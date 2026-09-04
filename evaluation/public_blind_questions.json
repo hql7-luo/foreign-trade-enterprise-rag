@@ -1,0 +1,561 @@
+{
+  "notice": "Fully synthetic Northstar Trading benchmark; not a real-company benchmark.",
+  "split": "blind",
+  "questions": [
+    {
+      "id": "PB-001",
+      "category": "grammar",
+      "language": "en",
+      "question": "NSTR-VESSEL-732 how big capacity pls, client says no tiny bottles.",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "800 ml"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-V732"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-V732"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PB-002",
+      "category": "chinese",
+      "language": "zh",
+      "question": "要给同事制单，NSTR-TOTE-552 起订量和包装分别是什么？",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "200 units"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-T552"
+          }
+        },
+        {
+          "contains": [
+            "50 units per carton"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-T552"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-T552"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PB-003",
+      "category": "mixed",
+      "language": "mixed",
+      "question": "NSITEM-M963 的 material + color，别带价格。",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "Cork with natural rubber backing"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-M963"
+          }
+        },
+        {
+          "contains": [
+            "Natural cork"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-M963"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-M963"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PB-004",
+      "category": "vague",
+      "language": "en",
+      "question": "I'm looking for the small green packing cube, do we have an option?",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "NSTR-POD-452"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-P452A"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-P452A"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PB-005",
+      "category": "partial_sku",
+      "language": "en",
+      "question": "NSTR-TOTE-55 was all I copied from the list.",
+      "expected_sufficient": false,
+      "claims": [
+        {
+          "contains": [
+            "NSTR-TOTE-552"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-T552"
+          }
+        },
+        {
+          "contains": [
+            "NSTR-TOTE-553"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-T553"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-T552"
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-T553"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PB-006",
+      "category": "comparison",
+      "language": "en",
+      "question": "NSTR-LANTERN-864 and NSTR-LANTERN-865: compare the capacity entries, not brightness.",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "2200 mAh"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-L864"
+          }
+        },
+        {
+          "contains": [
+            "1200 mAh"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-L865"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-L864"
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-L865"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PB-007",
+      "category": "unsupported",
+      "language": "en",
+      "question": "Can I promise NSTR-LANTERN-864 lead time this afternoon?",
+      "expected_sufficient": false,
+      "claims": [],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-L864"
+        }
+      ],
+      "unsupported_fields": [
+        "lead_time"
+      ]
+    },
+    {
+      "id": "PB-008",
+      "category": "misleading",
+      "language": "en",
+      "question": "NSTR-TOTE-553 is in stock right now, isn't it?",
+      "expected_sufficient": false,
+      "claims": [],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-T553"
+        }
+      ],
+      "unsupported_fields": [
+        "inventory"
+      ]
+    },
+    {
+      "id": "PB-009",
+      "category": "company",
+      "language": "en",
+      "question": "Company rules for a sample reservation — how long and what about customized samples?",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "seven calendar days"
+          ],
+          "source": {
+            "source_file": "northstar-company-knowledge.md",
+            "section": "Northstar Trading — synthetic company handbook / Sample policy"
+          }
+        },
+        {
+          "contains": [
+            "separate written scope"
+          ],
+          "source": {
+            "source_file": "northstar-company-knowledge.md",
+            "section": "Northstar Trading — synthetic company handbook / Sample policy"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-company-knowledge.md",
+          "section": "Northstar Trading — synthetic company handbook / Sample policy"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PB-010",
+      "category": "sop",
+      "language": "mixed",
+      "question": "SOP release gate 谁签？quality check 要对照啥？",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "reviewer signs"
+          ],
+          "source": {
+            "source_file": "northstar-production-sop.md",
+            "section": "Northstar Trading — synthetic order procedure / Release control"
+          }
+        },
+        {
+          "contains": [
+            "approved sample"
+          ],
+          "source": {
+            "source_file": "northstar-production-sop.md",
+            "section": "Northstar Trading — synthetic order procedure / Quality inspection"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-production-sop.md",
+          "section": "Northstar Trading — synthetic order procedure / Release control"
+        },
+        {
+          "source_file": "northstar-production-sop.md",
+          "section": "Northstar Trading — synthetic order procedure / Quality inspection"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PB-011",
+      "category": "history",
+      "language": "en",
+      "question": "Dig out the old NSTR-TOTE-552 deal. Payment terms, Incoterm and quoted price in one reply.",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "35% prepayment"
+          ],
+          "source": {
+            "source_file": "northstar-historical-rfqs.md",
+            "product_id": "NSITEM-T552"
+          }
+        },
+        {
+          "contains": [
+            "EXW Invented Cedar Workshop"
+          ],
+          "source": {
+            "source_file": "northstar-historical-rfqs.md",
+            "product_id": "NSITEM-T552"
+          }
+        },
+        {
+          "contains": [
+            "USD 3.90"
+          ],
+          "source": {
+            "source_file": "northstar-historical-rfqs.md",
+            "product_id": "NSITEM-T552"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-historical-rfqs.md",
+          "product_id": "NSITEM-T552"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PB-012",
+      "category": "conflict",
+      "language": "en",
+      "question": "Catalog ID NSITEM-M964 / SKU NSTR-VESSEL-731 — material please.",
+      "expected_sufficient": false,
+      "claims": [],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-M964"
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-V731"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PB-013",
+      "category": "unsupported",
+      "language": "zh",
+      "question": "NSTR-MAT-963 今天已核验的运费是多少？",
+      "expected_sufficient": false,
+      "claims": [],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-M963"
+        }
+      ],
+      "unsupported_fields": [
+        "logistics_or_freight"
+      ]
+    },
+    {
+      "id": "PB-014",
+      "category": "ambiguous",
+      "language": "en",
+      "question": "NSTR-POD-452 — I need the single approved dimension, nothing else.",
+      "expected_sufficient": false,
+      "claims": [],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-P452A"
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-P452B"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PB-015",
+      "category": "discovery",
+      "language": "en",
+      "question": "We want plastic-free individual wrapping on carry bags. Give several product options.",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "NSTR-TOTE-552"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-T552"
+          }
+        },
+        {
+          "contains": [
+            "NSTR-TOTE-553"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-T553"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-T552"
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-T553"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PB-016",
+      "category": "exact_id",
+      "language": "en",
+      "question": "NSITEM-L864 housing material? I'm taking notes while travelling.",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "ABS housing with silicone handle"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-L864"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-L864"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PB-017",
+      "category": "hard_negative",
+      "language": "en",
+      "question": "NSTR-VESSEL-732 MOQ — 731 is the one to leave out.",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "96 units"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-V732"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-V732"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PB-018",
+      "category": "sop",
+      "language": "en",
+      "question": "SOP exception handling: damaged goods found before packing, what's the next step?",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "Quarantine damaged units"
+          ],
+          "source": {
+            "source_file": "northstar-production-sop.md",
+            "section": "Northstar Trading — synthetic order procedure / Quality inspection"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-production-sop.md",
+          "section": "Northstar Trading — synthetic order procedure / Quality inspection"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PB-019",
+      "category": "multifact",
+      "language": "en",
+      "question": "NSTR-VESSEL-731 material is needed; also tell me current inventory.",
+      "expected_sufficient": false,
+      "claims": [
+        {
+          "contains": [
+            "18/8 stainless steel"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-V731"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-V731"
+        }
+      ],
+      "unsupported_fields": [
+        "inventory"
+      ]
+    },
+    {
+      "id": "PB-020",
+      "category": "unsupported",
+      "language": "en",
+      "question": "NSTR-LANTERN-865: send a verified final quotation for signature.",
+      "expected_sufficient": false,
+      "claims": [],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-L865"
+        }
+      ],
+      "unsupported_fields": [
+        "current_price"
+      ]
+    }
+  ]
+}

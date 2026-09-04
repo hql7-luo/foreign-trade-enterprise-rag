@@ -1,0 +1,19 @@
+# Deny by default; no private data or real-data evaluation artifacts in the context.
+**
+!Dockerfile
+!pyproject.toml
+!uv.lock
+!README.md
+!app/
+!app/**
+!scripts/
+!scripts/__init__.py
+!scripts/docker_start.py
+!scripts/bootstrap_demo.py
+!scripts/demo_ops.py
+!scripts/deployment_smoke.py
+!data/
+!data/demo/
+!data/demo/**
+**/__pycache__/**
+**/*.pyc

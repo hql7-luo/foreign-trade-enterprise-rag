@@ -1,0 +1,863 @@
+{
+  "notice": "Fully synthetic Northstar Trading benchmark; not a real-company benchmark.",
+  "split": "dev",
+  "questions": [
+    {
+      "id": "PD-001",
+      "category": "exact_sku",
+      "language": "en",
+      "question": "Give me the material recorded against NSTR-VESSEL-731.",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "18/8 stainless steel"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-V731"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-V731"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PD-002",
+      "category": "exact_id",
+      "language": "en",
+      "question": "NSITEM-M963 dimensions only, please.",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "680 x 320 x 3 mm"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-M963"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-M963"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PD-003",
+      "category": "chinese",
+      "language": "zh",
+      "question": "NSTR-TOTE-553 的材质是什么？",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "Unbleached cotton canvas"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-T553"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-T553"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PD-004",
+      "category": "mixed",
+      "language": "mixed",
+      "question": "NSTR-VESSEL-732 capacity 和包装都要。",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "800 ml"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-V732"
+          }
+        },
+        {
+          "contains": [
+            "18 units per carton"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-V732"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-V732"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PD-005",
+      "category": "comparison",
+      "language": "en",
+      "question": "Compare NSTR-VESSEL-731 vs NSTR-VESSEL-732 capacity.",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "500 ml"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-V731"
+          }
+        },
+        {
+          "contains": [
+            "800 ml"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-V732"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-V731"
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-V732"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PD-006",
+      "category": "comparison",
+      "language": "en",
+      "question": "NSTR-MAT-963 versus NSTR-MAT-964: material and dimensions?",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "Cork with natural rubber backing"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-M963"
+          }
+        },
+        {
+          "contains": [
+            "Recycled PET felt"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-M964"
+          }
+        },
+        {
+          "contains": [
+            "680 x 320 x 3 mm"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-M963"
+          }
+        },
+        {
+          "contains": [
+            "720 x 350 x 4 mm"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-M964"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-M963"
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-M964"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PD-007",
+      "category": "company",
+      "language": "en",
+      "question": "What is the company sample policy?",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "seven calendar days"
+          ],
+          "source": {
+            "source_file": "northstar-company-knowledge.md",
+            "section": "Northstar Trading — synthetic company handbook / Sample policy"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-company-knowledge.md",
+          "section": "Northstar Trading — synthetic company handbook / Sample policy"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PD-008",
+      "category": "company",
+      "language": "en",
+      "question": "What does the company business scope include?",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "does not operate a factory"
+          ],
+          "source": {
+            "source_file": "northstar-company-knowledge.md",
+            "section": "Northstar Trading — synthetic company handbook / Company scope"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-company-knowledge.md",
+          "section": "Northstar Trading — synthetic company handbook / Company scope"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PD-009",
+      "category": "sop",
+      "language": "en",
+      "question": "SOP order entry: which required fields should I capture?",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "artwork revision"
+          ],
+          "source": {
+            "source_file": "northstar-production-sop.md",
+            "section": "Northstar Trading — synthetic order procedure / Order entry"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-production-sop.md",
+          "section": "Northstar Trading — synthetic order procedure / Order entry"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PD-010",
+      "category": "sop",
+      "language": "en",
+      "question": "Explain the SOP release gate and quality inspection.",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "reviewer signs the release checklist"
+          ],
+          "source": {
+            "source_file": "northstar-production-sop.md",
+            "section": "Northstar Trading — synthetic order procedure / Release control"
+          }
+        },
+        {
+          "contains": [
+            "first assembled unit"
+          ],
+          "source": {
+            "source_file": "northstar-production-sop.md",
+            "section": "Northstar Trading — synthetic order procedure / Quality inspection"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-production-sop.md",
+          "section": "Northstar Trading — synthetic order procedure / Release control"
+        },
+        {
+          "source_file": "northstar-production-sop.md",
+          "section": "Northstar Trading — synthetic order procedure / Quality inspection"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PD-011",
+      "category": "history",
+      "language": "en",
+      "question": "Historical NSTR-VESSEL-731 MOQ and quoted price?",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "360 units"
+          ],
+          "source": {
+            "source_file": "northstar-historical-rfqs.md",
+            "product_id": "NSITEM-V731"
+          }
+        },
+        {
+          "contains": [
+            "USD 6.40"
+          ],
+          "source": {
+            "source_file": "northstar-historical-rfqs.md",
+            "product_id": "NSITEM-V731"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-historical-rfqs.md",
+          "product_id": "NSITEM-V731"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PD-012",
+      "category": "history",
+      "language": "mixed",
+      "question": "NSTR-TOTE-552 的 historical payment terms 和 Incoterms?",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "35% prepayment"
+          ],
+          "source": {
+            "source_file": "northstar-historical-rfqs.md",
+            "product_id": "NSITEM-T552"
+          }
+        },
+        {
+          "contains": [
+            "EXW Invented Cedar Workshop"
+          ],
+          "source": {
+            "source_file": "northstar-historical-rfqs.md",
+            "product_id": "NSITEM-T552"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-historical-rfqs.md",
+          "product_id": "NSITEM-T552"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PD-013",
+      "category": "unsupported",
+      "language": "en",
+      "question": "Current lead time for NSTR-LANTERN-864?",
+      "expected_sufficient": false,
+      "claims": [],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-L864"
+        }
+      ],
+      "unsupported_fields": [
+        "lead_time"
+      ]
+    },
+    {
+      "id": "PD-014",
+      "category": "unsupported",
+      "language": "zh",
+      "question": "NSTR-LANTERN-864 当前证书有哪些？",
+      "expected_sufficient": false,
+      "claims": [],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-L864"
+        }
+      ],
+      "unsupported_fields": [
+        "certificates"
+      ]
+    },
+    {
+      "id": "PD-015",
+      "category": "unsupported",
+      "language": "en",
+      "question": "NSTR-TOTE-552 current inventory?",
+      "expected_sufficient": false,
+      "claims": [],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-T552"
+        }
+      ],
+      "unsupported_fields": [
+        "inventory"
+      ]
+    },
+    {
+      "id": "PD-016",
+      "category": "ambiguous",
+      "language": "en",
+      "question": "NSTR-POD-452 dimensions?",
+      "expected_sufficient": false,
+      "claims": [],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-P452A"
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-P452B"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PD-017",
+      "category": "partial_sku",
+      "language": "en",
+      "question": "NSTR-VESSEL-73",
+      "expected_sufficient": false,
+      "claims": [
+        {
+          "contains": [
+            "NSTR-VESSEL-731"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-V731"
+          }
+        },
+        {
+          "contains": [
+            "NSTR-VESSEL-732"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-V732"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-V731"
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-V732"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PD-018",
+      "category": "discovery",
+      "language": "en",
+      "question": "Find a few recycled-material carry bags.",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "NSTR-TOTE-552"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-T552"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-T552"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PD-019",
+      "category": "discovery",
+      "language": "en",
+      "question": "Suggest travel drinkware options in steel.",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "NSTR-VESSEL-731"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-V731"
+          }
+        },
+        {
+          "contains": [
+            "NSTR-VESSEL-732"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-V732"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-V731"
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-V732"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PD-020",
+      "category": "hard_negative",
+      "language": "en",
+      "question": "NSTR-LANTERN-865 material, not the 864 model.",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "aluminium clip"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-L865"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-L865"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PD-021",
+      "category": "unsupported",
+      "language": "en",
+      "question": "For NSTR-VESSEL-739, what MOQ is verified?",
+      "expected_sufficient": false,
+      "claims": [],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-V731"
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-V732"
+        }
+      ],
+      "unsupported_fields": [
+        "moq"
+      ]
+    },
+    {
+      "id": "PD-022",
+      "category": "company",
+      "language": "en",
+      "question": "Company quotation policy: what is the quote validity?",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "14 calendar days"
+          ],
+          "source": {
+            "source_file": "northstar-company-knowledge.md",
+            "section": "Northstar Trading — synthetic company handbook / Quotation policy"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-company-knowledge.md",
+          "section": "Northstar Trading — synthetic company handbook / Quotation policy"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PD-023",
+      "category": "sop",
+      "language": "mixed",
+      "question": "SOP inspection 出现 damaged units，exception handling 怎么处理？",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "Quarantine damaged units"
+          ],
+          "source": {
+            "source_file": "northstar-production-sop.md",
+            "section": "Northstar Trading — synthetic order procedure / Quality inspection"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-production-sop.md",
+          "section": "Northstar Trading — synthetic order procedure / Quality inspection"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PD-024",
+      "category": "multifact",
+      "language": "en",
+      "question": "NSTR-VESSEL-731 dimensions, material and MOQ please.",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "245 x 72 mm"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-V731"
+          }
+        },
+        {
+          "contains": [
+            "18/8 stainless steel"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-V731"
+          }
+        },
+        {
+          "contains": [
+            "144 units"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-V731"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-V731"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PD-025",
+      "category": "exact_id",
+      "language": "en",
+      "question": "NSITEM-P452B packaging and capacity?",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "40 units per carton"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-P452B"
+          }
+        },
+        {
+          "contains": [
+            "6.1 litres"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-P452B"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-P452B"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PD-026",
+      "category": "chinese",
+      "language": "zh",
+      "question": "NSTR-MAT-964 的交期是多少？",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "12 working days"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-M964"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-M964"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PD-027",
+      "category": "history",
+      "language": "en",
+      "question": "Historical NSTR-VESSEL-731 date, payment terms and trade terms?",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "2024-02-16"
+          ],
+          "source": {
+            "source_file": "northstar-historical-rfqs.md",
+            "product_id": "NSITEM-V731"
+          }
+        },
+        {
+          "contains": [
+            "40% prepayment"
+          ],
+          "source": {
+            "source_file": "northstar-historical-rfqs.md",
+            "product_id": "NSITEM-V731"
+          }
+        },
+        {
+          "contains": [
+            "FCA Invented Rivergate"
+          ],
+          "source": {
+            "source_file": "northstar-historical-rfqs.md",
+            "product_id": "NSITEM-V731"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-historical-rfqs.md",
+          "product_id": "NSITEM-V731"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PD-028",
+      "category": "conflict",
+      "language": "en",
+      "question": "Does product ID NSITEM-V731 mean SKU NSTR-TOTE-552?",
+      "expected_sufficient": false,
+      "claims": [],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-V731"
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-T552"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PD-029",
+      "category": "unsupported",
+      "language": "en",
+      "question": "NSTR-MAT-963 current freight charge?",
+      "expected_sufficient": false,
+      "claims": [],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-M963"
+        }
+      ],
+      "unsupported_fields": [
+        "logistics_or_freight"
+      ]
+    },
+    {
+      "id": "PD-030",
+      "category": "analytics",
+      "language": "en",
+      "question": "Travel organizers demand: how many inquiries are in the synthetic analytics?",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "17"
+          ],
+          "source": {
+            "source_file": "northstar-rfq-demand-summary.csv",
+            "section": "Travel organizers"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-rfq-demand-summary.csv",
+          "section": "Travel organizers"
+        }
+      ],
+      "unsupported_fields": []
+    }
+  ]
+}

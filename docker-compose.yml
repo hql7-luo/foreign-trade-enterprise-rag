@@ -1,0 +1,88 @@
+name: foreign-trade-knowledge-desk
+
+services:
+  qdrant:
+    image: qdrant/qdrant:v1.15.4
+    restart: unless-stopped
+    volumes:
+      - qdrant_data:/qdrant/storage
+    networks:
+      - knowledge_backend
+
+  backend:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    depends_on:
+      - qdrant
+    environment:
+      RAG_AUTH_ENABLED: "true"
+      RAG_AUTH_USERS_FILE: /app/data/private/demo-auth.json
+      RAG_AUTH_SESSION_DATABASE_PATH: /app/data/private/demo-sessions.db
+      RAG_DATABASE_PATH: /app/data/private/knowledge.db
+      RAG_QDRANT_PATH: ""
+      RAG_QDRANT_URL: http://qdrant:6333
+      RAG_QDRANT_COLLECTION: foreign_trade_demo
+      RAG_EMBEDDING_PROVIDER: domain_hash
+      RAG_EMBEDDING_DIM: "384"
+      RAG_INGESTION_SOURCE_PATH: /app/data/demo/source
+      RAG_STAGING_PATH: /app/data/private/staging
+      RAG_ALLOWED_HOSTS: localhost,127.0.0.1,backend
+      RAG_ENABLE_DOCS: "false"
+    ports:
+      - "127.0.0.1:8000:8000"
+    volumes:
+      - demo_runtime:/app/data/private
+    read_only: true
+    tmpfs:
+      - /tmp:size=64m,mode=1777
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    healthcheck:
+      test: ["CMD", "python", "-c", "from urllib.request import urlopen; assert urlopen('http://127.0.0.1:8000/api/health/ready', timeout=2).status == 200"]
+      interval: 10s
+      timeout: 3s
+      retries: 10
+      start_period: 45s
+    networks:
+      - knowledge_backend
+      - knowledge_frontend
+
+  frontend:
+    build:
+      context: frontend
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    depends_on:
+      backend:
+        condition: service_healthy
+    ports:
+      - "127.0.0.1:3000:8080"
+    read_only: true
+    tmpfs:
+      - /tmp:size=16m,mode=1777
+      - /var/cache/nginx:size=16m,mode=0755
+    cap_drop:
+      - ALL
+    security_opt:
+      - no-new-privileges:true
+    healthcheck:
+      test: ["CMD", "wget", "-qO-", "http://127.0.0.1:8080/"]
+      interval: 10s
+      timeout: 3s
+      retries: 5
+      start_period: 5s
+    networks:
+      - knowledge_frontend
+
+networks:
+  knowledge_backend:
+    internal: true
+  knowledge_frontend:
+
+volumes:
+  demo_runtime:
+  qdrant_data:
