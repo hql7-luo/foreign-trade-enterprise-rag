@@ -1,0 +1,47 @@
+name: Public edition validation
+on: [push, pull_request, workflow_dispatch]
+permissions:
+  contents: read
+jobs:
+  python:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: astral-sh/setup-uv@v6
+        with:
+          version: '0.12.5'
+          python-version: '3.12'
+      - run: uv sync --frozen --extra dev
+      - run: uv run pytest -q
+      - run: uv run ruff check app scripts tests
+      - run: uv run python -m compileall -q app scripts tests
+      - run: uv run python -m scripts.verify_public_release
+      - run: uv run python -m scripts.audit_public_tree
+  frontend:
+    runs-on: ubuntu-latest
+    defaults:
+      run:
+        working-directory: frontend
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22.18.0'
+      - run: corepack enable && corepack prepare pnpm@11.19.0 --activate
+      - run: pnpm install --frozen-lockfile
+      - run: pnpm test
+      - run: pnpm lint
+      - run: pnpm build
+  docker:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - run: docker compose config --quiet
+      - run: docker compose up --build -d --wait --wait-timeout 300
+      - name: Smoke test inside clean stack
+        run: >-
+          docker compose exec -T backend python -m scripts.deployment_smoke
+          --url http://backend:8000 --frontend http://frontend:8080
+          --credentials /app/data/private/demo-credentials.txt
+      - if: always()
+        run: docker compose down

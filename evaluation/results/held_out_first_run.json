@@ -1,0 +1,3249 @@
+{
+  "summary": {
+    "n": 20,
+    "recall_at_1": 0.75,
+    "recall_at_3": 0.95,
+    "recall_at_5": 0.975,
+    "recall_at_8": 0.975,
+    "mrr": 0.8875,
+    "answer_correctness": 0.8,
+    "citation_correctness": 0.85,
+    "sufficiency_correctness": 0.9,
+    "claim_coverage": 0.7727272727272727,
+    "multi_fact_completeness": 0.6,
+    "unsupported_questions": 3,
+    "unsupported_hallucination_rate": 0.0,
+    "median_latency_ms": 6.4147910015890375,
+    "p95_latency_ms": 7.736540996120311,
+    "mean_context_chars": 1257.2,
+    "mean_context_chunks": 2.35,
+    "by_category": {
+      "ambiguous": {
+        "n": 1,
+        "recall_at_1": 0.5,
+        "recall_at_3": 1.0,
+        "recall_at_5": 1.0,
+        "recall_at_8": 1.0,
+        "mrr": 1.0,
+        "answer_correctness": 1.0,
+        "citation_correctness": 1.0,
+        "sufficiency_correctness": 1.0,
+        "claim_coverage": null,
+        "multi_fact_completeness": null,
+        "unsupported_questions": 0,
+        "unsupported_hallucination_rate": null,
+        "median_latency_ms": 6.1849579942645505,
+        "p95_latency_ms": 6.1849579942645505,
+        "mean_context_chars": 1054.0,
+        "mean_context_chunks": 2.0
+      },
+      "analytics": {
+        "n": 1,
+        "recall_at_1": 1.0,
+        "recall_at_3": 1.0,
+        "recall_at_5": 1.0,
+        "recall_at_8": 1.0,
+        "mrr": 1.0,
+        "answer_correctness": 1.0,
+        "citation_correctness": 1.0,
+        "sufficiency_correctness": 1.0,
+        "claim_coverage": 1.0,
+        "multi_fact_completeness": null,
+        "unsupported_questions": 0,
+        "unsupported_hallucination_rate": null,
+        "median_latency_ms": 7.22949999908451,
+        "p95_latency_ms": 7.22949999908451,
+        "mean_context_chars": 312.0,
+        "mean_context_chunks": 1.0
+      },
+      "company": {
+        "n": 2,
+        "recall_at_1": 0.5,
+        "recall_at_3": 1.0,
+        "recall_at_5": 1.0,
+        "recall_at_8": 1.0,
+        "mrr": 0.75,
+        "answer_correctness": 0.5,
+        "citation_correctness": 1.0,
+        "sufficiency_correctness": 0.5,
+        "claim_coverage": 1.0,
+        "multi_fact_completeness": null,
+        "unsupported_questions": 0,
+        "unsupported_hallucination_rate": null,
+        "median_latency_ms": 7.293583003047388,
+        "p95_latency_ms": 6.850625009974465,
+        "mean_context_chars": 564.0,
+        "mean_context_chunks": 1.0
+      },
+      "comparison": {
+        "n": 1,
+        "recall_at_1": 0.5,
+        "recall_at_3": 1.0,
+        "recall_at_5": 1.0,
+        "recall_at_8": 1.0,
+        "mrr": 1.0,
+        "answer_correctness": 1.0,
+        "citation_correctness": 1.0,
+        "sufficiency_correctness": 1.0,
+        "claim_coverage": 1.0,
+        "multi_fact_completeness": 1.0,
+        "unsupported_questions": 0,
+        "unsupported_hallucination_rate": null,
+        "median_latency_ms": 6.543416995555162,
+        "p95_latency_ms": 6.543416995555162,
+        "mean_context_chars": 1035.0,
+        "mean_context_chunks": 2.0
+      },
+      "discovery": {
+        "n": 1,
+        "recall_at_1": 1.0,
+        "recall_at_3": 1.0,
+        "recall_at_5": 1.0,
+        "recall_at_8": 1.0,
+        "mrr": 1.0,
+        "answer_correctness": 1.0,
+        "citation_correctness": 1.0,
+        "sufficiency_correctness": 1.0,
+        "claim_coverage": 1.0,
+        "multi_fact_completeness": null,
+        "unsupported_questions": 0,
+        "unsupported_hallucination_rate": null,
+        "median_latency_ms": 5.562958991504274,
+        "p95_latency_ms": 5.562958991504274,
+        "mean_context_chars": 1543.0,
+        "mean_context_chunks": 3.0
+      },
+      "exact_id": {
+        "n": 1,
+        "recall_at_1": 1.0,
+        "recall_at_3": 1.0,
+        "recall_at_5": 1.0,
+        "recall_at_8": 1.0,
+        "mrr": 1.0,
+        "answer_correctness": 1.0,
+        "citation_correctness": 1.0,
+        "sufficiency_correctness": 1.0,
+        "claim_coverage": 1.0,
+        "multi_fact_completeness": null,
+        "unsupported_questions": 0,
+        "unsupported_hallucination_rate": null,
+        "median_latency_ms": 6.169333006255329,
+        "p95_latency_ms": 6.169333006255329,
+        "mean_context_chars": 1053.0,
+        "mean_context_chunks": 2.0
+      },
+      "grammar": {
+        "n": 1,
+        "recall_at_1": 1.0,
+        "recall_at_3": 1.0,
+        "recall_at_5": 1.0,
+        "recall_at_8": 1.0,
+        "mrr": 1.0,
+        "answer_correctness": 1.0,
+        "citation_correctness": 1.0,
+        "sufficiency_correctness": 1.0,
+        "claim_coverage": 1.0,
+        "multi_fact_completeness": null,
+        "unsupported_questions": 0,
+        "unsupported_hallucination_rate": null,
+        "median_latency_ms": 6.3715410069562495,
+        "p95_latency_ms": 6.3715410069562495,
+        "mean_context_chars": 540.0,
+        "mean_context_chunks": 1.0
+      },
+      "hard_negative": {
+        "n": 1,
+        "recall_at_1": 1.0,
+        "recall_at_3": 1.0,
+        "recall_at_5": 1.0,
+        "recall_at_8": 1.0,
+        "mrr": 1.0,
+        "answer_correctness": 1.0,
+        "citation_correctness": 1.0,
+        "sufficiency_correctness": 1.0,
+        "claim_coverage": 1.0,
+        "multi_fact_completeness": null,
+        "unsupported_questions": 0,
+        "unsupported_hallucination_rate": null,
+        "median_latency_ms": 6.652166004641913,
+        "p95_latency_ms": 6.652166004641913,
+        "mean_context_chars": 1070.0,
+        "mean_context_chunks": 2.0
+      },
+      "history": {
+        "n": 2,
+        "recall_at_1": 0.5,
+        "recall_at_3": 1.0,
+        "recall_at_5": 1.0,
+        "recall_at_8": 1.0,
+        "mrr": 0.75,
+        "answer_correctness": 0.5,
+        "citation_correctness": 0.5,
+        "sufficiency_correctness": 0.5,
+        "claim_coverage": 0.5,
+        "multi_fact_completeness": 0.5,
+        "unsupported_questions": 0,
+        "unsupported_hallucination_rate": null,
+        "median_latency_ms": 6.17956199857872,
+        "p95_latency_ms": 5.901083000935614,
+        "mean_context_chars": 698.0,
+        "mean_context_chunks": 1.0
+      },
+      "mixed": {
+        "n": 1,
+        "recall_at_1": 1.0,
+        "recall_at_3": 1.0,
+        "recall_at_5": 1.0,
+        "recall_at_8": 1.0,
+        "mrr": 1.0,
+        "answer_correctness": 1.0,
+        "citation_correctness": 1.0,
+        "sufficiency_correctness": 1.0,
+        "claim_coverage": 1.0,
+        "multi_fact_completeness": null,
+        "unsupported_questions": 0,
+        "unsupported_hallucination_rate": null,
+        "median_latency_ms": 6.5234170033363625,
+        "p95_latency_ms": 6.5234170033363625,
+        "mean_context_chars": 567.0,
+        "mean_context_chunks": 1.0
+      },
+      "multifact": {
+        "n": 1,
+        "recall_at_1": 1.0,
+        "recall_at_3": 1.0,
+        "recall_at_5": 1.0,
+        "recall_at_8": 1.0,
+        "mrr": 1.0,
+        "answer_correctness": 1.0,
+        "citation_correctness": 1.0,
+        "sufficiency_correctness": 1.0,
+        "claim_coverage": 1.0,
+        "multi_fact_completeness": 1.0,
+        "unsupported_questions": 0,
+        "unsupported_hallucination_rate": null,
+        "median_latency_ms": 6.2027090025367215,
+        "p95_latency_ms": 6.2027090025367215,
+        "mean_context_chars": 601.0,
+        "mean_context_chunks": 1.0
+      },
+      "partial_sku": {
+        "n": 1,
+        "recall_at_1": 0.0,
+        "recall_at_3": 0.0,
+        "recall_at_5": 0.5,
+        "recall_at_8": 0.5,
+        "mrr": 0.25,
+        "answer_correctness": 0.0,
+        "citation_correctness": 0.0,
+        "sufficiency_correctness": 1.0,
+        "claim_coverage": 0.0,
+        "multi_fact_completeness": 0.0,
+        "unsupported_questions": 0,
+        "unsupported_hallucination_rate": null,
+        "median_latency_ms": 5.380000002332963,
+        "p95_latency_ms": 5.380000002332963,
+        "mean_context_chars": 3433.0,
+        "mean_context_chunks": 6.0
+      },
+      "sop": {
+        "n": 2,
+        "recall_at_1": 0.5,
+        "recall_at_3": 1.0,
+        "recall_at_5": 1.0,
+        "recall_at_8": 1.0,
+        "mrr": 0.75,
+        "answer_correctness": 0.5,
+        "citation_correctness": 0.5,
+        "sufficiency_correctness": 1.0,
+        "claim_coverage": 0.5,
+        "multi_fact_completeness": null,
+        "unsupported_questions": 0,
+        "unsupported_hallucination_rate": null,
+        "median_latency_ms": 6.438499993237201,
+        "p95_latency_ms": 6.328958988888189,
+        "mean_context_chars": 507.5,
+        "mean_context_chunks": 1.0
+      },
+      "unsupported": {
+        "n": 3,
+        "recall_at_1": 1.0,
+        "recall_at_3": 1.0,
+        "recall_at_5": 1.0,
+        "recall_at_8": 1.0,
+        "mrr": 1.0,
+        "answer_correctness": 1.0,
+        "citation_correctness": 1.0,
+        "sufficiency_correctness": 1.0,
+        "claim_coverage": null,
+        "multi_fact_completeness": null,
+        "unsupported_questions": 3,
+        "unsupported_hallucination_rate": 0.0,
+        "median_latency_ms": 6.0931670013815165,
+        "p95_latency_ms": 6.0931670013815165,
+        "mean_context_chars": 3029.3333333333335,
+        "mean_context_chunks": 6.0
+      },
+      "vague": {
+        "n": 1,
+        "recall_at_1": 1.0,
+        "recall_at_3": 1.0,
+        "recall_at_5": 1.0,
+        "recall_at_8": 1.0,
+        "mrr": 1.0,
+        "answer_correctness": 1.0,
+        "citation_correctness": 1.0,
+        "sufficiency_correctness": 1.0,
+        "claim_coverage": 1.0,
+        "multi_fact_completeness": null,
+        "unsupported_questions": 0,
+        "unsupported_hallucination_rate": null,
+        "median_latency_ms": 8.423874998698011,
+        "p95_latency_ms": 8.423874998698011,
+        "mean_context_chars": 1309.0,
+        "mean_context_chunks": 2.0
+      }
+    }
+  },
+  "items": [
+    {
+      "id": "PH-001",
+      "category": "vague",
+      "question": "The blue Harbor Sip one — can you identify it for a shortlist?",
+      "expected_claims": [
+        {
+          "contains": [
+            "NSTR-VESSEL-731"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-V731"
+          }
+        }
+      ],
+      "expected_sufficient": true,
+      "ranks": [
+        1
+      ],
+      "relevant_count": 1,
+      "answer_correct": true,
+      "citation_correct": true,
+      "sufficiency_correct": true,
+      "hallucination": false,
+      "unsupported_question": false,
+      "required_claims": 1,
+      "covered_claims": 1,
+      "latency_ms": 8.423874998698011,
+      "answer": "- NSTR-VESSEL-731 (NSITEM-V731): Harbor Sip Steel Bottle; material: 18/8 stainless steel. [1]\n- NSTR-VESSEL-732 (NSITEM-V732): Harbor Sip Wide Bottle; material: 18/8 stainless steel. [2]",
+      "sources": [
+        {
+          "citation_id": 1,
+          "label": "Source: northstar-products.csv → row 2 → SKU NSTR-VESSEL-731 → product ID NSITEM-V731",
+          "source_file": "northstar-products.csv",
+          "source_type": "csv",
+          "sheet": null,
+          "row_number": 2,
+          "section": null,
+          "product_sku": "NSTR-VESSEL-731",
+          "product_id": "NSITEM-V731",
+          "source_modified_at": "2026-09-04T13:38:27.652336+00:00",
+          "chunk_id": "1176230d-9509-5a28-bfef-202fbfa1bc65",
+          "source_version": "d9e19fef5884dbb88d977631c76ec1a8c2489285fbd7cfc3b31c787333c35008",
+          "approval_change_id": null,
+          "authority_class": "A",
+          "knowledge_status": "current_approved"
+        },
+        {
+          "citation_id": 2,
+          "label": "Source: northstar-products.csv → row 3 → SKU NSTR-VESSEL-732 → product ID NSITEM-V732",
+          "source_file": "northstar-products.csv",
+          "source_type": "csv",
+          "sheet": null,
+          "row_number": 3,
+          "section": null,
+          "product_sku": "NSTR-VESSEL-732",
+          "product_id": "NSITEM-V732",
+          "source_modified_at": "2026-09-04T13:38:27.652336+00:00",
+          "chunk_id": "9cb8819f-3192-5d7c-be3b-63afd8cbc817",
+          "source_version": "d9e19fef5884dbb88d977631c76ec1a8c2489285fbd7cfc3b31c787333c35008",
+          "approval_change_id": null,
+          "authority_class": "A",
+          "knowledge_status": "current_approved"
+        }
+      ],
+      "retrieved_evidence": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-V731",
+          "section": null,
+          "row": 2,
+          "content": "canonical_product_id: NSITEM-V731\nmodel: NSTR-VESSEL-731\nname: Harbor Sip Steel Bottle\ncategory: Travel drinkware\nplatform_reference_price_min_usd: 6.85\nplatform_reference_price_max_usd: 7.25\nunit: unit\ncolor: Glacier blue\ncapacity: 500 ml\nmoq: 144 units\nlead_time: 18 working days after artwork sign-off\ncurrent_price: USD 7.25 per unit; dated catalog reference, not a binding quote\ncertificates: DEMO-MAT-731: simulated material-screen result, not regulatory certification\npackaging: Paper sleeve; 24 units per carton\ndimensions: 245 x 72 mm\nmaterial: 18/8 stainless steel",
+          "dense": 0.11816317843965782,
+          "bm25": 6.304331302642822,
+          "rrf": 0.030158730158730156,
+          "reranker": 0.2652981294778411
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-V732",
+          "section": null,
+          "row": 3,
+          "content": "canonical_product_id: NSITEM-V732\nmodel: NSTR-VESSEL-732\nname: Harbor Sip Wide Bottle\ncategory: Travel drinkware\nplatform_reference_price_min_usd: 8.35\nplatform_reference_price_max_usd: 8.95\nunit: unit\ncolor: Basalt grey\ncapacity: 800 ml\nmoq: 96 units\nlead_time: 22 working days after artwork sign-off\ncurrent_price: USD 8.95 per unit; dated catalog reference, not a binding quote\npackaging: Paper sleeve; 18 units per carton\ndimensions: 292 x 84 mm\nmaterial: 18/8 stainless steel",
+          "dense": 0.12020319654306244,
+          "bm25": 4.7813920974731445,
+          "rrf": 0.030330882352941176,
+          "reranker": 0.2417962934392651
+        },
+        {
+          "source_file": "northstar-company-knowledge.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic company handbook / Company scope",
+          "row": 6,
+          "content": "Business scope: Northstar Trading is a fictional sourcing coordinator for travel drinkware, organizers, camping lights, desk accessories and carry bags. It does not operate a factory.\nResponse target: Acknowledge a new product inquiry within two working days.\nCompany status: This organization and all its records are invented for software demonstrations.",
+          "dense": 0.32632666553983625,
+          "bm25": 6.408953666687012,
+          "rrf": 0.03252247488101534,
+          "reranker": 0.26463480748190893
+        },
+        {
+          "source_file": "northstar-company-knowledge.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic company handbook / Sample policy",
+          "row": 11,
+          "content": "Sample policy: One standard sample per requested SKU can be reserved for seven calendar days. Customized samples require a separate written scope.\nSample ownership: The sample log stores an internal case code, never a customer's personal contact details.",
+          "dense": 0.2584911948503765,
+          "bm25": 10.511480331420898,
+          "rrf": 0.03252247488101534,
+          "reranker": 0.24554175153376007
+        },
+        {
+          "source_file": "northstar-production-sop.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic order procedure / Quality inspection",
+          "row": 15,
+          "content": "Quality check: Compare the first assembled unit with the approved sample; verify the SKU label, color and carton count before packing the batch.\nException handling: Quarantine damaged units, attach a defect code and request a corrective-action decision. Do not mix quarantined units into the outgoing cartons.",
+          "dense": 0.1966334822811881,
+          "bm25": 3.3703484535217285,
+          "rrf": 0.030798389007344232,
+          "reranker": 0.1786101524901165
+        },
+        {
+          "source_file": "northstar-production-sop.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic order procedure / Release control",
+          "row": 11,
+          "content": "Release gate: Operations checks the approved sample reference and artwork revision; a reviewer signs the release checklist before production starts.\nRevision policy: A changed specification pauses release until a new reviewer decision is recorded.",
+          "dense": 0.15949602484550793,
+          "bm25": 3.299341917037964,
+          "rrf": 0.030330882352941176,
+          "reranker": 0.1540032985025213
+        },
+        {
+          "source_file": "northstar-production-sop.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic order procedure / Dispatch handover",
+          "row": 19,
+          "content": "Handover: Operations provides the packing list and carton-count check to the dispatch coordinator.\nRequired fields: The dispatch record contains the order code, carton count, inspection decision and approved carrier booking reference.",
+          "dense": 0.15728674710582596,
+          "bm25": 2.112360715866089,
+          "rrf": 0.02967032967032967,
+          "reranker": 0.15190671528911653
+        },
+        {
+          "source_file": "northstar-company-knowledge.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic company handbook / Quotation policy",
+          "row": 15,
+          "content": "Quote validity: A newly approved written quotation is valid for 14 calendar days from issue.\nPayment terms: Current payment terms are agreed per quotation; no universal payment schedule is verified.\nRevision policy: Keep the prior approved fact in force until a reviewer approves the new source-backed value. Historical quotations cannot overwrite current catalog knowledge.",
+          "dense": 0.1562421480021956,
+          "bm25": 4.136420249938965,
+          "rrf": 0.030303030303030304,
+          "reranker": 0.15186042650445744
+        }
+      ],
+      "context_chars": 1309,
+      "context_chunks": 2,
+      "human_pass_fail": "unreviewed",
+      "reviewer_notes": ""
+    },
+    {
+      "id": "PH-002",
+      "category": "grammar",
+      "question": "NSTR-TOTE-553 packing how many carton?",
+      "expected_claims": [
+        {
+          "contains": [
+            "50 units per carton"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-T553"
+          }
+        }
+      ],
+      "expected_sufficient": true,
+      "ranks": [
+        1
+      ],
+      "relevant_count": 1,
+      "answer_correct": true,
+      "citation_correct": true,
+      "sufficiency_correct": true,
+      "hallucination": false,
+      "unsupported_question": false,
+      "required_claims": 1,
+      "covered_claims": 1,
+      "latency_ms": 6.3715410069562495,
+      "answer": "- NSTR-TOTE-553 — packaging: Paper belly band; 50 units per carton. [1]",
+      "sources": [
+        {
+          "citation_id": 1,
+          "label": "Source: northstar-products.csv → row 11 → SKU NSTR-TOTE-553 → product ID NSITEM-T553",
+          "source_file": "northstar-products.csv",
+          "source_type": "csv",
+          "sheet": null,
+          "row_number": 11,
+          "section": null,
+          "product_sku": "NSTR-TOTE-553",
+          "product_id": "NSITEM-T553",
+          "source_modified_at": "2026-09-04T13:38:27.652336+00:00",
+          "chunk_id": "d2a46324-0bea-50f5-8725-3020aa1e4ee8",
+          "source_version": "d9e19fef5884dbb88d977631c76ec1a8c2489285fbd7cfc3b31c787333c35008",
+          "approval_change_id": null,
+          "authority_class": "A",
+          "knowledge_status": "current_approved"
+        }
+      ],
+      "retrieved_evidence": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-T553",
+          "section": null,
+          "row": 11,
+          "content": "canonical_product_id: NSITEM-T553\nmodel: NSTR-TOTE-553\nname: Arc Fold Open Tote\ncategory: Carry bags\nplatform_reference_price_min_usd: 3.25\nplatform_reference_price_max_usd: 3.65\nunit: unit\ncolor: Undyed\ncapacity: 12 litres\nmoq: 200 units\nlead_time: 17 working days after sample approval\npackaging: Paper belly band; 50 units per carton\ndimensions: 370 x 330 x 100 mm\nmaterial: Unbleached cotton canvas",
+          "dense": 0.18883859538841574,
+          "bm25": 3.7641561031341553,
+          "rrf": 0.030679156908665108,
+          "reranker": 1.7750909105778019
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-T552",
+          "section": null,
+          "row": 10,
+          "content": "canonical_product_id: NSITEM-T552\nmodel: NSTR-TOTE-552\nname: Arc Fold Zip Tote\ncategory: Carry bags\nplatform_reference_price_min_usd: 4.15\nplatform_reference_price_max_usd: 4.55\nunit: unit\ncolor: Deep teal\ncapacity: 14 litres\nmoq: 200 units\nlead_time: 20 working days after sample approval\npackaging: Folded paper pocket; 50 units per carton\ndimensions: 390 x 340 x 110 mm\nmaterial: Recycled ripstop nylon",
+          "dense": 0.14837318209089806,
+          "bm25": 1.0903581380844116,
+          "rrf": 0.028594771241830064,
+          "reranker": 0.9217040062675805
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-P452A",
+          "section": null,
+          "row": 4,
+          "content": "canonical_product_id: NSITEM-P452A\nmodel: NSTR-POD-452\nname: Wayfarer Packing Cube Small\ncategory: Travel organizers\nplatform_reference_price_min_usd: 3.45\nplatform_reference_price_max_usd: 3.85\nunit: unit\ncolor: Moss green\ncapacity: 1.9 litres\nmoq: 240 units\nlead_time: 16 working days after sample approval\npackaging: Paper belly band; 60 units per carton\ndimensions: 210 x 140 x 65 mm\nmaterial: Recycled polyester",
+          "dense": 0.2597474883202474,
+          "bm25": 2.9331204891204834,
+          "rrf": 0.032018442622950824,
+          "reranker": 0.609187643364445
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-P452B",
+          "section": null,
+          "row": 5,
+          "content": "canonical_product_id: NSITEM-P452B\nmodel: NSTR-POD-452\nname: Wayfarer Packing Cube Large\ncategory: Travel organizers\nplatform_reference_price_min_usd: 4.95\nplatform_reference_price_max_usd: 5.35\nunit: unit\ncolor: Moss green\ncapacity: 6.1 litres\nmoq: 160 units\nlead_time: 16 working days after sample approval\npackaging: Paper belly band; 40 units per carton\ndimensions: 310 x 220 x 90 mm\nmaterial: Recycled polyester",
+          "dense": 0.25401705306169414,
+          "bm25": 2.9331204891204834,
+          "rrf": 0.0315136476426799,
+          "reranker": 0.6049580654661144
+        },
+        {
+          "source_file": "northstar-production-sop.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic order procedure / Quality inspection",
+          "row": 15,
+          "content": "Quality check: Compare the first assembled unit with the approved sample; verify the SKU label, color and carton count before packing the batch.\nException handling: Quarantine damaged units, attach a defect code and request a corrective-action decision. Do not mix quarantined units into the outgoing cartons.",
+          "dense": 0.1911187989334685,
+          "bm25": 2.9735682010650635,
+          "rrf": 0.03057889822595705,
+          "reranker": 0.49980611753271165
+        },
+        {
+          "source_file": "northstar-production-sop.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic order procedure / Dispatch handover",
+          "row": 19,
+          "content": "Handover: Operations provides the packing list and carton-count check to the dispatch coordinator.\nRequired fields: The dispatch record contains the order code, carton count, inspection decision and approved carrier booking reference.",
+          "dense": 0.1908399188382886,
+          "bm25": 3.4118852615356445,
+          "rrf": 0.030621785881252923,
+          "reranker": 0.49966773312614055
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-L865",
+          "section": null,
+          "row": 7,
+          "content": "canonical_product_id: NSITEM-L865\nmodel: NSTR-LANTERN-865\nname: Dusk Trail Clip Light\ncategory: Camping lights\nplatform_reference_price_min_usd: 9.55\nplatform_reference_price_max_usd: 10.15\nunit: unit\ncolor: Charcoal\ncapacity: 1200 mAh nominal battery\nmoq: 120 units\nlead_time: 24 working days after sample approval\npackaging: Moulded pulp insert; 30 units per carton\ndimensions: 94 x 62 x 42 mm\nmaterial: ABS housing with aluminium clip",
+          "dense": 0.2123294078857452,
+          "bm25": 1.0637589693069458,
+          "rrf": 0.030158730158730156,
+          "reranker": 0.4981728452844646
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-M964",
+          "section": null,
+          "row": 9,
+          "content": "canonical_product_id: NSITEM-M964\nmodel: NSTR-MAT-964\nname: Quiet Shore Felt Desk Mat\ncategory: Desk accessories\nplatform_reference_price_min_usd: 4.35\nplatform_reference_price_max_usd: 4.75\nunit: unit\ncolor: Heather grey\nmoq: 100 units\nlead_time: 12 working days after artwork sign-off\npackaging: Flat paper wrap; 25 units per carton\ndimensions: 720 x 350 x 4 mm\nmaterial: Recycled PET felt",
+          "dense": 0.21033352829480767,
+          "bm25": 1.108842372894287,
+          "rrf": 0.03055037313432836,
+          "reranker": 0.4972671665259534
+        }
+      ],
+      "context_chars": 540,
+      "context_chunks": 1,
+      "human_pass_fail": "unreviewed",
+      "reviewer_notes": ""
+    },
+    {
+      "id": "PH-003",
+      "category": "mixed",
+      "question": "NSITEM-L865 的 capacity 记了多少？",
+      "expected_claims": [
+        {
+          "contains": [
+            "1200 mAh"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-L865"
+          }
+        }
+      ],
+      "expected_sufficient": true,
+      "ranks": [
+        1
+      ],
+      "relevant_count": 1,
+      "answer_correct": true,
+      "citation_correct": true,
+      "sufficiency_correct": true,
+      "hallucination": false,
+      "unsupported_question": false,
+      "required_claims": 1,
+      "covered_claims": 1,
+      "latency_ms": 6.5234170033363625,
+      "answer": "- NSTR-LANTERN-865 — capacity: 1200 mAh nominal battery. [1]",
+      "sources": [
+        {
+          "citation_id": 1,
+          "label": "Source: northstar-products.csv → row 7 → SKU NSTR-LANTERN-865 → product ID NSITEM-L865",
+          "source_file": "northstar-products.csv",
+          "source_type": "csv",
+          "sheet": null,
+          "row_number": 7,
+          "section": null,
+          "product_sku": "NSTR-LANTERN-865",
+          "product_id": "NSITEM-L865",
+          "source_modified_at": "2026-09-04T13:38:27.652336+00:00",
+          "chunk_id": "770ad08d-f877-57f5-a866-9358c31b1e78",
+          "source_version": "d9e19fef5884dbb88d977631c76ec1a8c2489285fbd7cfc3b31c787333c35008",
+          "approval_change_id": null,
+          "authority_class": "A",
+          "knowledge_status": "current_approved"
+        }
+      ],
+      "retrieved_evidence": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-L865",
+          "section": null,
+          "row": 7,
+          "content": "canonical_product_id: NSITEM-L865\nmodel: NSTR-LANTERN-865\nname: Dusk Trail Clip Light\ncategory: Camping lights\nplatform_reference_price_min_usd: 9.55\nplatform_reference_price_max_usd: 10.15\nunit: unit\ncolor: Charcoal\ncapacity: 1200 mAh nominal battery\nmoq: 120 units\nlead_time: 24 working days after sample approval\npackaging: Moulded pulp insert; 30 units per carton\ndimensions: 94 x 62 x 42 mm\nmaterial: ABS housing with aluminium clip",
+          "dense": 0.07945670144005781,
+          "bm25": 3.5664889812469482,
+          "rrf": 0.03252247488101534,
+          "reranker": 1.7641693308170532
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-T553",
+          "section": null,
+          "row": 11,
+          "content": "canonical_product_id: NSITEM-T553\nmodel: NSTR-TOTE-553\nname: Arc Fold Open Tote\ncategory: Carry bags\nplatform_reference_price_min_usd: 3.25\nplatform_reference_price_max_usd: 3.65\nunit: unit\ncolor: Undyed\ncapacity: 12 litres\nmoq: 200 units\nlead_time: 17 working days after sample approval\npackaging: Paper belly band; 50 units per carton\ndimensions: 370 x 330 x 100 mm\nmaterial: Unbleached cotton canvas",
+          "dense": 0.11569452779850796,
+          "bm25": 1.0217607021331787,
+          "rrf": 0.032266458495966696,
+          "reranker": 0.16246790156499688
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-T552",
+          "section": null,
+          "row": 10,
+          "content": "canonical_product_id: NSITEM-T552\nmodel: NSTR-TOTE-552\nname: Arc Fold Zip Tote\ncategory: Carry bags\nplatform_reference_price_min_usd: 4.15\nplatform_reference_price_max_usd: 4.55\nunit: unit\ncolor: Deep teal\ncapacity: 14 litres\nmoq: 200 units\nlead_time: 20 working days after sample approval\npackaging: Folded paper pocket; 50 units per carton\ndimensions: 390 x 340 x 110 mm\nmaterial: Recycled ripstop nylon",
+          "dense": 0.055923160675218526,
+          "bm25": 1.013244390487671,
+          "rrf": 0.031024531024531024,
+          "reranker": 0.12237458546342306
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-V732",
+          "section": null,
+          "row": 3,
+          "content": "canonical_product_id: NSITEM-V732\nmodel: NSTR-VESSEL-732\nname: Harbor Sip Wide Bottle\ncategory: Travel drinkware\nplatform_reference_price_min_usd: 8.35\nplatform_reference_price_max_usd: 8.95\nunit: unit\ncolor: Basalt grey\ncapacity: 800 ml\nmoq: 96 units\nlead_time: 22 working days after artwork sign-off\ncurrent_price: USD 8.95 per unit; dated catalog reference, not a binding quote\npackaging: Paper sleeve; 18 units per carton\ndimensions: 292 x 84 mm\nmaterial: 18/8 stainless steel",
+          "dense": 0.05337017763963289,
+          "bm25": 0.942540168762207,
+          "rrf": 0.03055037313432836,
+          "reranker": 0.12024098860008975
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-P452A",
+          "section": null,
+          "row": 4,
+          "content": "canonical_product_id: NSITEM-P452A\nmodel: NSTR-POD-452\nname: Wayfarer Packing Cube Small\ncategory: Travel organizers\nplatform_reference_price_min_usd: 3.45\nplatform_reference_price_max_usd: 3.85\nunit: unit\ncolor: Moss green\ncapacity: 1.9 litres\nmoq: 240 units\nlead_time: 16 working days after sample approval\npackaging: Paper belly band; 60 units per carton\ndimensions: 210 x 140 x 65 mm\nmaterial: Recycled polyester",
+          "dense": 0.04544168109481671,
+          "bm25": 1.013244390487671,
+          "rrf": 0.031009615384615385,
+          "reranker": 0.11554670809624625
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-L864",
+          "section": null,
+          "row": 6,
+          "content": "canonical_product_id: NSITEM-L864\nmodel: NSTR-LANTERN-864\nname: Dusk Trail Rechargeable Lantern\ncategory: Camping lights\nplatform_reference_price_min_usd: 13.65\nplatform_reference_price_max_usd: 14.45\nunit: unit\ncolor: Sandstone\ncapacity: 2200 mAh nominal battery\nmoq: 48 units\npackaging: Moulded pulp insert; 12 units per carton\ndimensions: 128 x 88 x 88 mm\nmaterial: ABS housing with silicone handle",
+          "dense": 0.026344415051090125,
+          "bm25": 1.0481908321380615,
+          "rrf": 0.03128054740957967,
+          "reranker": 0.10340441719278826
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-P452B",
+          "section": null,
+          "row": 5,
+          "content": "canonical_product_id: NSITEM-P452B\nmodel: NSTR-POD-452\nname: Wayfarer Packing Cube Large\ncategory: Travel organizers\nplatform_reference_price_min_usd: 4.95\nplatform_reference_price_max_usd: 5.35\nunit: unit\ncolor: Moss green\ncapacity: 6.1 litres\nmoq: 160 units\nlead_time: 16 working days after sample approval\npackaging: Paper belly band; 40 units per carton\ndimensions: 310 x 220 x 90 mm\nmaterial: Recycled polyester",
+          "dense": 0.017345190848081785,
+          "bm25": 1.013244390487671,
+          "rrf": 0.030090497737556562,
+          "reranker": 0.09636487178880972
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-V731",
+          "section": null,
+          "row": 2,
+          "content": "canonical_product_id: NSITEM-V731\nmodel: NSTR-VESSEL-731\nname: Harbor Sip Steel Bottle\ncategory: Travel drinkware\nplatform_reference_price_min_usd: 6.85\nplatform_reference_price_max_usd: 7.25\nunit: unit\ncolor: Glacier blue\ncapacity: 500 ml\nmoq: 144 units\nlead_time: 18 working days after artwork sign-off\ncurrent_price: USD 7.25 per unit; dated catalog reference, not a binding quote\ncertificates: DEMO-MAT-731: simulated material-screen result, not regulatory certification\npackaging: Paper sleeve; 24 units per carton\ndimensions: 245 x 72 mm\nmaterial: 18/8 stainless steel",
+          "dense": 0.01804979516106692,
+          "bm25": 0.8747202754020691,
+          "rrf": 0.029631255487269532,
+          "reranker": 0.09636362234196304
+        }
+      ],
+      "context_chars": 567,
+      "context_chunks": 1,
+      "human_pass_fail": "unreviewed",
+      "reviewer_notes": ""
+    },
+    {
+      "id": "PH-004",
+      "category": "company",
+      "question": "New inquiry on my desk. Company response target?",
+      "expected_claims": [
+        {
+          "contains": [
+            "two working days"
+          ],
+          "source": {
+            "source_file": "northstar-company-knowledge.md",
+            "section": "Northstar Trading — synthetic company handbook / Company scope"
+          }
+        }
+      ],
+      "expected_sufficient": true,
+      "ranks": [
+        1
+      ],
+      "relevant_count": 1,
+      "answer_correct": false,
+      "citation_correct": true,
+      "sufficiency_correct": false,
+      "hallucination": false,
+      "unsupported_question": false,
+      "required_claims": 1,
+      "covered_claims": 1,
+      "latency_ms": 7.736540996120311,
+      "answer": "- Approved knowledge — response target: Acknowledge a new product inquiry within two working days.. [1]\n- inquiries is not verified by the retrieved approved evidence.",
+      "sources": [
+        {
+          "citation_id": 1,
+          "label": "Source: northstar-company-knowledge.md → row 6 → section Northstar Trading — synthetic company handbook / Company scope",
+          "source_file": "northstar-company-knowledge.md",
+          "source_type": "md",
+          "sheet": null,
+          "row_number": 6,
+          "section": "Northstar Trading — synthetic company handbook / Company scope",
+          "product_sku": null,
+          "product_id": null,
+          "source_modified_at": "2026-09-04T11:06:06.600863+00:00",
+          "chunk_id": "f64e3ed4-74aa-5caf-b23f-739e392c41d4",
+          "source_version": "89b8fb9a680ed92b7e04ecc2043c97dc310d2743b296323a17a4d24e63b917dd",
+          "approval_change_id": null,
+          "authority_class": "B",
+          "knowledge_status": "authoritative"
+        }
+      ],
+      "retrieved_evidence": [
+        {
+          "source_file": "northstar-company-knowledge.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic company handbook / Company scope",
+          "row": 6,
+          "content": "Business scope: Northstar Trading is a fictional sourcing coordinator for travel drinkware, organizers, camping lights, desk accessories and carry bags. It does not operate a factory.\nResponse target: Acknowledge a new product inquiry within two working days.\nCompany status: This organization and all its records are invented for software demonstrations.",
+          "dense": 0.2528834449782517,
+          "bm25": 13.005624771118164,
+          "rrf": 0.03278688524590164,
+          "reranker": 0.8171611244817653
+        },
+        {
+          "source_file": "northstar-historical-rfqs.md",
+          "product_id": "NSITEM-T552",
+          "section": "Northstar Trading — synthetic quotation archive / Archive case ARCH-TO552",
+          "row": 19,
+          "content": "Product ID: NSITEM-T552\nSKU: NSTR-TOTE-552\nDate: 2024-09-03\nStatus: Historical only; expired and not current company policy.\nCustomer requirement: A fictional outdoor event requested zip totes without individual plastic bags.\nMOQ: 450 units\nPayment terms: 35% prepayment and 65% after inspection, before dispatch\nIncoterms: EXW Invented Cedar Workshop, Incoterms 2020\nQuoted price: USD 3.90 per unit, valid for this archived case only\nPackaging: Folded paper pocket without individual plastic bags\nScope: The buyer-arranged transport was outside the archived quotation.",
+          "dense": 0.10460993933647039,
+          "bm25": 3.014784812927246,
+          "rrf": 0.030834914611005692,
+          "reranker": 0.40883137517971146
+        },
+        {
+          "source_file": "northstar-historical-rfqs.md",
+          "product_id": "NSITEM-V731",
+          "section": "Northstar Trading — synthetic quotation archive / Archive case ARCH-VE731",
+          "row": 6,
+          "content": "Product ID: NSITEM-V731\nSKU: NSTR-VESSEL-731\nDate: 2024-02-16\nStatus: Historical only; expired and not current company policy.\nCustomer requirement: A fictional hiking club requested blue reusable 500 ml drinkware with a one-color mark.\nMOQ: 360 units\nPayment terms: 40% prepayment and 60% before dispatch\nIncoterms: FCA Invented Rivergate consolidation hub, Incoterms 2020\nQuoted price: USD 6.40 per unit, valid for this archived case only\nPackaging: Paper sleeve with one-color mark\nScope: Freight after the named FCA handover point was excluded. This archive is not a current freight quote.",
+          "dense": 0.07517851028782309,
+          "bm25": 2.8408291339874268,
+          "rrf": 0.029957522915269395,
+          "reranker": 0.3888235546023544
+        },
+        {
+          "source_file": "northstar-company-knowledge.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic company handbook / Quotation policy",
+          "row": 15,
+          "content": "Quote validity: A newly approved written quotation is valid for 14 calendar days from issue.\nPayment terms: Current payment terms are agreed per quotation; no universal payment schedule is verified.\nRevision policy: Keep the prior approved fact in force until a reviewer approves the new source-backed value. Historical quotations cannot overwrite current catalog knowledge.",
+          "dense": 0.054689518646099125,
+          "bm25": 1.877925992012024,
+          "rrf": 0.028006267136701922,
+          "reranker": 0.3085544542566664
+        },
+        {
+          "source_file": "northstar-company-knowledge.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic company handbook / Logistics FAQ",
+          "row": 20,
+          "content": "Logistics guidance: Planning uses carton count, gross weight and destination zone. Carrier cost and transit duration require a separate verified freight quotation.\nCompliance guidance: DEMO-prefixed evidence is a simulated test record and is not legal certification. No claim of conformity may be made without a reviewed certificate.",
+          "dense": 0.01722636210632357,
+          "bm25": null,
+          "rrf": 0.012987012987012988,
+          "reranker": 0.24418414835612332
+        },
+        {
+          "source_file": "northstar-company-knowledge.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic company handbook / Sample policy",
+          "row": 11,
+          "content": "Sample policy: One standard sample per requested SKU can be reserved for seven calendar days. Customized samples require a separate written scope.\nSample ownership: The sample log stores an internal case code, never a customer's personal contact details.",
+          "dense": -0.014731414266453496,
+          "bm25": null,
+          "rrf": 0.0125,
+          "reranker": 0.2325
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-T552",
+          "section": null,
+          "row": 10,
+          "content": "canonical_product_id: NSITEM-T552\nmodel: NSTR-TOTE-552\nname: Arc Fold Zip Tote\ncategory: Carry bags\nplatform_reference_price_min_usd: 4.15\nplatform_reference_price_max_usd: 4.55\nunit: unit\ncolor: Deep teal\ncapacity: 14 litres\nmoq: 200 units\nlead_time: 20 working days after sample approval\npackaging: Folded paper pocket; 50 units per carton\ndimensions: 390 x 340 x 110 mm\nmaterial: Recycled ripstop nylon",
+          "dense": 0.17761814139852808,
+          "bm25": null,
+          "rrf": 0.016129032258064516,
+          "reranker": 0.16158082416710776
+        },
+        {
+          "source_file": "northstar-rfq-demand-summary.csv",
+          "product_id": null,
+          "section": "Travel organizers",
+          "row": 3,
+          "content": "date: 2025-10-31\ncategory: Travel organizers\ninquiries: 17\ntop_requested_attribute: Compressible construction\nscope: Invented internal inquiry exercise; not real market research",
+          "dense": 0.13834964763236662,
+          "bm25": 2.1070189476013184,
+          "rrf": 0.031024531024531024,
+          "reranker": 0.14595180198556934
+        }
+      ],
+      "context_chars": 538,
+      "context_chunks": 1,
+      "human_pass_fail": "unreviewed",
+      "reviewer_notes": ""
+    },
+    {
+      "id": "PH-005",
+      "category": "sop",
+      "question": "For the SOP handover at order entry, what goes to operations?",
+      "expected_claims": [
+        {
+          "contains": [
+            "approved sample reference"
+          ],
+          "source": {
+            "source_file": "northstar-production-sop.md",
+            "section": "Northstar Trading — synthetic order procedure / Order entry"
+          }
+        }
+      ],
+      "expected_sufficient": true,
+      "ranks": [
+        1
+      ],
+      "relevant_count": 1,
+      "answer_correct": true,
+      "citation_correct": true,
+      "sufficiency_correct": true,
+      "hallucination": false,
+      "unsupported_question": false,
+      "required_claims": 1,
+      "covered_claims": 1,
+      "latency_ms": 6.548040997586213,
+      "answer": "- Approved knowledge — handover: Sales submits the order worksheet and approved sample reference to the operations queue.. [1]",
+      "sources": [
+        {
+          "citation_id": 1,
+          "label": "Source: northstar-production-sop.md → row 6 → section Northstar Trading — synthetic order procedure / Order entry",
+          "source_file": "northstar-production-sop.md",
+          "source_type": "md",
+          "sheet": null,
+          "row_number": 6,
+          "section": "Northstar Trading — synthetic order procedure / Order entry",
+          "product_sku": null,
+          "product_id": null,
+          "source_modified_at": "2026-09-04T11:06:06.660665+00:00",
+          "chunk_id": "eaaff143-3140-5e37-bada-45f351a6c123",
+          "source_version": "56e89e0c6a3b7e60bf8dcb071dc9199ef1939e8e8daa376cd0a8df15609c83bd",
+          "approval_change_id": null,
+          "authority_class": "B",
+          "knowledge_status": "authoritative"
+        }
+      ],
+      "retrieved_evidence": [
+        {
+          "source_file": "northstar-production-sop.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic order procedure / Order entry",
+          "row": 6,
+          "content": "Required fields: Capture the internal order code, product ID, approved SKU, quantity, artwork revision and requested dispatch window.\nHandover: Sales submits the order worksheet and approved sample reference to the operations queue.\nPrivacy rule: Do not place personal contact or bank information in the shared worksheet.",
+          "dense": 0.31264038732780886,
+          "bm25": 11.806821823120117,
+          "rrf": 0.03252247488101534,
+          "reranker": 0.5307387266440912
+        },
+        {
+          "source_file": "northstar-production-sop.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic order procedure / Dispatch handover",
+          "row": 19,
+          "content": "Handover: Operations provides the packing list and carton-count check to the dispatch coordinator.\nRequired fields: The dispatch record contains the order code, carton count, inspection decision and approved carrier booking reference.",
+          "dense": 0.30647301770825947,
+          "bm25": 12.241544723510742,
+          "rrf": 0.03252247488101534,
+          "reranker": 0.526729936391384
+        },
+        {
+          "source_file": "northstar-production-sop.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic order procedure / Release control",
+          "row": 11,
+          "content": "Release gate: Operations checks the approved sample reference and artwork revision; a reviewer signs the release checklist before production starts.\nRevision policy: A changed specification pauses release until a new reviewer decision is recorded.",
+          "dense": 0.1686346027237841,
+          "bm25": 4.032103538513184,
+          "rrf": 0.03149801587301587,
+          "reranker": 0.3861105076434756
+        },
+        {
+          "source_file": "northstar-production-sop.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic order procedure / Quality inspection",
+          "row": 15,
+          "content": "Quality check: Compare the first assembled unit with the approved sample; verify the SKU label, color and carton count before packing the batch.\nException handling: Quarantine damaged units, attach a defect code and request a corrective-action decision. Do not mix quarantined units into the outgoing cartons.",
+          "dense": 0.129141039960909,
+          "bm25": 2.101229667663574,
+          "rrf": 0.02919863597612958,
+          "reranker": 0.33314031195072047
+        },
+        {
+          "source_file": "northstar-company-knowledge.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic company handbook / Quotation policy",
+          "row": 15,
+          "content": "Quote validity: A newly approved written quotation is valid for 14 calendar days from issue.\nPayment terms: Current payment terms are agreed per quotation; no universal payment schedule is verified.\nRevision policy: Keep the prior approved fact in force until a reviewer approves the new source-backed value. Historical quotations cannot overwrite current catalog knowledge.",
+          "dense": 0.21127542597625149,
+          "bm25": 2.9373538494110107,
+          "rrf": 0.03125763125763126,
+          "reranker": 0.18858665814219472
+        },
+        {
+          "source_file": "northstar-company-knowledge.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic company handbook / Company scope",
+          "row": 6,
+          "content": "Business scope: Northstar Trading is a fictional sourcing coordinator for travel drinkware, organizers, camping lights, desk accessories and carry bags. It does not operate a factory.\nResponse target: Acknowledge a new product inquiry within two working days.\nCompany status: This organization and all its records are invented for software demonstrations.",
+          "dense": 0.16378968689449547,
+          "bm25": 2.159047842025757,
+          "rrf": 0.030090497737556562,
+          "reranker": 0.1565537942189786
+        },
+        {
+          "source_file": "northstar-historical-rfqs.md",
+          "product_id": "NSITEM-V731",
+          "section": "Northstar Trading — synthetic quotation archive / Archive case ARCH-VE731",
+          "row": 6,
+          "content": "Product ID: NSITEM-V731\nSKU: NSTR-VESSEL-731\nDate: 2024-02-16\nStatus: Historical only; expired and not current company policy.\nCustomer requirement: A fictional hiking club requested blue reusable 500 ml drinkware with a one-color mark.\nMOQ: 360 units\nPayment terms: 40% prepayment and 60% before dispatch\nIncoterms: FCA Invented Rivergate consolidation hub, Incoterms 2020\nQuoted price: USD 6.40 per unit, valid for this archived case only\nPackaging: Paper sleeve with one-color mark\nScope: Freight after the named FCA handover point was excluded. This archive is not a current freight quote.",
+          "dense": 0.13800214463713062,
+          "bm25": 3.29367733001709,
+          "rrf": 0.03055037313432836,
+          "reranker": 0.15525176714846328
+        },
+        {
+          "source_file": "northstar-company-knowledge.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic company handbook / Sample policy",
+          "row": 11,
+          "content": "Sample policy: One standard sample per requested SKU can be reserved for seven calendar days. Customized samples require a separate written scope.\nSample ownership: The sample log stores an internal case code, never a customer's personal contact details.",
+          "dense": 0.15215337311836574,
+          "bm25": 2.893590211868286,
+          "rrf": 0.030303030303030304,
+          "reranker": 0.14920272282996802
+        }
+      ],
+      "context_chars": 511,
+      "context_chunks": 1,
+      "human_pass_fail": "unreviewed",
+      "reviewer_notes": ""
+    },
+    {
+      "id": "PH-006",
+      "category": "history",
+      "question": "Archive check for NSTR-TOTE-552: quoted price plus MOQ, not today's quote.",
+      "expected_claims": [
+        {
+          "contains": [
+            "USD 3.90"
+          ],
+          "source": {
+            "source_file": "northstar-historical-rfqs.md",
+            "product_id": "NSITEM-T552"
+          }
+        },
+        {
+          "contains": [
+            "450 units"
+          ],
+          "source": {
+            "source_file": "northstar-historical-rfqs.md",
+            "product_id": "NSITEM-T552"
+          }
+        }
+      ],
+      "expected_sufficient": true,
+      "ranks": [
+        2
+      ],
+      "relevant_count": 1,
+      "answer_correct": false,
+      "citation_correct": false,
+      "sufficiency_correct": false,
+      "hallucination": false,
+      "unsupported_question": false,
+      "required_claims": 2,
+      "covered_claims": 0,
+      "latency_ms": 5.901083000935614,
+      "answer": "- NSTR-TOTE-552 — moq: 200 units. [1]\n- NSTR-TOTE-552: current price is not verified in the approved knowledge base.\n- NSTR-TOTE-552: quoted price is not verified in the approved knowledge base.",
+      "sources": [
+        {
+          "citation_id": 1,
+          "label": "Source: northstar-products.csv → row 10 → SKU NSTR-TOTE-552 → product ID NSITEM-T552",
+          "source_file": "northstar-products.csv",
+          "source_type": "csv",
+          "sheet": null,
+          "row_number": 10,
+          "section": null,
+          "product_sku": "NSTR-TOTE-552",
+          "product_id": "NSITEM-T552",
+          "source_modified_at": "2026-09-04T13:38:27.652336+00:00",
+          "chunk_id": "2307a60b-6a05-568a-a221-3181df3711ad",
+          "source_version": "d9e19fef5884dbb88d977631c76ec1a8c2489285fbd7cfc3b31c787333c35008",
+          "approval_change_id": null,
+          "authority_class": "A",
+          "knowledge_status": "current_approved"
+        }
+      ],
+      "retrieved_evidence": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-T552",
+          "section": null,
+          "row": 10,
+          "content": "canonical_product_id: NSITEM-T552\nmodel: NSTR-TOTE-552\nname: Arc Fold Zip Tote\ncategory: Carry bags\nplatform_reference_price_min_usd: 4.15\nplatform_reference_price_max_usd: 4.55\nunit: unit\ncolor: Deep teal\ncapacity: 14 litres\nmoq: 200 units\nlead_time: 20 working days after sample approval\npackaging: Folded paper pocket; 50 units per carton\ndimensions: 390 x 340 x 110 mm\nmaterial: Recycled ripstop nylon",
+          "dense": 0.1706171825442771,
+          "bm25": 4.115706443786621,
+          "rrf": 0.03149801587301587,
+          "reranker": 2.0390658511934623
+        },
+        {
+          "source_file": "northstar-historical-rfqs.md",
+          "product_id": "NSITEM-T552",
+          "section": "Northstar Trading — synthetic quotation archive / Archive case ARCH-TO552",
+          "row": 19,
+          "content": "Product ID: NSITEM-T552\nSKU: NSTR-TOTE-552\nDate: 2024-09-03\nStatus: Historical only; expired and not current company policy.\nCustomer requirement: A fictional outdoor event requested zip totes without individual plastic bags.\nMOQ: 450 units\nPayment terms: 35% prepayment and 65% after inspection, before dispatch\nIncoterms: EXW Invented Cedar Workshop, Incoterms 2020\nQuoted price: USD 3.90 per unit, valid for this archived case only\nPackaging: Folded paper pocket without individual plastic bags\nScope: The buyer-arranged transport was outside the archived quotation.",
+          "dense": 0.2456384765255482,
+          "bm25": 8.58265209197998,
+          "rrf": 0.03225806451612903,
+          "reranker": 1.4769230742577353
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-T553",
+          "section": null,
+          "row": 11,
+          "content": "canonical_product_id: NSITEM-T553\nmodel: NSTR-TOTE-553\nname: Arc Fold Open Tote\ncategory: Carry bags\nplatform_reference_price_min_usd: 3.25\nplatform_reference_price_max_usd: 3.65\nunit: unit\ncolor: Undyed\ncapacity: 12 litres\nmoq: 200 units\nlead_time: 17 working days after sample approval\npackaging: Paper belly band; 50 units per carton\ndimensions: 370 x 330 x 100 mm\nmaterial: Unbleached cotton canvas",
+          "dense": 0.12796287248022056,
+          "bm25": 1.969477653503418,
+          "rrf": 0.02904040404040404,
+          "reranker": 1.1838829378192142
+        },
+        {
+          "source_file": "northstar-historical-rfqs.md",
+          "product_id": "NSITEM-V731",
+          "section": "Northstar Trading — synthetic quotation archive / Archive case ARCH-VE731",
+          "row": 6,
+          "content": "Product ID: NSITEM-V731\nSKU: NSTR-VESSEL-731\nDate: 2024-02-16\nStatus: Historical only; expired and not current company policy.\nCustomer requirement: A fictional hiking club requested blue reusable 500 ml drinkware with a one-color mark.\nMOQ: 360 units\nPayment terms: 40% prepayment and 60% before dispatch\nIncoterms: FCA Invented Rivergate consolidation hub, Incoterms 2020\nQuoted price: USD 6.40 per unit, valid for this archived case only\nPackaging: Paper sleeve with one-color mark\nScope: Freight after the named FCA handover point was excluded. This archive is not a current freight quote.",
+          "dense": 0.27961698967331344,
+          "bm25": 10.765241622924805,
+          "rrf": 0.03278688524590164,
+          "reranker": 0.9245379285335553
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-P452B",
+          "section": null,
+          "row": 5,
+          "content": "canonical_product_id: NSITEM-P452B\nmodel: NSTR-POD-452\nname: Wayfarer Packing Cube Large\ncategory: Travel organizers\nplatform_reference_price_min_usd: 4.95\nplatform_reference_price_max_usd: 5.35\nunit: unit\ncolor: Moss green\ncapacity: 6.1 litres\nmoq: 160 units\nlead_time: 16 working days after sample approval\npackaging: Paper belly band; 40 units per carton\ndimensions: 310 x 220 x 90 mm\nmaterial: Recycled polyester",
+          "dense": 0.11600948700581439,
+          "bm25": 1.9530621767044067,
+          "rrf": 0.028438886647841874,
+          "reranker": 0.7088450532016213
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-V731",
+          "section": null,
+          "row": 2,
+          "content": "canonical_product_id: NSITEM-V731\nmodel: NSTR-VESSEL-731\nname: Harbor Sip Steel Bottle\ncategory: Travel drinkware\nplatform_reference_price_min_usd: 6.85\nplatform_reference_price_max_usd: 7.25\nunit: unit\ncolor: Glacier blue\ncapacity: 500 ml\nmoq: 144 units\nlead_time: 18 working days after artwork sign-off\ncurrent_price: USD 7.25 per unit; dated catalog reference, not a binding quote\ncertificates: DEMO-MAT-731: simulated material-screen result, not regulatory certification\npackaging: Paper sleeve; 24 units per carton\ndimensions: 245 x 72 mm\nmaterial: 18/8 stainless steel",
+          "dense": 0.07423709728325632,
+          "bm25": 2.53481125831604,
+          "rrf": 0.028594771241830064,
+          "reranker": 0.7068488844759467
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-L865",
+          "section": null,
+          "row": 7,
+          "content": "canonical_product_id: NSITEM-L865\nmodel: NSTR-LANTERN-865\nname: Dusk Trail Clip Light\ncategory: Camping lights\nplatform_reference_price_min_usd: 9.55\nplatform_reference_price_max_usd: 10.15\nunit: unit\ncolor: Charcoal\ncapacity: 1200 mAh nominal battery\nmoq: 120 units\nlead_time: 24 working days after sample approval\npackaging: Moulded pulp insert; 30 units per carton\ndimensions: 94 x 62 x 42 mm\nmaterial: ABS housing with aluminium clip",
+          "dense": 0.11059086593122593,
+          "bm25": 1.905417561531067,
+          "rrf": 0.02786377708978328,
+          "reranker": 0.7047478399450802
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-V732",
+          "section": null,
+          "row": 3,
+          "content": "canonical_product_id: NSITEM-V732\nmodel: NSTR-VESSEL-732\nname: Harbor Sip Wide Bottle\ncategory: Travel drinkware\nplatform_reference_price_min_usd: 8.35\nplatform_reference_price_max_usd: 8.95\nunit: unit\ncolor: Basalt grey\ncapacity: 800 ml\nmoq: 96 units\nlead_time: 22 working days after artwork sign-off\ncurrent_price: USD 8.95 per unit; dated catalog reference, not a binding quote\npackaging: Paper sleeve; 18 units per carton\ndimensions: 292 x 84 mm\nmaterial: 18/8 stainless steel",
+          "dense": 0.0685552337331764,
+          "bm25": 2.422370195388794,
+          "rrf": 0.028006267136701922,
+          "reranker": 0.7025671690632667
+        }
+      ],
+      "context_chars": 579,
+      "context_chunks": 1,
+      "human_pass_fail": "unreviewed",
+      "reviewer_notes": ""
+    },
+    {
+      "id": "PH-007",
+      "category": "unsupported",
+      "question": "I need NSTR-TOTE-553 shipping cost for a budget right now.",
+      "expected_claims": [],
+      "expected_sufficient": false,
+      "ranks": [
+        1
+      ],
+      "relevant_count": 1,
+      "answer_correct": true,
+      "citation_correct": true,
+      "sufficiency_correct": true,
+      "hallucination": false,
+      "unsupported_question": true,
+      "required_claims": 0,
+      "covered_claims": 0,
+      "latency_ms": 5.6896249880082905,
+      "answer": "- NSTR-TOTE-553: logistics or freight is not verified in the approved knowledge base.",
+      "sources": [],
+      "retrieved_evidence": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-T553",
+          "section": null,
+          "row": 11,
+          "content": "canonical_product_id: NSITEM-T553\nmodel: NSTR-TOTE-553\nname: Arc Fold Open Tote\ncategory: Carry bags\nplatform_reference_price_min_usd: 3.25\nplatform_reference_price_max_usd: 3.65\nunit: unit\ncolor: Undyed\ncapacity: 12 litres\nmoq: 200 units\nlead_time: 17 working days after sample approval\npackaging: Paper belly band; 50 units per carton\ndimensions: 370 x 330 x 100 mm\nmaterial: Unbleached cotton canvas",
+          "dense": 0.08660022915984196,
+          "bm25": 2.6646335124969482,
+          "rrf": 0.029513888888888888,
+          "reranker": 1.4074707045094528
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-T552",
+          "section": null,
+          "row": 10,
+          "content": "canonical_product_id: NSITEM-T552\nmodel: NSTR-TOTE-552\nname: Arc Fold Zip Tote\ncategory: Carry bags\nplatform_reference_price_min_usd: 4.15\nplatform_reference_price_max_usd: 4.55\nunit: unit\ncolor: Deep teal\ncapacity: 14 litres\nmoq: 200 units\nlead_time: 20 working days after sample approval\npackaging: Folded paper pocket; 50 units per carton\ndimensions: 390 x 340 x 110 mm\nmaterial: Recycled ripstop nylon",
+          "dense": 0.01686695637743285,
+          "bm25": null,
+          "rrf": 0.01282051282051282,
+          "reranker": 0.5204507011325109
+        },
+        {
+          "source_file": "northstar-company-knowledge.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic company handbook / Company scope",
+          "row": 6,
+          "content": "Business scope: Northstar Trading is a fictional sourcing coordinator for travel drinkware, organizers, camping lights, desk accessories and carry bags. It does not operate a factory.\nResponse target: Acknowledge a new product inquiry within two working days.\nCompany status: This organization and all its records are invented for software demonstrations.",
+          "dense": 0.204147525775716,
+          "bm25": 3.6028060913085938,
+          "rrf": 0.03252247488101534,
+          "reranker": 0.18521836663523072
+        },
+        {
+          "source_file": "northstar-company-knowledge.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic company handbook / Logistics FAQ",
+          "row": 20,
+          "content": "Logistics guidance: Planning uses carton count, gross weight and destination zone. Carrier cost and transit duration require a separate verified freight quotation.\nCompliance guidance: DEMO-prefixed evidence is a simulated test record and is not legal certification. No claim of conformity may be made without a reviewed certificate.",
+          "dense": 0.11927807841980373,
+          "bm25": 4.314834117889404,
+          "rrf": 0.03047794966520434,
+          "reranker": 0.15300870063807676
+        },
+        {
+          "source_file": "northstar-historical-rfqs.md",
+          "product_id": "NSITEM-V731",
+          "section": "Northstar Trading — synthetic quotation archive / Archive case ARCH-VE731",
+          "row": 6,
+          "content": "Product ID: NSITEM-V731\nSKU: NSTR-VESSEL-731\nDate: 2024-02-16\nStatus: Historical only; expired and not current company policy.\nCustomer requirement: A fictional hiking club requested blue reusable 500 ml drinkware with a one-color mark.\nMOQ: 360 units\nPayment terms: 40% prepayment and 60% before dispatch\nIncoterms: FCA Invented Rivergate consolidation hub, Incoterms 2020\nQuoted price: USD 6.40 per unit, valid for this archived case only\nPackaging: Paper sleeve with one-color mark\nScope: Freight after the named FCA handover point was excluded. This archive is not a current freight quote.",
+          "dense": 0.16751926908836312,
+          "bm25": 2.285400867462158,
+          "rrf": 0.03128054740957967,
+          "reranker": 0.1501680723170157
+        },
+        {
+          "source_file": "northstar-production-sop.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic order procedure / Release control",
+          "row": 11,
+          "content": "Release gate: Operations checks the approved sample reference and artwork revision; a reviewer signs the release checklist before production starts.\nRevision policy: A changed specification pauses release until a new reviewer decision is recorded.",
+          "dense": 0.15111686190215645,
+          "bm25": 1.575626015663147,
+          "rrf": 0.03057889822595705,
+          "reranker": 0.14880485846235872
+        },
+        {
+          "source_file": "northstar-company-knowledge.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic company handbook / Quotation policy",
+          "row": 15,
+          "content": "Quote validity: A newly approved written quotation is valid for 14 calendar days from issue.\nPayment terms: Current payment terms are agreed per quotation; no universal payment schedule is verified.\nRevision policy: Keep the prior approved fact in force until a reviewer approves the new source-backed value. Historical quotations cannot overwrite current catalog knowledge.",
+          "dense": 0.1481685277227345,
+          "bm25": 2.645280599594116,
+          "rrf": 0.031009615384615385,
+          "reranker": 0.1473191584043928
+        },
+        {
+          "source_file": "northstar-company-knowledge.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic company handbook / Sample policy",
+          "row": 11,
+          "content": "Sample policy: One standard sample per requested SKU can be reserved for seven calendar days. Customized samples require a separate written scope.\nSample ownership: The sample log stores an internal case code, never a customer's personal contact details.",
+          "dense": 0.13913990274563467,
+          "bm25": 3.028327226638794,
+          "rrf": 0.03125763125763126,
+          "reranker": 0.1416985680422938
+        }
+      ],
+      "context_chars": 3144,
+      "context_chunks": 6,
+      "human_pass_fail": "unreviewed",
+      "reviewer_notes": ""
+    },
+    {
+      "id": "PH-008",
+      "category": "comparison",
+      "question": "比较 NSTR-TOTE-552 和 NSTR-TOTE-553 的材质。",
+      "expected_claims": [
+        {
+          "contains": [
+            "Recycled ripstop nylon"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-T552"
+          }
+        },
+        {
+          "contains": [
+            "Unbleached cotton canvas"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-T553"
+          }
+        }
+      ],
+      "expected_sufficient": true,
+      "ranks": [
+        1,
+        2
+      ],
+      "relevant_count": 2,
+      "answer_correct": true,
+      "citation_correct": true,
+      "sufficiency_correct": true,
+      "hallucination": false,
+      "unsupported_question": false,
+      "required_claims": 2,
+      "covered_claims": 2,
+      "latency_ms": 6.543416995555162,
+      "answer": "- NSTR-TOTE-552 — material: Recycled ripstop nylon. [1]\n- NSTR-TOTE-553 — material: Unbleached cotton canvas. [2]",
+      "sources": [
+        {
+          "citation_id": 1,
+          "label": "Source: northstar-products.csv → row 10 → SKU NSTR-TOTE-552 → product ID NSITEM-T552",
+          "source_file": "northstar-products.csv",
+          "source_type": "csv",
+          "sheet": null,
+          "row_number": 10,
+          "section": null,
+          "product_sku": "NSTR-TOTE-552",
+          "product_id": "NSITEM-T552",
+          "source_modified_at": "2026-09-04T13:38:27.652336+00:00",
+          "chunk_id": "2307a60b-6a05-568a-a221-3181df3711ad",
+          "source_version": "d9e19fef5884dbb88d977631c76ec1a8c2489285fbd7cfc3b31c787333c35008",
+          "approval_change_id": null,
+          "authority_class": "A",
+          "knowledge_status": "current_approved"
+        },
+        {
+          "citation_id": 2,
+          "label": "Source: northstar-products.csv → row 11 → SKU NSTR-TOTE-553 → product ID NSITEM-T553",
+          "source_file": "northstar-products.csv",
+          "source_type": "csv",
+          "sheet": null,
+          "row_number": 11,
+          "section": null,
+          "product_sku": "NSTR-TOTE-553",
+          "product_id": "NSITEM-T553",
+          "source_modified_at": "2026-09-04T13:38:27.652336+00:00",
+          "chunk_id": "d2a46324-0bea-50f5-8725-3020aa1e4ee8",
+          "source_version": "d9e19fef5884dbb88d977631c76ec1a8c2489285fbd7cfc3b31c787333c35008",
+          "approval_change_id": null,
+          "authority_class": "A",
+          "knowledge_status": "current_approved"
+        }
+      ],
+      "retrieved_evidence": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-T552",
+          "section": null,
+          "row": 10,
+          "content": "canonical_product_id: NSITEM-T552\nmodel: NSTR-TOTE-552\nname: Arc Fold Zip Tote\ncategory: Carry bags\nplatform_reference_price_min_usd: 4.15\nplatform_reference_price_max_usd: 4.55\nunit: unit\ncolor: Deep teal\ncapacity: 14 litres\nmoq: 200 units\nlead_time: 20 working days after sample approval\npackaging: Folded paper pocket; 50 units per carton\ndimensions: 390 x 340 x 110 mm\nmaterial: Recycled ripstop nylon",
+          "dense": 0.09271391320745734,
+          "bm25": 2.977421760559082,
+          "rrf": 0.03200204813108039,
+          "reranker": 1.6889327583825946
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-T553",
+          "section": null,
+          "row": 11,
+          "content": "canonical_product_id: NSITEM-T553\nmodel: NSTR-TOTE-553\nname: Arc Fold Open Tote\ncategory: Carry bags\nplatform_reference_price_min_usd: 3.25\nplatform_reference_price_max_usd: 3.65\nunit: unit\ncolor: Undyed\ncapacity: 12 litres\nmoq: 200 units\nlead_time: 17 working days after sample approval\npackaging: Paper belly band; 50 units per carton\ndimensions: 370 x 330 x 100 mm\nmaterial: Unbleached cotton canvas",
+          "dense": 0.0329425253046481,
+          "bm25": 3.4862594604492188,
+          "rrf": 0.03028233151183971,
+          "reranker": 1.6483616396265277
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-M964",
+          "section": null,
+          "row": 9,
+          "content": "canonical_product_id: NSITEM-M964\nmodel: NSTR-MAT-964\nname: Quiet Shore Felt Desk Mat\ncategory: Desk accessories\nplatform_reference_price_min_usd: 4.35\nplatform_reference_price_max_usd: 4.75\nunit: unit\ncolor: Heather grey\nmoq: 100 units\nlead_time: 12 working days after artwork sign-off\npackaging: Flat paper wrap; 25 units per carton\ndimensions: 720 x 350 x 4 mm\nmaterial: Recycled PET felt",
+          "dense": 0.09516309636391497,
+          "bm25": 0.8285902142524719,
+          "rrf": 0.03177805800756621,
+          "reranker": 0.39863407064411094
+        },
+        {
+          "source_file": "northstar-historical-rfqs.md",
+          "product_id": "NSITEM-T552",
+          "section": "Northstar Trading — synthetic quotation archive / Archive case ARCH-TO552",
+          "row": 19,
+          "content": "Product ID: NSITEM-T552\nSKU: NSTR-TOTE-552\nDate: 2024-09-03\nStatus: Historical only; expired and not current company policy.\nCustomer requirement: A fictional outdoor event requested zip totes without individual plastic bags.\nMOQ: 450 units\nPayment terms: 35% prepayment and 65% after inspection, before dispatch\nIncoterms: EXW Invented Cedar Workshop, Incoterms 2020\nQuoted price: USD 3.90 per unit, valid for this archived case only\nPackaging: Folded paper pocket without individual plastic bags\nScope: The buyer-arranged transport was outside the archived quotation.",
+          "dense": 0.004708616723781639,
+          "bm25": 1.7653611898422241,
+          "rrf": 0.028693528693528692,
+          "reranker": 0.6667541295639868
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-V732",
+          "section": null,
+          "row": 3,
+          "content": "canonical_product_id: NSITEM-V732\nmodel: NSTR-VESSEL-732\nname: Harbor Sip Wide Bottle\ncategory: Travel drinkware\nplatform_reference_price_min_usd: 8.35\nplatform_reference_price_max_usd: 8.95\nunit: unit\ncolor: Basalt grey\ncapacity: 800 ml\nmoq: 96 units\nlead_time: 22 working days after artwork sign-off\ncurrent_price: USD 8.95 per unit; dated catalog reference, not a binding quote\npackaging: Paper sleeve; 18 units per carton\ndimensions: 292 x 84 mm\nmaterial: 18/8 stainless steel",
+          "dense": 0.09423869976902532,
+          "bm25": 0.7579225301742554,
+          "rrf": 0.0304147465437788,
+          "reranker": 0.39666990139364533
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-M963",
+          "section": null,
+          "row": 8,
+          "content": "canonical_product_id: NSITEM-M963\nmodel: NSTR-MAT-963\nname: Quiet Shore Cork Desk Mat\ncategory: Desk accessories\nplatform_reference_price_min_usd: 5.65\nplatform_reference_price_max_usd: 6.15\nunit: unit\ncolor: Natural cork\nmoq: 80 units\nlead_time: 14 working days after artwork sign-off\npackaging: Rolled paper wrap; 20 units per carton\ndimensions: 680 x 320 x 3 mm\nmaterial: Cork with natural rubber backing",
+          "dense": 0.06740574922154874,
+          "bm25": 0.814777672290802,
+          "rrf": 0.030090497737556562,
+          "reranker": 0.3789042347315633
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-L865",
+          "section": null,
+          "row": 7,
+          "content": "canonical_product_id: NSITEM-L865\nmodel: NSTR-LANTERN-865\nname: Dusk Trail Clip Light\ncategory: Camping lights\nplatform_reference_price_min_usd: 9.55\nplatform_reference_price_max_usd: 10.15\nunit: unit\ncolor: Charcoal\ncapacity: 1200 mAh nominal battery\nmoq: 120 units\nlead_time: 24 working days after sample approval\npackaging: Moulded pulp insert; 30 units per carton\ndimensions: 94 x 62 x 42 mm\nmaterial: ABS housing with aluminium clip",
+          "dense": 0.055346703099270735,
+          "bm25": 0.7949013113975525,
+          "rrf": 0.029418126757516764,
+          "reranker": 0.37039348377204273
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-V731",
+          "section": null,
+          "row": 2,
+          "content": "canonical_product_id: NSITEM-V731\nmodel: NSTR-VESSEL-731\nname: Harbor Sip Steel Bottle\ncategory: Travel drinkware\nplatform_reference_price_min_usd: 6.85\nplatform_reference_price_max_usd: 7.25\nunit: unit\ncolor: Glacier blue\ncapacity: 500 ml\nmoq: 144 units\nlead_time: 18 working days after artwork sign-off\ncurrent_price: USD 7.25 per unit; dated catalog reference, not a binding quote\ncertificates: DEMO-MAT-731: simulated material-screen result, not regulatory certification\npackaging: Paper sleeve; 24 units per carton\ndimensions: 245 x 72 mm\nmaterial: 18/8 stainless steel",
+          "dense": 0.04617496339156927,
+          "bm25": 0.703386664390564,
+          "rrf": 0.028790389395194696,
+          "reranker": 0.3638041155997147
+        }
+      ],
+      "context_chars": 1035,
+      "context_chunks": 2,
+      "human_pass_fail": "unreviewed",
+      "reviewer_notes": ""
+    },
+    {
+      "id": "PH-009",
+      "category": "exact_id",
+      "question": "NSITEM-P452A: how much capacity?",
+      "expected_claims": [
+        {
+          "contains": [
+            "1.9 litres"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-P452A"
+          }
+        }
+      ],
+      "expected_sufficient": true,
+      "ranks": [
+        1
+      ],
+      "relevant_count": 1,
+      "answer_correct": true,
+      "citation_correct": true,
+      "sufficiency_correct": true,
+      "hallucination": false,
+      "unsupported_question": false,
+      "required_claims": 1,
+      "covered_claims": 1,
+      "latency_ms": 6.169333006255329,
+      "answer": "- NSTR-POD-452 — capacity: 1.9 litres. [1]\nConflict notice: this model maps to multiple active product IDs; the model alone is not a unique identifier. [1] [2]",
+      "sources": [
+        {
+          "citation_id": 1,
+          "label": "Source: northstar-products.csv → row 4 → SKU NSTR-POD-452 → product ID NSITEM-P452A",
+          "source_file": "northstar-products.csv",
+          "source_type": "csv",
+          "sheet": null,
+          "row_number": 4,
+          "section": null,
+          "product_sku": "NSTR-POD-452",
+          "product_id": "NSITEM-P452A",
+          "source_modified_at": "2026-09-04T13:38:27.652336+00:00",
+          "chunk_id": "acaa36ec-3294-5947-a108-80c7d9dd5c39",
+          "source_version": "d9e19fef5884dbb88d977631c76ec1a8c2489285fbd7cfc3b31c787333c35008",
+          "approval_change_id": null,
+          "authority_class": "A",
+          "knowledge_status": "current_approved"
+        },
+        {
+          "citation_id": 2,
+          "label": "Source: northstar-products.csv → row 5 → SKU NSTR-POD-452 → product ID NSITEM-P452B",
+          "source_file": "northstar-products.csv",
+          "source_type": "csv",
+          "sheet": null,
+          "row_number": 5,
+          "section": null,
+          "product_sku": "NSTR-POD-452",
+          "product_id": "NSITEM-P452B",
+          "source_modified_at": "2026-09-04T13:38:27.652336+00:00",
+          "chunk_id": "77f0af8d-8414-544f-89f8-a98638952513",
+          "source_version": "d9e19fef5884dbb88d977631c76ec1a8c2489285fbd7cfc3b31c787333c35008",
+          "approval_change_id": null,
+          "authority_class": "A",
+          "knowledge_status": "current_approved"
+        }
+      ],
+      "retrieved_evidence": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-P452A",
+          "section": null,
+          "row": 4,
+          "content": "canonical_product_id: NSITEM-P452A\nmodel: NSTR-POD-452\nname: Wayfarer Packing Cube Small\ncategory: Travel organizers\nplatform_reference_price_min_usd: 3.45\nplatform_reference_price_max_usd: 3.85\nunit: unit\ncolor: Moss green\ncapacity: 1.9 litres\nmoq: 240 units\nlead_time: 16 working days after sample approval\npackaging: Paper belly band; 60 units per carton\ndimensions: 210 x 140 x 65 mm\nmaterial: Recycled polyester",
+          "dense": 0.22971936967223883,
+          "bm25": 3.655668258666992,
+          "rrf": 0.03278688524590164,
+          "reranker": 1.862104475532857
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-P452B",
+          "section": null,
+          "row": 5,
+          "content": "canonical_product_id: NSITEM-P452B\nmodel: NSTR-POD-452\nname: Wayfarer Packing Cube Large\ncategory: Travel organizers\nplatform_reference_price_min_usd: 4.95\nplatform_reference_price_max_usd: 5.35\nunit: unit\ncolor: Moss green\ncapacity: 6.1 litres\nmoq: 160 units\nlead_time: 16 working days after sample approval\npackaging: Paper belly band; 40 units per carton\ndimensions: 310 x 220 x 90 mm\nmaterial: Recycled polyester",
+          "dense": 0.17972112633287907,
+          "bm25": 1.013244390487671,
+          "rrf": 0.031754032258064516,
+          "reranker": 0.20357276437443592
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-T553",
+          "section": null,
+          "row": 11,
+          "content": "canonical_product_id: NSITEM-T553\nmodel: NSTR-TOTE-553\nname: Arc Fold Open Tote\ncategory: Carry bags\nplatform_reference_price_min_usd: 3.25\nplatform_reference_price_max_usd: 3.65\nunit: unit\ncolor: Undyed\ncapacity: 12 litres\nmoq: 200 units\nlead_time: 17 working days after sample approval\npackaging: Paper belly band; 50 units per carton\ndimensions: 370 x 330 x 100 mm\nmaterial: Unbleached cotton canvas",
+          "dense": 0.11563954874873161,
+          "bm25": 1.0217607021331787,
+          "rrf": 0.03149801587301587,
+          "reranker": 0.16166372255969141
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-T552",
+          "section": null,
+          "row": 10,
+          "content": "canonical_product_id: NSITEM-T552\nmodel: NSTR-TOTE-552\nname: Arc Fold Zip Tote\ncategory: Carry bags\nplatform_reference_price_min_usd: 4.15\nplatform_reference_price_max_usd: 4.55\nunit: unit\ncolor: Deep teal\ncapacity: 14 litres\nmoq: 200 units\nlead_time: 20 working days after sample approval\npackaging: Folded paper pocket; 50 units per carton\ndimensions: 390 x 340 x 110 mm\nmaterial: Recycled ripstop nylon",
+          "dense": 0.11563956364989281,
+          "bm25": 1.013244390487671,
+          "rrf": 0.03125763125763126,
+          "reranker": 0.16142334763006158
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-L865",
+          "section": null,
+          "row": 7,
+          "content": "canonical_product_id: NSITEM-L865\nmodel: NSTR-LANTERN-865\nname: Dusk Trail Clip Light\ncategory: Camping lights\nplatform_reference_price_min_usd: 9.55\nplatform_reference_price_max_usd: 10.15\nunit: unit\ncolor: Charcoal\ncapacity: 1200 mAh nominal battery\nmoq: 120 units\nlead_time: 24 working days after sample approval\npackaging: Moulded pulp insert; 30 units per carton\ndimensions: 94 x 62 x 42 mm\nmaterial: ABS housing with aluminium clip",
+          "dense": 0.10707914549857378,
+          "bm25": 0.9885264039039612,
+          "rrf": 0.030536130536130537,
+          "reranker": 0.15513757511020349
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-L864",
+          "section": null,
+          "row": 6,
+          "content": "canonical_product_id: NSITEM-L864\nmodel: NSTR-LANTERN-864\nname: Dusk Trail Rechargeable Lantern\ncategory: Camping lights\nplatform_reference_price_min_usd: 13.65\nplatform_reference_price_max_usd: 14.45\nunit: unit\ncolor: Sandstone\ncapacity: 2200 mAh nominal battery\nmoq: 48 units\npackaging: Moulded pulp insert; 12 units per carton\ndimensions: 128 x 88 x 88 mm\nmaterial: ABS housing with silicone handle",
+          "dense": 0.09515917021781206,
+          "bm25": 1.0481908321380615,
+          "rrf": 0.03128054740957967,
+          "reranker": 0.1481340080511575
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-V731",
+          "section": null,
+          "row": 2,
+          "content": "canonical_product_id: NSITEM-V731\nmodel: NSTR-VESSEL-731\nname: Harbor Sip Steel Bottle\ncategory: Travel drinkware\nplatform_reference_price_min_usd: 6.85\nplatform_reference_price_max_usd: 7.25\nunit: unit\ncolor: Glacier blue\ncapacity: 500 ml\nmoq: 144 units\nlead_time: 18 working days after artwork sign-off\ncurrent_price: USD 7.25 per unit; dated catalog reference, not a binding quote\ncertificates: DEMO-MAT-731: simulated material-screen result, not regulatory certification\npackaging: Paper sleeve; 24 units per carton\ndimensions: 245 x 72 mm\nmaterial: 18/8 stainless steel",
+          "dense": 0.08183355815708637,
+          "bm25": 0.8747202754020691,
+          "rrf": 0.02919863597612958,
+          "reranker": 0.13739044877823572
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-V732",
+          "section": null,
+          "row": 3,
+          "content": "canonical_product_id: NSITEM-V732\nmodel: NSTR-VESSEL-732\nname: Harbor Sip Wide Bottle\ncategory: Travel drinkware\nplatform_reference_price_min_usd: 8.35\nplatform_reference_price_max_usd: 8.95\nunit: unit\ncolor: Basalt grey\ncapacity: 800 ml\nmoq: 96 units\nlead_time: 22 working days after artwork sign-off\ncurrent_price: USD 8.95 per unit; dated catalog reference, not a binding quote\npackaging: Paper sleeve; 18 units per carton\ndimensions: 292 x 84 mm\nmaterial: 18/8 stainless steel",
+          "dense": 0.07375368848443031,
+          "bm25": 0.942540168762207,
+          "rrf": 0.029211087420042643,
+          "reranker": 0.13215098493492233
+        }
+      ],
+      "context_chars": 1053,
+      "context_chunks": 2,
+      "human_pass_fail": "unreviewed",
+      "reviewer_notes": ""
+    },
+    {
+      "id": "PH-010",
+      "category": "partial_sku",
+      "question": "I only wrote NSTR-LANTERN-86, which one?",
+      "expected_claims": [
+        {
+          "contains": [
+            "NSTR-LANTERN-864"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-L864"
+          }
+        },
+        {
+          "contains": [
+            "NSTR-LANTERN-865"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-L865"
+          }
+        }
+      ],
+      "expected_sufficient": false,
+      "ranks": [
+        4
+      ],
+      "relevant_count": 2,
+      "answer_correct": false,
+      "citation_correct": false,
+      "sufficiency_correct": true,
+      "hallucination": false,
+      "unsupported_question": false,
+      "required_claims": 2,
+      "covered_claims": 0,
+      "latency_ms": 5.380000002332963,
+      "answer": "- No exact approved product matches that identifier. Check the SKU or product ID.",
+      "sources": [],
+      "retrieved_evidence": [
+        {
+          "source_file": "northstar-historical-rfqs.md",
+          "product_id": "NSITEM-V731",
+          "section": "Northstar Trading — synthetic quotation archive / Archive case ARCH-VE731",
+          "row": 6,
+          "content": "Product ID: NSITEM-V731\nSKU: NSTR-VESSEL-731\nDate: 2024-02-16\nStatus: Historical only; expired and not current company policy.\nCustomer requirement: A fictional hiking club requested blue reusable 500 ml drinkware with a one-color mark.\nMOQ: 360 units\nPayment terms: 40% prepayment and 60% before dispatch\nIncoterms: FCA Invented Rivergate consolidation hub, Incoterms 2020\nQuoted price: USD 6.40 per unit, valid for this archived case only\nPackaging: Paper sleeve with one-color mark\nScope: Freight after the named FCA handover point was excluded. This archive is not a current freight quote.",
+          "dense": 0.18258538376506264,
+          "bm25": 2.5811095237731934,
+          "rrf": 0.032266458495966696,
+          "reranker": 0.18594695794325744
+        },
+        {
+          "source_file": "northstar-company-knowledge.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic company handbook / Sample policy",
+          "row": 11,
+          "content": "Sample policy: One standard sample per requested SKU can be reserved for seven calendar days. Customized samples require a separate written scope.\nSample ownership: The sample log stores an internal case code, never a customer's personal contact details.",
+          "dense": 0.13075380632838515,
+          "bm25": 3.139627456665039,
+          "rrf": 0.03252247488101534,
+          "reranker": 0.16251244899446568
+        },
+        {
+          "source_file": "northstar-historical-rfqs.md",
+          "product_id": "NSITEM-T552",
+          "section": "Northstar Trading — synthetic quotation archive / Archive case ARCH-TO552",
+          "row": 19,
+          "content": "Product ID: NSITEM-T552\nSKU: NSTR-TOTE-552\nDate: 2024-09-03\nStatus: Historical only; expired and not current company policy.\nCustomer requirement: A fictional outdoor event requested zip totes without individual plastic bags.\nMOQ: 450 units\nPayment terms: 35% prepayment and 65% after inspection, before dispatch\nIncoterms: EXW Invented Cedar Workshop, Incoterms 2020\nQuoted price: USD 3.90 per unit, valid for this archived case only\nPackaging: Folded paper pocket without individual plastic bags\nScope: The buyer-arranged transport was outside the archived quotation.",
+          "dense": 0.11688757330373337,
+          "bm25": 2.7020668983459473,
+          "rrf": 0.03200204813108039,
+          "reranker": 0.14297897077850708
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-L864",
+          "section": null,
+          "row": 6,
+          "content": "canonical_product_id: NSITEM-L864\nmodel: NSTR-LANTERN-864\nname: Dusk Trail Rechargeable Lantern\ncategory: Camping lights\nplatform_reference_price_min_usd: 13.65\nplatform_reference_price_max_usd: 14.45\nunit: unit\ncolor: Sandstone\ncapacity: 2200 mAh nominal battery\nmoq: 48 units\npackaging: Moulded pulp insert; 12 units per carton\ndimensions: 128 x 88 x 88 mm\nmaterial: ABS housing with silicone handle",
+          "dense": 0.09540634639279345,
+          "bm25": null,
+          "rrf": 0.015384615384615385,
+          "reranker": 0.10739874053993113
+        },
+        {
+          "source_file": "northstar-company-knowledge.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic company handbook / Quotation policy",
+          "row": 15,
+          "content": "Quote validity: A newly approved written quotation is valid for 14 calendar days from issue.\nPayment terms: Current payment terms are agreed per quotation; no universal payment schedule is verified.\nRevision policy: Keep the prior approved fact in force until a reviewer approves the new source-backed value. Historical quotations cannot overwrite current catalog knowledge.",
+          "dense": 0.10690296472220431,
+          "bm25": null,
+          "rrf": 0.015625,
+          "reranker": 0.10511192706943281
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-M964",
+          "section": null,
+          "row": 9,
+          "content": "canonical_product_id: NSITEM-M964\nmodel: NSTR-MAT-964\nname: Quiet Shore Felt Desk Mat\ncategory: Desk accessories\nplatform_reference_price_min_usd: 4.35\nplatform_reference_price_max_usd: 4.75\nunit: unit\ncolor: Heather grey\nmoq: 100 units\nlead_time: 12 working days after artwork sign-off\npackaging: Flat paper wrap; 25 units per carton\ndimensions: 720 x 350 x 4 mm\nmaterial: Recycled PET felt",
+          "dense": 0.08399317312610494,
+          "bm25": null,
+          "rrf": 0.015151515151515152,
+          "reranker": 0.09974707768348337
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-M963",
+          "section": null,
+          "row": 8,
+          "content": "canonical_product_id: NSITEM-M963\nmodel: NSTR-MAT-963\nname: Quiet Shore Cork Desk Mat\ncategory: Desk accessories\nplatform_reference_price_min_usd: 5.65\nplatform_reference_price_max_usd: 6.15\nunit: unit\ncolor: Natural cork\nmoq: 80 units\nlead_time: 14 working days after artwork sign-off\npackaging: Rolled paper wrap; 20 units per carton\ndimensions: 680 x 320 x 3 mm\nmaterial: Cork with natural rubber backing",
+          "dense": 0.0652306313679323,
+          "bm25": null,
+          "rrf": 0.014705882352941176,
+          "reranker": 0.08710579274209718
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-P452A",
+          "section": null,
+          "row": 4,
+          "content": "canonical_product_id: NSITEM-P452A\nmodel: NSTR-POD-452\nname: Wayfarer Packing Cube Small\ncategory: Travel organizers\nplatform_reference_price_min_usd: 3.45\nplatform_reference_price_max_usd: 3.85\nunit: unit\ncolor: Moss green\ncapacity: 1.9 litres\nmoq: 240 units\nlead_time: 16 working days after sample approval\npackaging: Paper belly band; 60 units per carton\ndimensions: 210 x 140 x 65 mm\nmaterial: Recycled polyester",
+          "dense": 0.061294173765003485,
+          "bm25": null,
+          "rrf": 0.014285714285714285,
+          "reranker": 0.08412692723296655
+        }
+      ],
+      "context_chars": 3433,
+      "context_chunks": 6,
+      "human_pass_fail": "unreviewed",
+      "reviewer_notes": ""
+    },
+    {
+      "id": "PH-011",
+      "category": "unsupported",
+      "question": "Is a current lead-time commitment recorded for NSTR-LANTERN-864?",
+      "expected_claims": [],
+      "expected_sufficient": false,
+      "ranks": [
+        1
+      ],
+      "relevant_count": 1,
+      "answer_correct": true,
+      "citation_correct": true,
+      "sufficiency_correct": true,
+      "hallucination": false,
+      "unsupported_question": true,
+      "required_claims": 0,
+      "covered_claims": 0,
+      "latency_ms": 6.0931670013815165,
+      "answer": "- NSTR-LANTERN-864: lead time is not verified in the approved knowledge base.",
+      "sources": [],
+      "retrieved_evidence": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-L864",
+          "section": null,
+          "row": 6,
+          "content": "canonical_product_id: NSITEM-L864\nmodel: NSTR-LANTERN-864\nname: Dusk Trail Rechargeable Lantern\ncategory: Camping lights\nplatform_reference_price_min_usd: 13.65\nplatform_reference_price_max_usd: 14.45\nunit: unit\ncolor: Sandstone\ncapacity: 2200 mAh nominal battery\nmoq: 48 units\npackaging: Moulded pulp insert; 12 units per carton\ndimensions: 128 x 88 x 88 mm\nmaterial: ABS housing with silicone handle",
+          "dense": -0.01114312435189883,
+          "bm25": 2.73356032371521,
+          "rrf": 0.027051561365286855,
+          "reranker": 1.3487182280319536
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-L865",
+          "section": null,
+          "row": 7,
+          "content": "canonical_product_id: NSITEM-L865\nmodel: NSTR-LANTERN-865\nname: Dusk Trail Clip Light\ncategory: Camping lights\nplatform_reference_price_min_usd: 9.55\nplatform_reference_price_max_usd: 10.15\nunit: unit\ncolor: Charcoal\ncapacity: 1200 mAh nominal battery\nmoq: 120 units\nlead_time: 24 working days after sample approval\npackaging: Moulded pulp insert; 30 units per carton\ndimensions: 94 x 62 x 42 mm\nmaterial: ABS housing with aluminium clip",
+          "dense": -0.010198013857007034,
+          "bm25": null,
+          "rrf": 0.012658227848101266,
+          "reranker": 0.509324894514768
+        },
+        {
+          "source_file": "northstar-company-knowledge.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic company handbook / Logistics FAQ",
+          "row": 20,
+          "content": "Logistics guidance: Planning uses carton count, gross weight and destination zone. Carrier cost and transit duration require a separate verified freight quotation.\nCompliance guidance: DEMO-prefixed evidence is a simulated test record and is not legal certification. No claim of conformity may be made without a reviewed certificate.",
+          "dense": 0.23773071169853216,
+          "bm25": 3.644834041595459,
+          "rrf": 0.032018442622950824,
+          "reranker": 0.20654340522699674
+        },
+        {
+          "source_file": "northstar-company-knowledge.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic company handbook / Quotation policy",
+          "row": 15,
+          "content": "Quote validity: A newly approved written quotation is valid for 14 calendar days from issue.\nPayment terms: Current payment terms are agreed per quotation; no universal payment schedule is verified.\nRevision policy: Keep the prior approved fact in force until a reviewer approves the new source-backed value. Historical quotations cannot overwrite current catalog knowledge.",
+          "dense": 0.23157276275257274,
+          "bm25": 7.455698490142822,
+          "rrf": 0.03252247488101534,
+          "reranker": 0.2030447706701876
+        },
+        {
+          "source_file": "northstar-company-knowledge.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic company handbook / Company scope",
+          "row": 6,
+          "content": "Business scope: Northstar Trading is a fictional sourcing coordinator for travel drinkware, organizers, camping lights, desk accessories and carry bags. It does not operate a factory.\nResponse target: Acknowledge a new product inquiry within two working days.\nCompany status: This organization and all its records are invented for software demonstrations.",
+          "dense": 0.22569358224670094,
+          "bm25": 5.113024711608887,
+          "rrf": 0.031746031746031744,
+          "reranker": 0.19844686020638735
+        },
+        {
+          "source_file": "northstar-company-knowledge.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic company handbook / Sample policy",
+          "row": 11,
+          "content": "Sample policy: One standard sample per requested SKU can be reserved for seven calendar days. Customized samples require a separate written scope.\nSample ownership: The sample log stores an internal case code, never a customer's personal contact details.",
+          "dense": 0.19177866975466412,
+          "bm25": 3.028327226638794,
+          "rrf": 0.03055037313432836,
+          "reranker": 0.17520650847486005
+        },
+        {
+          "source_file": "northstar-production-sop.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic order procedure / Release control",
+          "row": 11,
+          "content": "Release gate: Operations checks the approved sample reference and artwork revision; a reviewer signs the release checklist before production starts.\nRevision policy: A changed specification pauses release until a new reviewer decision is recorded.",
+          "dense": 0.1552525522808234,
+          "bm25": 3.353343963623047,
+          "rrf": 0.030536130536130537,
+          "reranker": 0.15145028951866576
+        },
+        {
+          "source_file": "northstar-historical-rfqs.md",
+          "product_id": "NSITEM-V731",
+          "section": "Northstar Trading — synthetic quotation archive / Archive case ARCH-VE731",
+          "row": 6,
+          "content": "Product ID: NSITEM-V731\nSKU: NSTR-VESSEL-731\nDate: 2024-02-16\nStatus: Historical only; expired and not current company policy.\nCustomer requirement: A fictional hiking club requested blue reusable 500 ml drinkware with a one-color mark.\nMOQ: 360 units\nPayment terms: 40% prepayment and 60% before dispatch\nIncoterms: FCA Invented Rivergate consolidation hub, Incoterms 2020\nQuoted price: USD 6.40 per unit, valid for this archived case only\nPackaging: Paper sleeve with one-color mark\nScope: Freight after the named FCA handover point was excluded. This archive is not a current freight quote.",
+          "dense": 0.16038529699047407,
+          "bm25": 5.583216667175293,
+          "rrf": 0.0315136476426799,
+          "reranker": 0.14576409068648805
+        }
+      ],
+      "context_chars": 2923,
+      "context_chunks": 6,
+      "human_pass_fail": "unreviewed",
+      "reviewer_notes": ""
+    },
+    {
+      "id": "PH-012",
+      "category": "ambiguous",
+      "question": "NSTR-POD-452 哪个尺寸？我没有 product ID。",
+      "expected_claims": [],
+      "expected_sufficient": false,
+      "ranks": [
+        1,
+        2
+      ],
+      "relevant_count": 2,
+      "answer_correct": true,
+      "citation_correct": true,
+      "sufficiency_correct": true,
+      "hallucination": false,
+      "unsupported_question": false,
+      "required_claims": 0,
+      "covered_claims": 0,
+      "latency_ms": 6.1849579942645505,
+      "answer": "- This SKU is ambiguous: NSITEM-P452A, NSITEM-P452B. Specify a product ID. [1] [2]",
+      "sources": [
+        {
+          "citation_id": 1,
+          "label": "Source: northstar-products.csv → row 5 → SKU NSTR-POD-452 → product ID NSITEM-P452B",
+          "source_file": "northstar-products.csv",
+          "source_type": "csv",
+          "sheet": null,
+          "row_number": 5,
+          "section": null,
+          "product_sku": "NSTR-POD-452",
+          "product_id": "NSITEM-P452B",
+          "source_modified_at": "2026-09-04T13:38:27.652336+00:00",
+          "chunk_id": "77f0af8d-8414-544f-89f8-a98638952513",
+          "source_version": "d9e19fef5884dbb88d977631c76ec1a8c2489285fbd7cfc3b31c787333c35008",
+          "approval_change_id": null,
+          "authority_class": "A",
+          "knowledge_status": "current_approved"
+        },
+        {
+          "citation_id": 2,
+          "label": "Source: northstar-products.csv → row 4 → SKU NSTR-POD-452 → product ID NSITEM-P452A",
+          "source_file": "northstar-products.csv",
+          "source_type": "csv",
+          "sheet": null,
+          "row_number": 4,
+          "section": null,
+          "product_sku": "NSTR-POD-452",
+          "product_id": "NSITEM-P452A",
+          "source_modified_at": "2026-09-04T13:38:27.652336+00:00",
+          "chunk_id": "acaa36ec-3294-5947-a108-80c7d9dd5c39",
+          "source_version": "d9e19fef5884dbb88d977631c76ec1a8c2489285fbd7cfc3b31c787333c35008",
+          "approval_change_id": null,
+          "authority_class": "A",
+          "knowledge_status": "current_approved"
+        }
+      ],
+      "retrieved_evidence": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-P452B",
+          "section": null,
+          "row": 5,
+          "content": "canonical_product_id: NSITEM-P452B\nmodel: NSTR-POD-452\nname: Wayfarer Packing Cube Large\ncategory: Travel organizers\nplatform_reference_price_min_usd: 4.95\nplatform_reference_price_max_usd: 5.35\nunit: unit\ncolor: Moss green\ncapacity: 6.1 litres\nmoq: 160 units\nlead_time: 16 working days after sample approval\npackaging: Paper belly band; 40 units per carton\ndimensions: 310 x 220 x 90 mm\nmaterial: Recycled polyester",
+          "dense": 0.15266032237559557,
+          "bm25": 2.977421760559082,
+          "rrf": 0.032266458495966696,
+          "reranker": 1.7281623347067705
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-P452A",
+          "section": null,
+          "row": 4,
+          "content": "canonical_product_id: NSITEM-P452A\nmodel: NSTR-POD-452\nname: Wayfarer Packing Cube Small\ncategory: Travel organizers\nplatform_reference_price_min_usd: 3.45\nplatform_reference_price_max_usd: 3.85\nunit: unit\ncolor: Moss green\ncapacity: 1.9 litres\nmoq: 240 units\nlead_time: 16 working days after sample approval\npackaging: Paper belly band; 60 units per carton\ndimensions: 210 x 140 x 65 mm\nmaterial: Recycled polyester",
+          "dense": 0.12547497497871518,
+          "bm25": 2.977421760559082,
+          "rrf": 0.03200204813108039,
+          "reranker": 1.7102274485339122
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-M963",
+          "section": null,
+          "row": 8,
+          "content": "canonical_product_id: NSITEM-M963\nmodel: NSTR-MAT-963\nname: Quiet Shore Cork Desk Mat\ncategory: Desk accessories\nplatform_reference_price_min_usd: 5.65\nplatform_reference_price_max_usd: 6.15\nunit: unit\ncolor: Natural cork\nmoq: 80 units\nlead_time: 14 working days after artwork sign-off\npackaging: Rolled paper wrap; 20 units per carton\ndimensions: 680 x 320 x 3 mm\nmaterial: Cork with natural rubber backing",
+          "dense": 0.12919393926858902,
+          "bm25": 0.814777672290802,
+          "rrf": 0.0304147465437788,
+          "reranker": 0.41939080706836174
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-V732",
+          "section": null,
+          "row": 3,
+          "content": "canonical_product_id: NSITEM-V732\nmodel: NSTR-VESSEL-732\nname: Harbor Sip Wide Bottle\ncategory: Travel drinkware\nplatform_reference_price_min_usd: 8.35\nplatform_reference_price_max_usd: 8.95\nunit: unit\ncolor: Basalt grey\ncapacity: 800 ml\nmoq: 96 units\nlead_time: 22 working days after artwork sign-off\ncurrent_price: USD 8.95 per unit; dated catalog reference, not a binding quote\npackaging: Paper sleeve; 18 units per carton\ndimensions: 292 x 84 mm\nmaterial: 18/8 stainless steel",
+          "dense": 0.11574274860322475,
+          "bm25": 0.7579225301742554,
+          "rrf": 0.0293236301369863,
+          "reranker": 0.4095564167290824
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-V731",
+          "section": null,
+          "row": 2,
+          "content": "canonical_product_id: NSITEM-V731\nmodel: NSTR-VESSEL-731\nname: Harbor Sip Steel Bottle\ncategory: Travel drinkware\nplatform_reference_price_min_usd: 6.85\nplatform_reference_price_max_usd: 7.25\nunit: unit\ncolor: Glacier blue\ncapacity: 500 ml\nmoq: 144 units\nlead_time: 18 working days after artwork sign-off\ncurrent_price: USD 7.25 per unit; dated catalog reference, not a binding quote\ncertificates: DEMO-MAT-731: simulated material-screen result, not regulatory certification\npackaging: Paper sleeve; 24 units per carton\ndimensions: 245 x 72 mm\nmaterial: 18/8 stainless steel",
+          "dense": 0.11080577876418829,
+          "bm25": 0.703386664390564,
+          "rrf": 0.0288981288981289,
+          "reranker": 0.4059218850948514
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-L864",
+          "section": null,
+          "row": 6,
+          "content": "canonical_product_id: NSITEM-L864\nmodel: NSTR-LANTERN-864\nname: Dusk Trail Rechargeable Lantern\ncategory: Camping lights\nplatform_reference_price_min_usd: 13.65\nplatform_reference_price_max_usd: 14.45\nunit: unit\ncolor: Sandstone\ncapacity: 2200 mAh nominal battery\nmoq: 48 units\npackaging: Moulded pulp insert; 12 units per carton\ndimensions: 128 x 88 x 88 mm\nmaterial: ABS housing with silicone handle",
+          "dense": 0.09003022266551852,
+          "bm25": 0.842879056930542,
+          "rrf": 0.03007688828584351,
+          "reranker": 0.39359653301843056
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-T552",
+          "section": null,
+          "row": 10,
+          "content": "canonical_product_id: NSITEM-T552\nmodel: NSTR-TOTE-552\nname: Arc Fold Zip Tote\ncategory: Carry bags\nplatform_reference_price_min_usd: 4.15\nplatform_reference_price_max_usd: 4.55\nunit: unit\ncolor: Deep teal\ncapacity: 14 litres\nmoq: 200 units\nlead_time: 20 working days after sample approval\npackaging: Folded paper pocket; 50 units per carton\ndimensions: 390 x 340 x 110 mm\nmaterial: Recycled ripstop nylon",
+          "dense": 0.08579046465456486,
+          "bm25": 0.814777672290802,
+          "rrf": 0.02900988017658188,
+          "reranker": 0.3897736822020491
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-T553",
+          "section": null,
+          "row": 11,
+          "content": "canonical_product_id: NSITEM-T553\nmodel: NSTR-TOTE-553\nname: Arc Fold Open Tote\ncategory: Carry bags\nplatform_reference_price_min_usd: 3.25\nplatform_reference_price_max_usd: 3.65\nunit: unit\ncolor: Undyed\ncapacity: 12 litres\nmoq: 200 units\nlead_time: 17 working days after sample approval\npackaging: Paper belly band; 50 units per carton\ndimensions: 370 x 330 x 100 mm\nmaterial: Unbleached cotton canvas",
+          "dense": 0.06927052233368158,
+          "bm25": 0.8216258883476257,
+          "rrf": 0.028985507246376812,
+          "reranker": 0.37901134676326986
+        }
+      ],
+      "context_chars": 1054,
+      "context_chunks": 2,
+      "human_pass_fail": "unreviewed",
+      "reviewer_notes": ""
+    },
+    {
+      "id": "PH-013",
+      "category": "discovery",
+      "question": "Desk mats with recycled material, give some options.",
+      "expected_claims": [
+        {
+          "contains": [
+            "NSTR-MAT-964"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-M964"
+          }
+        }
+      ],
+      "expected_sufficient": true,
+      "ranks": [
+        1
+      ],
+      "relevant_count": 1,
+      "answer_correct": true,
+      "citation_correct": true,
+      "sufficiency_correct": true,
+      "hallucination": false,
+      "unsupported_question": false,
+      "required_claims": 1,
+      "covered_claims": 1,
+      "latency_ms": 5.562958991504274,
+      "answer": "- NSTR-MAT-964 (NSITEM-M964): Quiet Shore Felt Desk Mat; material: Recycled PET felt. [1]\n- NSTR-MAT-963 (NSITEM-M963): Quiet Shore Cork Desk Mat; material: Cork with natural rubber backing. [2]\n- NSTR-POD-452 (NSITEM-P452B): Wayfarer Packing Cube Large; material: Recycled polyester. [3]",
+      "sources": [
+        {
+          "citation_id": 1,
+          "label": "Source: northstar-products.csv → row 9 → SKU NSTR-MAT-964 → product ID NSITEM-M964",
+          "source_file": "northstar-products.csv",
+          "source_type": "csv",
+          "sheet": null,
+          "row_number": 9,
+          "section": null,
+          "product_sku": "NSTR-MAT-964",
+          "product_id": "NSITEM-M964",
+          "source_modified_at": "2026-09-04T13:38:27.652336+00:00",
+          "chunk_id": "b31f3d87-bc58-5dcc-b088-1fe705ee4170",
+          "source_version": "d9e19fef5884dbb88d977631c76ec1a8c2489285fbd7cfc3b31c787333c35008",
+          "approval_change_id": null,
+          "authority_class": "A",
+          "knowledge_status": "current_approved"
+        },
+        {
+          "citation_id": 2,
+          "label": "Source: northstar-products.csv → row 8 → SKU NSTR-MAT-963 → product ID NSITEM-M963",
+          "source_file": "northstar-products.csv",
+          "source_type": "csv",
+          "sheet": null,
+          "row_number": 8,
+          "section": null,
+          "product_sku": "NSTR-MAT-963",
+          "product_id": "NSITEM-M963",
+          "source_modified_at": "2026-09-04T13:38:27.652336+00:00",
+          "chunk_id": "8d6af15d-3da2-534b-a9f5-ca689c574199",
+          "source_version": "d9e19fef5884dbb88d977631c76ec1a8c2489285fbd7cfc3b31c787333c35008",
+          "approval_change_id": null,
+          "authority_class": "A",
+          "knowledge_status": "current_approved"
+        },
+        {
+          "citation_id": 3,
+          "label": "Source: northstar-products.csv → row 5 → SKU NSTR-POD-452 → product ID NSITEM-P452B",
+          "source_file": "northstar-products.csv",
+          "source_type": "csv",
+          "sheet": null,
+          "row_number": 5,
+          "section": null,
+          "product_sku": "NSTR-POD-452",
+          "product_id": "NSITEM-P452B",
+          "source_modified_at": "2026-09-04T13:38:27.652336+00:00",
+          "chunk_id": "77f0af8d-8414-544f-89f8-a98638952513",
+          "source_version": "d9e19fef5884dbb88d977631c76ec1a8c2489285fbd7cfc3b31c787333c35008",
+          "approval_change_id": null,
+          "authority_class": "A",
+          "knowledge_status": "current_approved"
+        }
+      ],
+      "retrieved_evidence": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-M964",
+          "section": null,
+          "row": 9,
+          "content": "canonical_product_id: NSITEM-M964\nmodel: NSTR-MAT-964\nname: Quiet Shore Felt Desk Mat\ncategory: Desk accessories\nplatform_reference_price_min_usd: 4.35\nplatform_reference_price_max_usd: 4.75\nunit: unit\ncolor: Heather grey\nmoq: 100 units\nlead_time: 12 working days after artwork sign-off\npackaging: Flat paper wrap; 25 units per carton\ndimensions: 720 x 350 x 4 mm\nmaterial: Recycled PET felt",
+          "dense": 0.2163796238601208,
+          "bm25": 6.012641906738281,
+          "rrf": 0.03278688524590164,
+          "reranker": 0.5534336407549801
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-M963",
+          "section": null,
+          "row": 8,
+          "content": "canonical_product_id: NSITEM-M963\nmodel: NSTR-MAT-963\nname: Quiet Shore Cork Desk Mat\ncategory: Desk accessories\nplatform_reference_price_min_usd: 5.65\nplatform_reference_price_max_usd: 6.15\nunit: unit\ncolor: Natural cork\nmoq: 80 units\nlead_time: 14 working days after artwork sign-off\npackaging: Rolled paper wrap; 20 units per carton\ndimensions: 680 x 320 x 3 mm\nmaterial: Cork with natural rubber backing",
+          "dense": 0.14359096065163615,
+          "bm25": 5.736308574676514,
+          "rrf": 0.03200204813108039,
+          "reranker": 0.4803361725546439
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-P452B",
+          "section": null,
+          "row": 5,
+          "content": "canonical_product_id: NSITEM-P452B\nmodel: NSTR-POD-452\nname: Wayfarer Packing Cube Large\ncategory: Travel organizers\nplatform_reference_price_min_usd: 4.95\nplatform_reference_price_max_usd: 5.35\nunit: unit\ncolor: Moss green\ncapacity: 6.1 litres\nmoq: 160 units\nlead_time: 16 working days after sample approval\npackaging: Paper belly band; 40 units per carton\ndimensions: 310 x 220 x 90 mm\nmaterial: Recycled polyester",
+          "dense": 0.09984506977101168,
+          "bm25": 3.240135908126831,
+          "rrf": 0.031009615384615385,
+          "reranker": 0.450908910735773
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-L864",
+          "section": null,
+          "row": 6,
+          "content": "canonical_product_id: NSITEM-L864\nmodel: NSTR-LANTERN-864\nname: Dusk Trail Rechargeable Lantern\ncategory: Camping lights\nplatform_reference_price_min_usd: 13.65\nplatform_reference_price_max_usd: 14.45\nunit: unit\ncolor: Sandstone\ncapacity: 2200 mAh nominal battery\nmoq: 48 units\npackaging: Moulded pulp insert; 12 units per carton\ndimensions: 128 x 88 x 88 mm\nmaterial: ABS housing with silicone handle",
+          "dense": 0.1371367909014225,
+          "bm25": 3.156911849975586,
+          "rrf": 0.030776515151515152,
+          "reranker": 0.44991542923743977
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-T552",
+          "section": null,
+          "row": 10,
+          "content": "canonical_product_id: NSITEM-T552\nmodel: NSTR-TOTE-552\nname: Arc Fold Zip Tote\ncategory: Carry bags\nplatform_reference_price_min_usd: 4.15\nplatform_reference_price_max_usd: 4.55\nunit: unit\ncolor: Deep teal\ncapacity: 14 litres\nmoq: 200 units\nlead_time: 20 working days after sample approval\npackaging: Folded paper pocket; 50 units per carton\ndimensions: 390 x 340 x 110 mm\nmaterial: Recycled ripstop nylon",
+          "dense": 0.0914857958753904,
+          "bm25": 3.240135908126831,
+          "rrf": 0.030090497737556562,
+          "reranker": 0.4445562650565603
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-P452A",
+          "section": null,
+          "row": 4,
+          "content": "canonical_product_id: NSITEM-P452A\nmodel: NSTR-POD-452\nname: Wayfarer Packing Cube Small\ncategory: Travel organizers\nplatform_reference_price_min_usd: 3.45\nplatform_reference_price_max_usd: 3.85\nunit: unit\ncolor: Moss green\ncapacity: 1.9 litres\nmoq: 240 units\nlead_time: 16 working days after sample approval\npackaging: Paper belly band; 60 units per carton\ndimensions: 210 x 140 x 65 mm\nmaterial: Recycled polyester",
+          "dense": 0.08167799686392149,
+          "bm25": 3.240135908126831,
+          "rrf": 0.030158730158730156,
+          "reranker": 0.4382494281202791
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-V731",
+          "section": null,
+          "row": 2,
+          "content": "canonical_product_id: NSITEM-V731\nmodel: NSTR-VESSEL-731\nname: Harbor Sip Steel Bottle\ncategory: Travel drinkware\nplatform_reference_price_min_usd: 6.85\nplatform_reference_price_max_usd: 7.25\nunit: unit\ncolor: Glacier blue\ncapacity: 500 ml\nmoq: 144 units\nlead_time: 18 working days after artwork sign-off\ncurrent_price: USD 7.25 per unit; dated catalog reference, not a binding quote\ncertificates: DEMO-MAT-731: simulated material-screen result, not regulatory certification\npackaging: Paper sleeve; 24 units per carton\ndimensions: 245 x 72 mm\nmaterial: 18/8 stainless steel",
+          "dense": 0.09780683740973475,
+          "bm25": 1.406773328781128,
+          "rrf": 0.028850145288501453,
+          "reranker": 0.422424589604829
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-L865",
+          "section": null,
+          "row": 7,
+          "content": "canonical_product_id: NSITEM-L865\nmodel: NSTR-LANTERN-865\nname: Dusk Trail Clip Light\ncategory: Camping lights\nplatform_reference_price_min_usd: 9.55\nplatform_reference_price_max_usd: 10.15\nunit: unit\ncolor: Charcoal\ncapacity: 1200 mAh nominal battery\nmoq: 120 units\nlead_time: 24 working days after sample approval\npackaging: Moulded pulp insert; 30 units per carton\ndimensions: 94 x 62 x 42 mm\nmaterial: ABS housing with aluminium clip",
+          "dense": 0.09491141264637312,
+          "bm25": 2.9772162437438965,
+          "rrf": 0.029850746268656716,
+          "reranker": 0.42154316448879925
+        }
+      ],
+      "context_chars": 1543,
+      "context_chunks": 3,
+      "human_pass_fail": "unreviewed",
+      "reviewer_notes": ""
+    },
+    {
+      "id": "PH-014",
+      "category": "sop",
+      "question": "SOP dispatch handover: name the documents sent onward.",
+      "expected_claims": [
+        {
+          "contains": [
+            "packing list"
+          ],
+          "source": {
+            "source_file": "northstar-production-sop.md",
+            "section": "Northstar Trading — synthetic order procedure / Dispatch handover"
+          }
+        }
+      ],
+      "expected_sufficient": true,
+      "ranks": [
+        2
+      ],
+      "relevant_count": 1,
+      "answer_correct": false,
+      "citation_correct": false,
+      "sufficiency_correct": true,
+      "hallucination": false,
+      "unsupported_question": false,
+      "required_claims": 1,
+      "covered_claims": 0,
+      "latency_ms": 6.328958988888189,
+      "answer": "- Approved knowledge — handover: Sales submits the order worksheet and approved sample reference to the operations queue.. [1]",
+      "sources": [
+        {
+          "citation_id": 1,
+          "label": "Source: northstar-production-sop.md → row 6 → section Northstar Trading — synthetic order procedure / Order entry",
+          "source_file": "northstar-production-sop.md",
+          "source_type": "md",
+          "sheet": null,
+          "row_number": 6,
+          "section": "Northstar Trading — synthetic order procedure / Order entry",
+          "product_sku": null,
+          "product_id": null,
+          "source_modified_at": "2026-09-04T11:06:06.660665+00:00",
+          "chunk_id": "eaaff143-3140-5e37-bada-45f351a6c123",
+          "source_version": "56e89e0c6a3b7e60bf8dcb071dc9199ef1939e8e8daa376cd0a8df15609c83bd",
+          "approval_change_id": null,
+          "authority_class": "B",
+          "knowledge_status": "authoritative"
+        }
+      ],
+      "retrieved_evidence": [
+        {
+          "source_file": "northstar-production-sop.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic order procedure / Order entry",
+          "row": 6,
+          "content": "Required fields: Capture the internal order code, product ID, approved SKU, quantity, artwork revision and requested dispatch window.\nHandover: Sales submits the order worksheet and approved sample reference to the operations queue.\nPrivacy rule: Do not place personal contact or bank information in the shared worksheet.",
+          "dense": 0.2459474398112933,
+          "bm25": 5.797426223754883,
+          "rrf": 0.03252247488101534,
+          "reranker": 0.462388310758356
+        },
+        {
+          "source_file": "northstar-production-sop.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic order procedure / Dispatch handover",
+          "row": 19,
+          "content": "Handover: Operations provides the packing list and carton-count check to the dispatch coordinator.\nRequired fields: The dispatch record contains the order code, carton count, inspection decision and approved carrier booking reference.",
+          "dense": 0.2439906274136641,
+          "bm25": 7.204512119293213,
+          "rrf": 0.03252247488101534,
+          "reranker": 0.461116382699897
+        },
+        {
+          "source_file": "northstar-production-sop.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic order procedure / Quality inspection",
+          "row": 15,
+          "content": "Quality check: Compare the first assembled unit with the approved sample; verify the SKU label, color and carton count before packing the batch.\nException handling: Quarantine damaged units, attach a defect code and request a corrective-action decision. Do not mix quarantined units into the outgoing cartons.",
+          "dense": 0.08300776640624528,
+          "bm25": 2.101229667663574,
+          "rrf": 0.02946912242686891,
+          "reranker": 0.3034241705909284
+        },
+        {
+          "source_file": "northstar-production-sop.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic order procedure / Release control",
+          "row": 11,
+          "content": "Release gate: Operations checks the approved sample reference and artwork revision; a reviewer signs the release checklist before production starts.\nRevision policy: A changed specification pauses release until a new reviewer decision is recorded.",
+          "dense": 0.0785104935763775,
+          "bm25": 1.7237160205841064,
+          "rrf": 0.028850145288501453,
+          "reranker": 0.2998819661131468
+        },
+        {
+          "source_file": "northstar-historical-rfqs.md",
+          "product_id": "NSITEM-V731",
+          "section": "Northstar Trading — synthetic quotation archive / Archive case ARCH-VE731",
+          "row": 6,
+          "content": "Product ID: NSITEM-V731\nSKU: NSTR-VESSEL-731\nDate: 2024-02-16\nStatus: Historical only; expired and not current company policy.\nCustomer requirement: A fictional hiking club requested blue reusable 500 ml drinkware with a one-color mark.\nMOQ: 360 units\nPayment terms: 40% prepayment and 60% before dispatch\nIncoterms: FCA Invented Rivergate consolidation hub, Incoterms 2020\nQuoted price: USD 6.40 per unit, valid for this archived case only\nPackaging: Paper sleeve with one-color mark\nScope: Freight after the named FCA handover point was excluded. This archive is not a current freight quote.",
+          "dense": 0.13989051395210989,
+          "bm25": 3.4386515617370605,
+          "rrf": 0.031746031746031744,
+          "reranker": 0.18267486581490316
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-V731",
+          "section": null,
+          "row": 2,
+          "content": "canonical_product_id: NSITEM-V731\nmodel: NSTR-VESSEL-731\nname: Harbor Sip Steel Bottle\ncategory: Travel drinkware\nplatform_reference_price_min_usd: 6.85\nplatform_reference_price_max_usd: 7.25\nunit: unit\ncolor: Glacier blue\ncapacity: 500 ml\nmoq: 144 units\nlead_time: 18 working days after artwork sign-off\ncurrent_price: USD 7.25 per unit; dated catalog reference, not a binding quote\ncertificates: DEMO-MAT-731: simulated material-screen result, not regulatory certification\npackaging: Paper sleeve; 24 units per carton\ndimensions: 245 x 72 mm\nmaterial: 18/8 stainless steel",
+          "dense": 0.11203721003702934,
+          "bm25": 0.703386664390564,
+          "rrf": 0.028205128205128206,
+          "reranker": 0.15602931472919726
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-V732",
+          "section": null,
+          "row": 3,
+          "content": "canonical_product_id: NSITEM-V732\nmodel: NSTR-VESSEL-732\nname: Harbor Sip Wide Bottle\ncategory: Travel drinkware\nplatform_reference_price_min_usd: 8.35\nplatform_reference_price_max_usd: 8.95\nunit: unit\ncolor: Basalt grey\ncapacity: 800 ml\nmoq: 96 units\nlead_time: 22 working days after artwork sign-off\ncurrent_price: USD 8.95 per unit; dated catalog reference, not a binding quote\npackaging: Paper sleeve; 18 units per carton\ndimensions: 292 x 84 mm\nmaterial: 18/8 stainless steel",
+          "dense": 0.09571542527663873,
+          "bm25": 0.7579225301742554,
+          "rrf": 0.027912386121341344,
+          "reranker": 0.14512741255115652
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-L864",
+          "section": null,
+          "row": 6,
+          "content": "canonical_product_id: NSITEM-L864\nmodel: NSTR-LANTERN-864\nname: Dusk Trail Rechargeable Lantern\ncategory: Camping lights\nplatform_reference_price_min_usd: 13.65\nplatform_reference_price_max_usd: 14.45\nunit: unit\ncolor: Sandstone\ncapacity: 2200 mAh nominal battery\nmoq: 48 units\npackaging: Moulded pulp insert; 12 units per carton\ndimensions: 128 x 88 x 88 mm\nmaterial: ABS housing with silicone handle",
+          "dense": 0.09009546741920185,
+          "bm25": 0.842879056930542,
+          "rrf": 0.02919863597612958,
+          "reranker": 0.14276068979861078
+        }
+      ],
+      "context_chars": 504,
+      "context_chunks": 1,
+      "human_pass_fail": "unreviewed",
+      "reviewer_notes": ""
+    },
+    {
+      "id": "PH-015",
+      "category": "multifact",
+      "question": "NSTR-LANTERN-865 material, dimensions, and packaging together.",
+      "expected_claims": [
+        {
+          "contains": [
+            "aluminium clip"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-L865"
+          }
+        },
+        {
+          "contains": [
+            "94 x 62 x 42 mm"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-L865"
+          }
+        },
+        {
+          "contains": [
+            "30 units per carton"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-L865"
+          }
+        }
+      ],
+      "expected_sufficient": true,
+      "ranks": [
+        1
+      ],
+      "relevant_count": 1,
+      "answer_correct": true,
+      "citation_correct": true,
+      "sufficiency_correct": true,
+      "hallucination": false,
+      "unsupported_question": false,
+      "required_claims": 3,
+      "covered_claims": 3,
+      "latency_ms": 6.2027090025367215,
+      "answer": "- NSTR-LANTERN-865 — material: ABS housing with aluminium clip. [1]\n- NSTR-LANTERN-865 — dimensions: 94 x 62 x 42 mm. [1]\n- NSTR-LANTERN-865 — packaging: Moulded pulp insert; 30 units per carton. [1]",
+      "sources": [
+        {
+          "citation_id": 1,
+          "label": "Source: northstar-products.csv → row 7 → SKU NSTR-LANTERN-865 → product ID NSITEM-L865",
+          "source_file": "northstar-products.csv",
+          "source_type": "csv",
+          "sheet": null,
+          "row_number": 7,
+          "section": null,
+          "product_sku": "NSTR-LANTERN-865",
+          "product_id": "NSITEM-L865",
+          "source_modified_at": "2026-09-04T13:38:27.652336+00:00",
+          "chunk_id": "770ad08d-f877-57f5-a866-9358c31b1e78",
+          "source_version": "d9e19fef5884dbb88d977631c76ec1a8c2489285fbd7cfc3b31c787333c35008",
+          "approval_change_id": null,
+          "authority_class": "A",
+          "knowledge_status": "current_approved"
+        }
+      ],
+      "retrieved_evidence": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-L865",
+          "section": null,
+          "row": 7,
+          "content": "canonical_product_id: NSITEM-L865\nmodel: NSTR-LANTERN-865\nname: Dusk Trail Clip Light\ncategory: Camping lights\nplatform_reference_price_min_usd: 9.55\nplatform_reference_price_max_usd: 10.15\nunit: unit\ncolor: Charcoal\ncapacity: 1200 mAh nominal battery\nmoq: 120 units\nlead_time: 24 working days after sample approval\npackaging: Moulded pulp insert; 30 units per carton\ndimensions: 94 x 62 x 42 mm\nmaterial: ABS housing with aluminium clip",
+          "dense": 0.2909003415175239,
+          "bm25": 6.891847133636475,
+          "rrf": 0.03177805800756621,
+          "reranker": 2.442529946660623
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-L864",
+          "section": null,
+          "row": 6,
+          "content": "canonical_product_id: NSITEM-L864\nmodel: NSTR-LANTERN-864\nname: Dusk Trail Rechargeable Lantern\ncategory: Camping lights\nplatform_reference_price_min_usd: 13.65\nplatform_reference_price_max_usd: 14.45\nunit: unit\ncolor: Sandstone\ncapacity: 2200 mAh nominal battery\nmoq: 48 units\npackaging: Moulded pulp insert; 12 units per carton\ndimensions: 128 x 88 x 88 mm\nmaterial: ABS housing with silicone handle",
+          "dense": 0.30701388360342213,
+          "bm25": 4.5742573738098145,
+          "rrf": 0.031754032258064516,
+          "reranker": 1.6279797232669557
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-M964",
+          "section": null,
+          "row": 9,
+          "content": "canonical_product_id: NSITEM-M964\nmodel: NSTR-MAT-964\nname: Quiet Shore Felt Desk Mat\ncategory: Desk accessories\nplatform_reference_price_min_usd: 4.35\nplatform_reference_price_max_usd: 4.75\nunit: unit\ncolor: Heather grey\nmoq: 100 units\nlead_time: 12 working days after artwork sign-off\npackaging: Flat paper wrap; 25 units per carton\ndimensions: 720 x 350 x 4 mm\nmaterial: Recycled PET felt",
+          "dense": 0.3162776570808102,
+          "bm25": 4.4967122077941895,
+          "rrf": 0.03177805800756621,
+          "reranker": 1.1673585351100928
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-P452A",
+          "section": null,
+          "row": 4,
+          "content": "canonical_product_id: NSITEM-P452A\nmodel: NSTR-POD-452\nname: Wayfarer Packing Cube Small\ncategory: Travel organizers\nplatform_reference_price_min_usd: 3.45\nplatform_reference_price_max_usd: 3.85\nunit: unit\ncolor: Moss green\ncapacity: 1.9 litres\nmoq: 240 units\nlead_time: 16 working days after sample approval\npackaging: Paper belly band; 60 units per carton\ndimensions: 210 x 140 x 65 mm\nmaterial: Recycled polyester",
+          "dense": 0.30580077872657485,
+          "bm25": 4.653934478759766,
+          "rrf": 0.03200204813108039,
+          "reranker": 1.1607725543033542
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-P452B",
+          "section": null,
+          "row": 5,
+          "content": "canonical_product_id: NSITEM-P452B\nmodel: NSTR-POD-452\nname: Wayfarer Packing Cube Large\ncategory: Travel organizers\nplatform_reference_price_min_usd: 4.95\nplatform_reference_price_max_usd: 5.35\nunit: unit\ncolor: Moss green\ncapacity: 6.1 litres\nmoq: 160 units\nlead_time: 16 working days after sample approval\npackaging: Paper belly band; 40 units per carton\ndimensions: 310 x 220 x 90 mm\nmaterial: Recycled polyester",
+          "dense": 0.299054338887157,
+          "bm25": 4.653934478759766,
+          "rrf": 0.03149801587301587,
+          "reranker": 1.155883336149668
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-M963",
+          "section": null,
+          "row": 8,
+          "content": "canonical_product_id: NSITEM-M963\nmodel: NSTR-MAT-963\nname: Quiet Shore Cork Desk Mat\ncategory: Desk accessories\nplatform_reference_price_min_usd: 5.65\nplatform_reference_price_max_usd: 6.15\nunit: unit\ncolor: Natural cork\nmoq: 80 units\nlead_time: 14 working days after artwork sign-off\npackaging: Rolled paper wrap; 20 units per carton\ndimensions: 680 x 320 x 3 mm\nmaterial: Cork with natural rubber backing",
+          "dense": 0.27489917429503463,
+          "bm25": 4.421752452850342,
+          "rrf": 0.03007688828584351,
+          "reranker": 1.138761351577616
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-V731",
+          "section": null,
+          "row": 2,
+          "content": "canonical_product_id: NSITEM-V731\nmodel: NSTR-VESSEL-731\nname: Harbor Sip Steel Bottle\ncategory: Travel drinkware\nplatform_reference_price_min_usd: 6.85\nplatform_reference_price_max_usd: 7.25\nunit: unit\ncolor: Glacier blue\ncapacity: 500 ml\nmoq: 144 units\nlead_time: 18 working days after artwork sign-off\ncurrent_price: USD 7.25 per unit; dated catalog reference, not a binding quote\ncertificates: DEMO-MAT-731: simulated material-screen result, not regulatory certification\npackaging: Paper sleeve; 24 units per carton\ndimensions: 245 x 72 mm\nmaterial: 18/8 stainless steel",
+          "dense": 0.26358843084643796,
+          "bm25": 3.817239761352539,
+          "rrf": 0.029211087420042643,
+          "reranker": 1.1305435674702273
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-T553",
+          "section": null,
+          "row": 11,
+          "content": "canonical_product_id: NSITEM-T553\nmodel: NSTR-TOTE-553\nname: Arc Fold Open Tote\ncategory: Carry bags\nplatform_reference_price_min_usd: 3.25\nplatform_reference_price_max_usd: 3.65\nunit: unit\ncolor: Undyed\ncapacity: 12 litres\nmoq: 200 units\nlead_time: 17 working days after sample approval\npackaging: Paper belly band; 50 units per carton\ndimensions: 370 x 330 x 100 mm\nmaterial: Unbleached cotton canvas",
+          "dense": 0.2605585192406577,
+          "bm25": 4.458917140960693,
+          "rrf": 0.029857397504456328,
+          "reranker": 1.1292204350108839
+        }
+      ],
+      "context_chars": 601,
+      "context_chunks": 1,
+      "human_pass_fail": "unreviewed",
+      "reviewer_notes": ""
+    },
+    {
+      "id": "PH-016",
+      "category": "history",
+      "question": "历史 NSTR-VESSEL-731 的付款和贸易条款能列一下吗？",
+      "expected_claims": [
+        {
+          "contains": [
+            "40% prepayment"
+          ],
+          "source": {
+            "source_file": "northstar-historical-rfqs.md",
+            "product_id": "NSITEM-V731"
+          }
+        },
+        {
+          "contains": [
+            "FCA Invented Rivergate"
+          ],
+          "source": {
+            "source_file": "northstar-historical-rfqs.md",
+            "product_id": "NSITEM-V731"
+          }
+        }
+      ],
+      "expected_sufficient": true,
+      "ranks": [
+        1
+      ],
+      "relevant_count": 1,
+      "answer_correct": true,
+      "citation_correct": true,
+      "sufficiency_correct": true,
+      "hallucination": false,
+      "unsupported_question": false,
+      "required_claims": 2,
+      "covered_claims": 2,
+      "latency_ms": 6.4580409962218255,
+      "answer": "- Historical evidence (not current policy) — payment terms: 40% prepayment and 60% before dispatch (dated 2024-02-16). [1]\n- Historical evidence (not current policy) — incoterms: FCA Invented Rivergate consolidation hub, Incoterms 2020 (dated 2024-02-16). [1]",
+      "sources": [
+        {
+          "citation_id": 1,
+          "label": "Source: northstar-historical-rfqs.md → row 6 → section Northstar Trading — synthetic quotation archive / Archive case ARCH-VE731 → SKU NSTR-VESSEL-731 → product ID NSITEM-V731",
+          "source_file": "northstar-historical-rfqs.md",
+          "source_type": "md",
+          "sheet": null,
+          "row_number": 6,
+          "section": "Northstar Trading — synthetic quotation archive / Archive case ARCH-VE731",
+          "product_sku": "NSTR-VESSEL-731",
+          "product_id": "NSITEM-V731",
+          "source_modified_at": "2026-09-04T11:13:53.439426+00:00",
+          "chunk_id": "31519c67-8848-5153-b483-3a3add37f9c6",
+          "source_version": "d4041cba38096e585814563a2123e144324c99e2efaf37bcbf43d5cb0dc789ff",
+          "approval_change_id": null,
+          "authority_class": "C",
+          "knowledge_status": "historical_or_dated"
+        }
+      ],
+      "retrieved_evidence": [
+        {
+          "source_file": "northstar-historical-rfqs.md",
+          "product_id": "NSITEM-V731",
+          "section": "Northstar Trading — synthetic quotation archive / Archive case ARCH-VE731",
+          "row": 6,
+          "content": "Product ID: NSITEM-V731\nSKU: NSTR-VESSEL-731\nDate: 2024-02-16\nStatus: Historical only; expired and not current company policy.\nCustomer requirement: A fictional hiking club requested blue reusable 500 ml drinkware with a one-color mark.\nMOQ: 360 units\nPayment terms: 40% prepayment and 60% before dispatch\nIncoterms: FCA Invented Rivergate consolidation hub, Incoterms 2020\nQuoted price: USD 6.40 per unit, valid for this archived case only\nPackaging: Paper sleeve with one-color mark\nScope: Freight after the named FCA handover point was excluded. This archive is not a current freight quote.",
+          "dense": 0.10739168873368032,
+          "bm25": 6.167825698852539,
+          "rrf": 0.03278688524590164,
+          "reranker": 1.7625914829227938
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-V731",
+          "section": null,
+          "row": 2,
+          "content": "canonical_product_id: NSITEM-V731\nmodel: NSTR-VESSEL-731\nname: Harbor Sip Steel Bottle\ncategory: Travel drinkware\nplatform_reference_price_min_usd: 6.85\nplatform_reference_price_max_usd: 7.25\nunit: unit\ncolor: Glacier blue\ncapacity: 500 ml\nmoq: 144 units\nlead_time: 18 working days after artwork sign-off\ncurrent_price: USD 7.25 per unit; dated catalog reference, not a binding quote\ncertificates: DEMO-MAT-731: simulated material-screen result, not regulatory certification\npackaging: Paper sleeve; 24 units per carton\ndimensions: 245 x 72 mm\nmaterial: 18/8 stainless steel",
+          "dense": -0.0028737251826663583,
+          "bm25": 1.8669816255569458,
+          "rrf": 0.029709507042253523,
+          "reranker": 1.3513761737089203
+        },
+        {
+          "source_file": "northstar-historical-rfqs.md",
+          "product_id": "NSITEM-T552",
+          "section": "Northstar Trading — synthetic quotation archive / Archive case ARCH-TO552",
+          "row": 19,
+          "content": "Product ID: NSITEM-T552\nSKU: NSTR-TOTE-552\nDate: 2024-09-03\nStatus: Historical only; expired and not current company policy.\nCustomer requirement: A fictional outdoor event requested zip totes without individual plastic bags.\nMOQ: 450 units\nPayment terms: 35% prepayment and 65% after inspection, before dispatch\nIncoterms: EXW Invented Cedar Workshop, Incoterms 2020\nQuoted price: USD 3.90 per unit, valid for this archived case only\nPackaging: Folded paper pocket without individual plastic bags\nScope: The buyer-arranged transport was outside the archived quotation.",
+          "dense": 0.045119121277068915,
+          "bm25": 4.78014612197876,
+          "rrf": 0.03225806451612903,
+          "reranker": 1.0965854933462238
+        },
+        {
+          "source_file": "northstar-company-knowledge.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic company handbook / Quotation policy",
+          "row": 15,
+          "content": "Quote validity: A newly approved written quotation is valid for 14 calendar days from issue.\nPayment terms: Current payment terms are agreed per quotation; no universal payment schedule is verified.\nRevision policy: Keep the prior approved fact in force until a reviewer approves the new source-backed value. Historical quotations cannot overwrite current catalog knowledge.",
+          "dense": -0.04480928615934752,
+          "bm25": 3.755851984024048,
+          "rrf": 0.028693528693528692,
+          "reranker": 0.5986935286935288
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-V732",
+          "section": null,
+          "row": 3,
+          "content": "canonical_product_id: NSITEM-V732\nmodel: NSTR-VESSEL-732\nname: Harbor Sip Wide Bottle\ncategory: Travel drinkware\nplatform_reference_price_min_usd: 8.35\nplatform_reference_price_max_usd: 8.95\nunit: unit\ncolor: Basalt grey\ncapacity: 800 ml\nmoq: 96 units\nlead_time: 22 working days after artwork sign-off\ncurrent_price: USD 8.95 per unit; dated catalog reference, not a binding quote\npackaging: Paper sleeve; 18 units per carton\ndimensions: 292 x 84 mm\nmaterial: 18/8 stainless steel",
+          "dense": -0.0462761671458143,
+          "bm25": null,
+          "rrf": 0.012658227848101266,
+          "reranker": 0.509324894514768
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-M963",
+          "section": null,
+          "row": 8,
+          "content": "canonical_product_id: NSITEM-M963\nmodel: NSTR-MAT-963\nname: Quiet Shore Cork Desk Mat\ncategory: Desk accessories\nplatform_reference_price_min_usd: 5.65\nplatform_reference_price_max_usd: 6.15\nunit: unit\ncolor: Natural cork\nmoq: 80 units\nlead_time: 14 working days after artwork sign-off\npackaging: Rolled paper wrap; 20 units per carton\ndimensions: 680 x 320 x 3 mm\nmaterial: Cork with natural rubber backing",
+          "dense": 0.004785111359315943,
+          "bm25": null,
+          "rrf": 0.014925373134328358,
+          "reranker": 0.04803569551788372
+        },
+        {
+          "source_file": "northstar-production-sop.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic order procedure / Dispatch handover",
+          "row": 19,
+          "content": "Handover: Operations provides the packing list and carton-count check to the dispatch coordinator.\nRequired fields: The dispatch record contains the order code, carton count, inspection decision and approved carrier booking reference.",
+          "dense": 0.013928541982691806,
+          "bm25": null,
+          "rrf": 0.015384615384615385,
+          "reranker": 0.04443816767336506
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-T553",
+          "section": null,
+          "row": 11,
+          "content": "canonical_product_id: NSITEM-T553\nmodel: NSTR-TOTE-553\nname: Arc Fold Open Tote\ncategory: Carry bags\nplatform_reference_price_min_usd: 3.25\nplatform_reference_price_max_usd: 3.65\nunit: unit\ncolor: Undyed\ncapacity: 12 litres\nmoq: 200 units\nlead_time: 17 working days after sample approval\npackaging: Paper belly band; 50 units per carton\ndimensions: 370 x 330 x 100 mm\nmaterial: Unbleached cotton canvas",
+          "dense": -0.0026238044834904477,
+          "bm25": null,
+          "rrf": 0.014285714285714285,
+          "reranker": 0.04428571428571428
+        }
+      ],
+      "context_chars": 817,
+      "context_chunks": 1,
+      "human_pass_fail": "unreviewed",
+      "reviewer_notes": ""
+    },
+    {
+      "id": "PH-017",
+      "category": "unsupported",
+      "question": "NSTR-MAT-964 current certificate for our tender?",
+      "expected_claims": [],
+      "expected_sufficient": false,
+      "ranks": [
+        1
+      ],
+      "relevant_count": 1,
+      "answer_correct": true,
+      "citation_correct": true,
+      "sufficiency_correct": true,
+      "hallucination": false,
+      "unsupported_question": true,
+      "required_claims": 0,
+      "covered_claims": 0,
+      "latency_ms": 6.563333008671179,
+      "answer": "- NSTR-MAT-964: certificates is not verified in the approved knowledge base.",
+      "sources": [],
+      "retrieved_evidence": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-M964",
+          "section": null,
+          "row": 9,
+          "content": "canonical_product_id: NSITEM-M964\nmodel: NSTR-MAT-964\nname: Quiet Shore Felt Desk Mat\ncategory: Desk accessories\nplatform_reference_price_min_usd: 4.35\nplatform_reference_price_max_usd: 4.75\nunit: unit\ncolor: Heather grey\nmoq: 100 units\nlead_time: 12 working days after artwork sign-off\npackaging: Flat paper wrap; 25 units per carton\ndimensions: 720 x 350 x 4 mm\nmaterial: Recycled PET felt",
+          "dense": 0.03091849491782611,
+          "bm25": 2.6872196197509766,
+          "rrf": 0.02946912242686891,
+          "reranker": 1.3712328107901228
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-M963",
+          "section": null,
+          "row": 8,
+          "content": "canonical_product_id: NSITEM-M963\nmodel: NSTR-MAT-963\nname: Quiet Shore Cork Desk Mat\ncategory: Desk accessories\nplatform_reference_price_min_usd: 5.65\nplatform_reference_price_max_usd: 6.15\nunit: unit\ncolor: Natural cork\nmoq: 80 units\nlead_time: 14 working days after artwork sign-off\npackaging: Rolled paper wrap; 20 units per carton\ndimensions: 680 x 320 x 3 mm\nmaterial: Cork with natural rubber backing",
+          "dense": 0.07494428967326314,
+          "bm25": null,
+          "rrf": 0.015151515151515152,
+          "reranker": 0.5605319701058029
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-V731",
+          "section": null,
+          "row": 2,
+          "content": "canonical_product_id: NSITEM-V731\nmodel: NSTR-VESSEL-731\nname: Harbor Sip Steel Bottle\ncategory: Travel drinkware\nplatform_reference_price_min_usd: 6.85\nplatform_reference_price_max_usd: 7.25\nunit: unit\ncolor: Glacier blue\ncapacity: 500 ml\nmoq: 144 units\nlead_time: 18 working days after artwork sign-off\ncurrent_price: USD 7.25 per unit; dated catalog reference, not a binding quote\ncertificates: DEMO-MAT-731: simulated material-screen result, not regulatory certification\npackaging: Paper sleeve; 24 units per carton\ndimensions: 245 x 72 mm\nmaterial: 18/8 stainless steel",
+          "dense": 0.09293961896657406,
+          "bm25": 2.8195157051086426,
+          "rrf": 0.03149801587301587,
+          "reranker": 0.39690876820128906
+        },
+        {
+          "source_file": "northstar-company-knowledge.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic company handbook / Logistics FAQ",
+          "row": 20,
+          "content": "Logistics guidance: Planning uses carton count, gross weight and destination zone. Carrier cost and transit duration require a separate verified freight quotation.\nCompliance guidance: DEMO-prefixed evidence is a simulated test record and is not legal certification. No claim of conformity may be made without a reviewed certificate.",
+          "dense": 0.08895655748807983,
+          "bm25": 3.3254172801971436,
+          "rrf": 0.031754032258064516,
+          "reranker": 0.38457579462531644
+        },
+        {
+          "source_file": "northstar-company-knowledge.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic company handbook / Company scope",
+          "row": 6,
+          "content": "Business scope: Northstar Trading is a fictional sourcing coordinator for travel drinkware, organizers, camping lights, desk accessories and carry bags. It does not operate a factory.\nResponse target: Acknowledge a new product inquiry within two working days.\nCompany status: This organization and all its records are invented for software demonstrations.",
+          "dense": 0.11455987241046907,
+          "bm25": 2.159047842025757,
+          "rrf": 0.03131881575727918,
+          "reranker": 0.12578273282408406
+        },
+        {
+          "source_file": "northstar-company-knowledge.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic company handbook / Sample policy",
+          "row": 11,
+          "content": "Sample policy: One standard sample per requested SKU can be reserved for seven calendar days. Customized samples require a separate written scope.\nSample ownership: The sample log stores an internal case code, never a customer's personal contact details.",
+          "dense": 0.09296724660770267,
+          "bm25": 1.6896919012069702,
+          "rrf": 0.030834914611005692,
+          "reranker": 0.11126362490601244
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-P452A",
+          "section": null,
+          "row": 4,
+          "content": "canonical_product_id: NSITEM-P452A\nmodel: NSTR-POD-452\nname: Wayfarer Packing Cube Small\ncategory: Travel organizers\nplatform_reference_price_min_usd: 3.45\nplatform_reference_price_max_usd: 3.85\nunit: unit\ncolor: Moss green\ncapacity: 1.9 litres\nmoq: 240 units\nlead_time: 16 working days after sample approval\npackaging: Paper belly band; 60 units per carton\ndimensions: 210 x 140 x 65 mm\nmaterial: Recycled polyester",
+          "dense": 0.07502603196410212,
+          "bm25": null,
+          "rrf": 0.015384615384615385,
+          "reranker": 0.09415153616128177
+        },
+        {
+          "source_file": "northstar-company-knowledge.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic company handbook / Quotation policy",
+          "row": 15,
+          "content": "Quote validity: A newly approved written quotation is valid for 14 calendar days from issue.\nPayment terms: Current payment terms are agreed per quotation; no universal payment schedule is verified.\nRevision policy: Keep the prior approved fact in force until a reviewer approves the new source-backed value. Historical quotations cannot overwrite current catalog knowledge.",
+          "dense": 0.06243895181846838,
+          "bm25": 4.163791656494141,
+          "rrf": 0.031099324975891997,
+          "reranker": 0.09168464365789646
+        }
+      ],
+      "context_chars": 3021,
+      "context_chunks": 6,
+      "human_pass_fail": "unreviewed",
+      "reviewer_notes": ""
+    },
+    {
+      "id": "PH-018",
+      "category": "hard_negative",
+      "question": "Use NSITEM-P452A, not the large cube: dimensions?",
+      "expected_claims": [
+        {
+          "contains": [
+            "210 x 140 x 65 mm"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-P452A"
+          }
+        }
+      ],
+      "expected_sufficient": true,
+      "ranks": [
+        1
+      ],
+      "relevant_count": 1,
+      "answer_correct": true,
+      "citation_correct": true,
+      "sufficiency_correct": true,
+      "hallucination": false,
+      "unsupported_question": false,
+      "required_claims": 1,
+      "covered_claims": 1,
+      "latency_ms": 6.652166004641913,
+      "answer": "- NSTR-POD-452 — dimensions: 210 x 140 x 65 mm. [1]\nConflict notice: this model maps to multiple active product IDs; the model alone is not a unique identifier. [1] [2]",
+      "sources": [
+        {
+          "citation_id": 1,
+          "label": "Source: northstar-products.csv → row 4 → SKU NSTR-POD-452 → product ID NSITEM-P452A",
+          "source_file": "northstar-products.csv",
+          "source_type": "csv",
+          "sheet": null,
+          "row_number": 4,
+          "section": null,
+          "product_sku": "NSTR-POD-452",
+          "product_id": "NSITEM-P452A",
+          "source_modified_at": "2026-09-04T13:38:27.652336+00:00",
+          "chunk_id": "acaa36ec-3294-5947-a108-80c7d9dd5c39",
+          "source_version": "d9e19fef5884dbb88d977631c76ec1a8c2489285fbd7cfc3b31c787333c35008",
+          "approval_change_id": null,
+          "authority_class": "A",
+          "knowledge_status": "current_approved"
+        },
+        {
+          "citation_id": 2,
+          "label": "Source: northstar-products.csv → row 5 → SKU NSTR-POD-452 → product ID NSITEM-P452B",
+          "source_file": "northstar-products.csv",
+          "source_type": "csv",
+          "sheet": null,
+          "row_number": 5,
+          "section": null,
+          "product_sku": "NSTR-POD-452",
+          "product_id": "NSITEM-P452B",
+          "source_modified_at": "2026-09-04T13:38:27.652336+00:00",
+          "chunk_id": "77f0af8d-8414-544f-89f8-a98638952513",
+          "source_version": "d9e19fef5884dbb88d977631c76ec1a8c2489285fbd7cfc3b31c787333c35008",
+          "approval_change_id": null,
+          "authority_class": "A",
+          "knowledge_status": "current_approved"
+        }
+      ],
+      "retrieved_evidence": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-P452A",
+          "section": null,
+          "row": 4,
+          "content": "canonical_product_id: NSITEM-P452A\nmodel: NSTR-POD-452\nname: Wayfarer Packing Cube Small\ncategory: Travel organizers\nplatform_reference_price_min_usd: 3.45\nplatform_reference_price_max_usd: 3.85\nunit: unit\ncolor: Moss green\ncapacity: 1.9 litres\nmoq: 240 units\nlead_time: 16 working days after sample approval\npackaging: Paper belly band; 60 units per carton\ndimensions: 210 x 140 x 65 mm\nmaterial: Recycled polyester",
+          "dense": 0.16207475292993526,
+          "bm25": 6.4346232414245605,
+          "rrf": 0.031544957774465976,
+          "reranker": 2.116893547178924
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-P452B",
+          "section": null,
+          "row": 5,
+          "content": "canonical_product_id: NSITEM-P452B\nmodel: NSTR-POD-452\nname: Wayfarer Packing Cube Large\ncategory: Travel organizers\nplatform_reference_price_min_usd: 4.95\nplatform_reference_price_max_usd: 5.35\nunit: unit\ncolor: Moss green\ncapacity: 6.1 litres\nmoq: 160 units\nlead_time: 16 working days after sample approval\npackaging: Paper belly band; 40 units per carton\ndimensions: 310 x 220 x 90 mm\nmaterial: Recycled polyester",
+          "dense": 0.20378460170508048,
+          "bm25": 6.4346232414245605,
+          "rrf": 0.03200204813108039,
+          "reranker": 0.5977953725727161
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-V732",
+          "section": null,
+          "row": 3,
+          "content": "canonical_product_id: NSITEM-V732\nmodel: NSTR-VESSEL-732\nname: Harbor Sip Wide Bottle\ncategory: Travel drinkware\nplatform_reference_price_min_usd: 8.35\nplatform_reference_price_max_usd: 8.95\nunit: unit\ncolor: Basalt grey\ncapacity: 800 ml\nmoq: 96 units\nlead_time: 22 working days after artwork sign-off\ncurrent_price: USD 8.95 per unit; dated catalog reference, not a binding quote\npackaging: Paper sleeve; 18 units per carton\ndimensions: 292 x 84 mm\nmaterial: 18/8 stainless steel",
+          "dense": 0.2307391359228381,
+          "bm25": 2.1214375495910645,
+          "rrf": 0.031544957774465976,
+          "reranker": 0.5365253961243108
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-V731",
+          "section": null,
+          "row": 2,
+          "content": "canonical_product_id: NSITEM-V731\nmodel: NSTR-VESSEL-731\nname: Harbor Sip Steel Bottle\ncategory: Travel drinkware\nplatform_reference_price_min_usd: 6.85\nplatform_reference_price_max_usd: 7.25\nunit: unit\ncolor: Glacier blue\ncapacity: 500 ml\nmoq: 144 units\nlead_time: 18 working days after artwork sign-off\ncurrent_price: USD 7.25 per unit; dated catalog reference, not a binding quote\ncertificates: DEMO-MAT-731: simulated material-screen result, not regulatory certification\npackaging: Paper sleeve; 24 units per carton\ndimensions: 245 x 72 mm\nmaterial: 18/8 stainless steel",
+          "dense": 0.20374658496569992,
+          "bm25": 2.2555320262908936,
+          "rrf": 0.031009615384615385,
+          "reranker": 0.5184448956123203
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-L864",
+          "section": null,
+          "row": 6,
+          "content": "canonical_product_id: NSITEM-L864\nmodel: NSTR-LANTERN-864\nname: Dusk Trail Rechargeable Lantern\ncategory: Camping lights\nplatform_reference_price_min_usd: 13.65\nplatform_reference_price_max_usd: 14.45\nunit: unit\ncolor: Sandstone\ncapacity: 2200 mAh nominal battery\nmoq: 48 units\npackaging: Moulded pulp insert; 12 units per carton\ndimensions: 128 x 88 x 88 mm\nmaterial: ABS housing with silicone handle",
+          "dense": 0.14286339004368676,
+          "bm25": 1.685758113861084,
+          "rrf": 0.028991596638655463,
+          "reranker": 0.45185280016705187
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-L865",
+          "section": null,
+          "row": 7,
+          "content": "canonical_product_id: NSITEM-L865\nmodel: NSTR-LANTERN-865\nname: Dusk Trail Clip Light\ncategory: Camping lights\nplatform_reference_price_min_usd: 9.55\nplatform_reference_price_max_usd: 10.15\nunit: unit\ncolor: Charcoal\ncapacity: 1200 mAh nominal battery\nmoq: 120 units\nlead_time: 24 working days after sample approval\npackaging: Moulded pulp insert; 30 units per carton\ndimensions: 94 x 62 x 42 mm\nmaterial: ABS housing with aluminium clip",
+          "dense": 0.13876152959536048,
+          "bm25": 1.589802622795105,
+          "rrf": 0.02782608695652174,
+          "reranker": 0.44802108119350603
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-T552",
+          "section": null,
+          "row": 10,
+          "content": "canonical_product_id: NSITEM-T552\nmodel: NSTR-TOTE-552\nname: Arc Fold Zip Tote\ncategory: Carry bags\nplatform_reference_price_min_usd: 4.15\nplatform_reference_price_max_usd: 4.55\nunit: unit\ncolor: Deep teal\ncapacity: 14 litres\nmoq: 200 units\nlead_time: 20 working days after sample approval\npackaging: Folded paper pocket; 50 units per carton\ndimensions: 390 x 340 x 110 mm\nmaterial: Recycled ripstop nylon",
+          "dense": 0.13736688973526742,
+          "bm25": 1.629555344581604,
+          "rrf": 0.027799227799227798,
+          "reranker": 0.44708770612715165
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-M963",
+          "section": null,
+          "row": 8,
+          "content": "canonical_product_id: NSITEM-M963\nmodel: NSTR-MAT-963\nname: Quiet Shore Cork Desk Mat\ncategory: Desk accessories\nplatform_reference_price_min_usd: 5.65\nplatform_reference_price_max_usd: 6.15\nunit: unit\ncolor: Natural cork\nmoq: 80 units\nlead_time: 14 working days after artwork sign-off\npackaging: Rolled paper wrap; 20 units per carton\ndimensions: 680 x 320 x 3 mm\nmaterial: Cork with natural rubber backing",
+          "dense": 0.11564154957113913,
+          "bm25": 1.629555344581604,
+          "rrf": 0.02758751902587519,
+          "reranker": 0.43275452624711563
+        }
+      ],
+      "context_chars": 1070,
+      "context_chunks": 2,
+      "human_pass_fail": "unreviewed",
+      "reviewer_notes": ""
+    },
+    {
+      "id": "PH-019",
+      "category": "company",
+      "question": "Company revision policy — what remains in force while a change awaits review?",
+      "expected_claims": [
+        {
+          "contains": [
+            "prior approved fact"
+          ],
+          "source": {
+            "source_file": "northstar-company-knowledge.md",
+            "section": "Northstar Trading — synthetic company handbook / Quotation policy"
+          }
+        }
+      ],
+      "expected_sufficient": true,
+      "ranks": [
+        2
+      ],
+      "relevant_count": 1,
+      "answer_correct": true,
+      "citation_correct": true,
+      "sufficiency_correct": true,
+      "hallucination": false,
+      "unsupported_question": false,
+      "required_claims": 1,
+      "covered_claims": 1,
+      "latency_ms": 6.850625009974465,
+      "answer": "- Approved knowledge — revision policy: Keep the prior approved fact in force until a reviewer approves the new source-backed value. Historical quotations cannot overwrite current catalog knowledge.. [1]",
+      "sources": [
+        {
+          "citation_id": 1,
+          "label": "Source: northstar-company-knowledge.md → row 15 → section Northstar Trading — synthetic company handbook / Quotation policy",
+          "source_file": "northstar-company-knowledge.md",
+          "source_type": "md",
+          "sheet": null,
+          "row_number": 15,
+          "section": "Northstar Trading — synthetic company handbook / Quotation policy",
+          "product_sku": null,
+          "product_id": null,
+          "source_modified_at": "2026-09-04T11:06:06.600863+00:00",
+          "chunk_id": "48790e71-92fa-5683-8460-af7c41ce943c",
+          "source_version": "89b8fb9a680ed92b7e04ecc2043c97dc310d2743b296323a17a4d24e63b917dd",
+          "approval_change_id": null,
+          "authority_class": "B",
+          "knowledge_status": "authoritative"
+        }
+      ],
+      "retrieved_evidence": [
+        {
+          "source_file": "northstar-company-knowledge.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic company handbook / Company scope",
+          "row": 6,
+          "content": "Business scope: Northstar Trading is a fictional sourcing coordinator for travel drinkware, organizers, camping lights, desk accessories and carry bags. It does not operate a factory.\nResponse target: Acknowledge a new product inquiry within two working days.\nCompany status: This organization and all its records are invented for software demonstrations.",
+          "dense": 0.19381223091944283,
+          "bm25": 5.365832328796387,
+          "rrf": 0.031746031746031744,
+          "reranker": 0.6777239818436696
+        },
+        {
+          "source_file": "northstar-company-knowledge.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic company handbook / Quotation policy",
+          "row": 15,
+          "content": "Quote validity: A newly approved written quotation is valid for 14 calendar days from issue.\nPayment terms: Current payment terms are agreed per quotation; no universal payment schedule is verified.\nRevision policy: Keep the prior approved fact in force until a reviewer approves the new source-backed value. Historical quotations cannot overwrite current catalog knowledge.",
+          "dense": 0.23304930990207812,
+          "bm25": 9.84144401550293,
+          "rrf": 0.03278688524590164,
+          "reranker": 0.47926893668225246
+        },
+        {
+          "source_file": "northstar-historical-rfqs.md",
+          "product_id": "NSITEM-V731",
+          "section": "Northstar Trading — synthetic quotation archive / Archive case ARCH-VE731",
+          "row": 6,
+          "content": "Product ID: NSITEM-V731\nSKU: NSTR-VESSEL-731\nDate: 2024-02-16\nStatus: Historical only; expired and not current company policy.\nCustomer requirement: A fictional hiking club requested blue reusable 500 ml drinkware with a one-color mark.\nMOQ: 360 units\nPayment terms: 40% prepayment and 60% before dispatch\nIncoterms: FCA Invented Rivergate consolidation hub, Incoterms 2020\nQuoted price: USD 6.40 per unit, valid for this archived case only\nPackaging: Paper sleeve with one-color mark\nScope: Freight after the named FCA handover point was excluded. This archive is not a current freight quote.",
+          "dense": 0.1556445133269408,
+          "bm25": 4.032351493835449,
+          "rrf": 0.031009615384615385,
+          "reranker": 0.4421785490471269
+        },
+        {
+          "source_file": "northstar-historical-rfqs.md",
+          "product_id": "NSITEM-T552",
+          "section": "Northstar Trading — synthetic quotation archive / Archive case ARCH-TO552",
+          "row": 19,
+          "content": "Product ID: NSITEM-T552\nSKU: NSTR-TOTE-552\nDate: 2024-09-03\nStatus: Historical only; expired and not current company policy.\nCustomer requirement: A fictional outdoor event requested zip totes without individual plastic bags.\nMOQ: 450 units\nPayment terms: 35% prepayment and 65% after inspection, before dispatch\nIncoterms: EXW Invented Cedar Workshop, Incoterms 2020\nQuoted price: USD 3.90 per unit, valid for this archived case only\nPackaging: Folded paper pocket without individual plastic bags\nScope: The buyer-arranged transport was outside the archived quotation.",
+          "dense": 0.132807924483371,
+          "bm25": 3.6798858642578125,
+          "rrf": 0.030536130536130537,
+          "reranker": 0.42686128145032165
+        },
+        {
+          "source_file": "northstar-company-knowledge.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic company handbook / Sample policy",
+          "row": 11,
+          "content": "Sample policy: One standard sample per requested SKU can be reserved for seven calendar days. Customized samples require a separate written scope.\nSample ownership: The sample log stores an internal case code, never a customer's personal contact details.",
+          "dense": 0.03797162617130238,
+          "bm25": 3.5327203273773193,
+          "rrf": 0.028438886647841874,
+          "reranker": 0.29812044365918844
+        },
+        {
+          "source_file": "northstar-company-knowledge.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic company handbook / Logistics FAQ",
+          "row": 20,
+          "content": "Logistics guidance: Planning uses carton count, gross weight and destination zone. Carrier cost and transit duration require a separate verified freight quotation.\nCompliance guidance: DEMO-prefixed evidence is a simulated test record and is not legal certification. No claim of conformity may be made without a reviewed certificate.",
+          "dense": 0.034376588822276094,
+          "bm25": 1.4581149816513062,
+          "rrf": 0.02803921568627451,
+          "reranker": 0.270383998420754
+        },
+        {
+          "source_file": "northstar-production-sop.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic order procedure / Release control",
+          "row": 11,
+          "content": "Release gate: Operations checks the approved sample reference and artwork revision; a reviewer signs the release checklist before production starts.\nRevision policy: A changed specification pauses release until a new reviewer decision is recorded.",
+          "dense": 0.2191038603105181,
+          "bm25": 7.025457859039307,
+          "rrf": 0.03225806451612903,
+          "reranker": 0.2446755737179658
+        },
+        {
+          "source_file": "northstar-production-sop.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic order procedure / Quality inspection",
+          "row": 15,
+          "content": "Quality check: Compare the first assembled unit with the approved sample; verify the SKU label, color and carton count before packing the batch.\nException handling: Quarantine damaged units, attach a defect code and request a corrective-action decision. Do not mix quarantined units into the outgoing cartons.",
+          "dense": 0.11690153164404996,
+          "bm25": 1.2691187858581543,
+          "rrf": 0.02964426877470356,
+          "reranker": 0.12563026434333602
+        }
+      ],
+      "context_chars": 590,
+      "context_chunks": 1,
+      "human_pass_fail": "unreviewed",
+      "reviewer_notes": ""
+    },
+    {
+      "id": "PH-020",
+      "category": "analytics",
+      "question": "Camping lights inquiries in the demand snapshot?",
+      "expected_claims": [
+        {
+          "contains": [
+            "11"
+          ],
+          "source": {
+            "source_file": "northstar-rfq-demand-summary.csv",
+            "section": "Camping lights"
+          }
+        }
+      ],
+      "expected_sufficient": true,
+      "ranks": [
+        1
+      ],
+      "relevant_count": 1,
+      "answer_correct": true,
+      "citation_correct": true,
+      "sufficiency_correct": true,
+      "hallucination": false,
+      "unsupported_question": false,
+      "required_claims": 1,
+      "covered_claims": 1,
+      "latency_ms": 7.22949999908451,
+      "answer": "- Approved knowledge — inquiries: 11. [1]",
+      "sources": [
+        {
+          "citation_id": 1,
+          "label": "Source: northstar-rfq-demand-summary.csv → row 4 → section Camping lights",
+          "source_file": "northstar-rfq-demand-summary.csv",
+          "source_type": "csv",
+          "sheet": null,
+          "row_number": 4,
+          "section": "Camping lights",
+          "product_sku": null,
+          "product_id": null,
+          "source_modified_at": "2026-09-04T11:06:06.776865+00:00",
+          "chunk_id": "e3217094-3da4-5d38-9873-7319c061cd7e",
+          "source_version": "d4db9a8d2fcecbf65fc3739dae53f51f63d7ae97b48158500c21662e40d8b5ea",
+          "approval_change_id": null,
+          "authority_class": "D",
+          "knowledge_status": "historical_or_dated"
+        }
+      ],
+      "retrieved_evidence": [
+        {
+          "source_file": "northstar-rfq-demand-summary.csv",
+          "product_id": null,
+          "section": "Camping lights",
+          "row": 4,
+          "content": "date: 2025-10-31\ncategory: Camping lights\ninquiries: 11\ntop_requested_attribute: Replaceable charging cable\nscope: Invented internal inquiry exercise; not real market research",
+          "dense": 0.2578439796112147,
+          "bm25": 7.071473598480225,
+          "rrf": 0.03278688524590164,
+          "reranker": 0.47538547199319126
+        },
+        {
+          "source_file": "northstar-rfq-demand-summary.csv",
+          "product_id": null,
+          "section": "Travel organizers",
+          "row": 3,
+          "content": "date: 2025-10-31\ncategory: Travel organizers\ninquiries: 17\ntop_requested_attribute: Compressible construction\nscope: Invented internal inquiry exercise; not real market research",
+          "dense": 0.09805806756909202,
+          "bm25": 2.3862669467926025,
+          "rrf": 0.028991596638655463,
+          "reranker": 0.3177293405585653
+        },
+        {
+          "source_file": "northstar-rfq-demand-summary.csv",
+          "product_id": null,
+          "section": "Travel drinkware",
+          "row": 2,
+          "content": "date: 2025-10-31\ncategory: Travel drinkware\ninquiries: 23\ntop_requested_attribute: Leak-resistant closure\nscope: Invented internal inquiry exercise; not real market research",
+          "dense": 0.07242068570186605,
+          "bm25": 2.3862669467926025,
+          "rrf": 0.028814262023217248,
+          "reranker": 0.3008877077294302
+        },
+        {
+          "source_file": "northstar-rfq-demand-summary.csv",
+          "product_id": null,
+          "section": "Carry bags",
+          "row": 5,
+          "content": "date: 2025-10-31\ncategory: Carry bags\ninquiries: 19\ntop_requested_attribute: Plastic-free individual wrapping\nscope: Invented internal inquiry exercise; not real market research",
+          "dense": 0.04688072356567538,
+          "bm25": 2.3571579456329346,
+          "rrf": 0.02819138376017471,
+          "reranker": 0.2836638540778637
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-L864",
+          "section": null,
+          "row": 6,
+          "content": "canonical_product_id: NSITEM-L864\nmodel: NSTR-LANTERN-864\nname: Dusk Trail Rechargeable Lantern\ncategory: Camping lights\nplatform_reference_price_min_usd: 13.65\nplatform_reference_price_max_usd: 14.45\nunit: unit\ncolor: Sandstone\ncapacity: 2200 mAh nominal battery\nmoq: 48 units\npackaging: Moulded pulp insert; 12 units per carton\ndimensions: 128 x 88 x 88 mm\nmaterial: ABS housing with silicone handle",
+          "dense": 0.15734494665061777,
+          "bm25": 3.3322577476501465,
+          "rrf": 0.031009615384615385,
+          "reranker": 0.26661716404085023
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-L865",
+          "section": null,
+          "row": 7,
+          "content": "canonical_product_id: NSITEM-L865\nmodel: NSTR-LANTERN-865\nname: Dusk Trail Clip Light\ncategory: Camping lights\nplatform_reference_price_min_usd: 9.55\nplatform_reference_price_max_usd: 10.15\nunit: unit\ncolor: Charcoal\ncapacity: 1200 mAh nominal battery\nmoq: 120 units\nlead_time: 24 working days after sample approval\npackaging: Moulded pulp insert; 30 units per carton\ndimensions: 94 x 62 x 42 mm\nmaterial: ABS housing with aluminium clip",
+          "dense": 0.11999970382331182,
+          "bm25": 3.1425812244415283,
+          "rrf": 0.03007688828584351,
+          "reranker": 0.24141002910432954
+        },
+        {
+          "source_file": "northstar-company-knowledge.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic company handbook / Company scope",
+          "row": 6,
+          "content": "Business scope: Northstar Trading is a fictional sourcing coordinator for travel drinkware, organizers, camping lights, desk accessories and carry bags. It does not operate a factory.\nResponse target: Acknowledge a new product inquiry within two working days.\nCompany status: This organization and all its records are invented for software demonstrations.",
+          "dense": 0.13416191749754708,
+          "bm25": 3.4207427501678467,
+          "rrf": 0.031009615384615385,
+          "reranker": 0.18821486175802096
+        },
+        {
+          "source_file": "northstar-production-sop.md",
+          "product_id": null,
+          "section": "Northstar Trading — synthetic order procedure / Release control",
+          "row": 11,
+          "content": "Release gate: Operations checks the approved sample reference and artwork revision; a reviewer signs the release checklist before production starts.\nRevision policy: A changed specification pauses release until a new reviewer decision is recorded.",
+          "dense": 0.18054701058344907,
+          "bm25": 1.7237160205841064,
+          "rrf": 0.030017921146953404,
+          "reranker": 0.1673734780261953
+        }
+      ],
+      "context_chars": 312,
+      "context_chunks": 1,
+      "human_pass_fail": "unreviewed",
+      "reviewer_notes": ""
+    }
+  ],
+  "benchmark": "Synthetic Public Demo Benchmark",
+  "split": "held_out",
+  "dataset_sha256": "409cfab359733513a0667309e10b6ff89b88d47d7421745fe2b0c2504933d7df",
+  "embedding_provider": "domain_hash",
+  "embedding_model": "domain_hash_v1",
+  "embedding_dimension": 384,
+  "ingestion": {
+    "run_id": "a95a526c-b7e4-4430-aaff-ebdff5445fe6",
+    "source_documents": 5,
+    "products": 10,
+    "knowledge_records": 14,
+    "chunks": 24,
+    "qdrant_points": 24,
+    "source_hashes_unchanged": true
+  },
+  "method": "Developer-authored synthetic source/claim checks; not human-blind validation"
+}

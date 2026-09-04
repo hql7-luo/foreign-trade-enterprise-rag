@@ -1,0 +1,538 @@
+{
+  "notice": "Fully synthetic Northstar Trading benchmark; not a real-company benchmark.",
+  "split": "held_out",
+  "questions": [
+    {
+      "id": "PH-001",
+      "category": "vague",
+      "language": "en",
+      "question": "The blue Harbor Sip one — can you identify it for a shortlist?",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "NSTR-VESSEL-731"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-V731"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-V731"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PH-002",
+      "category": "grammar",
+      "language": "en",
+      "question": "NSTR-TOTE-553 packing how many carton?",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "50 units per carton"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-T553"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-T553"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PH-003",
+      "category": "mixed",
+      "language": "mixed",
+      "question": "NSITEM-L865 的 capacity 记了多少？",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "1200 mAh"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-L865"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-L865"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PH-004",
+      "category": "company",
+      "language": "en",
+      "question": "New inquiry on my desk. Company response target?",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "two working days"
+          ],
+          "source": {
+            "source_file": "northstar-company-knowledge.md",
+            "section": "Northstar Trading — synthetic company handbook / Company scope"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-company-knowledge.md",
+          "section": "Northstar Trading — synthetic company handbook / Company scope"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PH-005",
+      "category": "sop",
+      "language": "en",
+      "question": "For the SOP handover at order entry, what goes to operations?",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "approved sample reference"
+          ],
+          "source": {
+            "source_file": "northstar-production-sop.md",
+            "section": "Northstar Trading — synthetic order procedure / Order entry"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-production-sop.md",
+          "section": "Northstar Trading — synthetic order procedure / Order entry"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PH-006",
+      "category": "history",
+      "language": "en",
+      "question": "Archive check for NSTR-TOTE-552: quoted price plus MOQ, not today's quote.",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "USD 3.90"
+          ],
+          "source": {
+            "source_file": "northstar-historical-rfqs.md",
+            "product_id": "NSITEM-T552"
+          }
+        },
+        {
+          "contains": [
+            "450 units"
+          ],
+          "source": {
+            "source_file": "northstar-historical-rfqs.md",
+            "product_id": "NSITEM-T552"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-historical-rfqs.md",
+          "product_id": "NSITEM-T552"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PH-007",
+      "category": "unsupported",
+      "language": "en",
+      "question": "I need NSTR-TOTE-553 shipping cost for a budget right now.",
+      "expected_sufficient": false,
+      "claims": [],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-T553"
+        }
+      ],
+      "unsupported_fields": [
+        "logistics_or_freight"
+      ]
+    },
+    {
+      "id": "PH-008",
+      "category": "comparison",
+      "language": "zh",
+      "question": "比较 NSTR-TOTE-552 和 NSTR-TOTE-553 的材质。",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "Recycled ripstop nylon"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-T552"
+          }
+        },
+        {
+          "contains": [
+            "Unbleached cotton canvas"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-T553"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-T552"
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-T553"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PH-009",
+      "category": "exact_id",
+      "language": "en",
+      "question": "NSITEM-P452A: how much capacity?",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "1.9 litres"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-P452A"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-P452A"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PH-010",
+      "category": "partial_sku",
+      "language": "en",
+      "question": "I only wrote NSTR-LANTERN-86, which one?",
+      "expected_sufficient": false,
+      "claims": [
+        {
+          "contains": [
+            "NSTR-LANTERN-864"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-L864"
+          }
+        },
+        {
+          "contains": [
+            "NSTR-LANTERN-865"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-L865"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-L864"
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-L865"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PH-011",
+      "category": "unsupported",
+      "language": "en",
+      "question": "Is a current lead-time commitment recorded for NSTR-LANTERN-864?",
+      "expected_sufficient": false,
+      "claims": [],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-L864"
+        }
+      ],
+      "unsupported_fields": [
+        "lead_time"
+      ]
+    },
+    {
+      "id": "PH-012",
+      "category": "ambiguous",
+      "language": "mixed",
+      "question": "NSTR-POD-452 哪个尺寸？我没有 product ID。",
+      "expected_sufficient": false,
+      "claims": [],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-P452A"
+        },
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-P452B"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PH-013",
+      "category": "discovery",
+      "language": "en",
+      "question": "Desk mats with recycled material, give some options.",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "NSTR-MAT-964"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-M964"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-M964"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PH-014",
+      "category": "sop",
+      "language": "en",
+      "question": "SOP dispatch handover: name the documents sent onward.",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "packing list"
+          ],
+          "source": {
+            "source_file": "northstar-production-sop.md",
+            "section": "Northstar Trading — synthetic order procedure / Dispatch handover"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-production-sop.md",
+          "section": "Northstar Trading — synthetic order procedure / Dispatch handover"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PH-015",
+      "category": "multifact",
+      "language": "en",
+      "question": "NSTR-LANTERN-865 material, dimensions, and packaging together.",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "aluminium clip"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-L865"
+          }
+        },
+        {
+          "contains": [
+            "94 x 62 x 42 mm"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-L865"
+          }
+        },
+        {
+          "contains": [
+            "30 units per carton"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-L865"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-L865"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PH-016",
+      "category": "history",
+      "language": "zh",
+      "question": "历史 NSTR-VESSEL-731 的付款和贸易条款能列一下吗？",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "40% prepayment"
+          ],
+          "source": {
+            "source_file": "northstar-historical-rfqs.md",
+            "product_id": "NSITEM-V731"
+          }
+        },
+        {
+          "contains": [
+            "FCA Invented Rivergate"
+          ],
+          "source": {
+            "source_file": "northstar-historical-rfqs.md",
+            "product_id": "NSITEM-V731"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-historical-rfqs.md",
+          "product_id": "NSITEM-V731"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PH-017",
+      "category": "unsupported",
+      "language": "en",
+      "question": "NSTR-MAT-964 current certificate for our tender?",
+      "expected_sufficient": false,
+      "claims": [],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-M964"
+        }
+      ],
+      "unsupported_fields": [
+        "certificates"
+      ]
+    },
+    {
+      "id": "PH-018",
+      "category": "hard_negative",
+      "language": "en",
+      "question": "Use NSITEM-P452A, not the large cube: dimensions?",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "210 x 140 x 65 mm"
+          ],
+          "source": {
+            "source_file": "northstar-products.csv",
+            "product_id": "NSITEM-P452A"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-products.csv",
+          "product_id": "NSITEM-P452A"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PH-019",
+      "category": "company",
+      "language": "en",
+      "question": "Company revision policy — what remains in force while a change awaits review?",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "prior approved fact"
+          ],
+          "source": {
+            "source_file": "northstar-company-knowledge.md",
+            "section": "Northstar Trading — synthetic company handbook / Quotation policy"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-company-knowledge.md",
+          "section": "Northstar Trading — synthetic company handbook / Quotation policy"
+        }
+      ],
+      "unsupported_fields": []
+    },
+    {
+      "id": "PH-020",
+      "category": "analytics",
+      "language": "en",
+      "question": "Camping lights inquiries in the demand snapshot?",
+      "expected_sufficient": true,
+      "claims": [
+        {
+          "contains": [
+            "11"
+          ],
+          "source": {
+            "source_file": "northstar-rfq-demand-summary.csv",
+            "section": "Camping lights"
+          }
+        }
+      ],
+      "relevance": [
+        {
+          "source_file": "northstar-rfq-demand-summary.csv",
+          "section": "Camping lights"
+        }
+      ],
+      "unsupported_fields": []
+    }
+  ]
+}
