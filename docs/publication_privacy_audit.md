@@ -57,6 +57,11 @@ copied into the public repository, and no original history was rewritten.
 
 The assembled synthetic content and newly recorded media pass the pre-initialization privacy
 review. All 148 staged release files and all newly created Git objects also passed the
-independent staged/object scan. No private Git storage or alternates were imported. GitHub
-publication remains a separate authenticated action; no remote URL or successful upload is
-claimed. Do not publish new content if provenance is uncertain or a later scan raises a finding.
+independent staged/object scan. No private Git storage or alternates were imported.
+
+GitHub publication was subsequently verified against the audited release: all 148 remote
+file-object hashes match the local release tree. The public history starts with the single
+independent release commit. Publication-only documentation is recorded separately in the
+[GitHub publication record](github_publication.md); no product code, evaluation labels or
+synthetic data were changed. Do not publish new content if provenance is uncertain or a later
+scan raises a finding.

@@ -50,48 +50,27 @@ data. See [recording runbook](demo/recording_runbook.md) and [privacy audit](pub
 README, architecture diagrams, demo script/checklist, portfolio page, resume bullets,
 interview notes and a portfolio-safe retrospective are included.
 
-## Publication status and remaining manual actions
+## Publication status
 
 Local release: one independent initial release commit on `main`, with the public `v1.0.0`
 tag. Resolve its exact object with `git rev-parse 'v1.0.0^{commit}'`; this tag is unrelated to
 any private repository's release. All 148 release files passed staged-content and Git-object
 checks. Only `data/private/.gitkeep` is tracked under the private runtime path.
 
-GitHub CLI is not installed on the validation host. No remote repository, hosted release,
-video upload or paid cloud deployment has been created. Docker is also unavailable locally;
-configuration and a clean-stack CI job are provided, but Docker execution and remote CI success
-are not claimed. No open-source license has been selected.
-Compose/CI YAML, declared services, persistent-volume definitions and required build inputs
-were checked locally; this is not a substitute for executing Docker.
+The [public repository](https://github.com/hql7-luo/foreign-trade-enterprise-rag) and
+[v1.0.0 Release](https://github.com/hql7-luo/foreign-trade-enterprise-rag/releases/tag/v1.0.0)
+are published. The original public tag was pushed unchanged; later publication documentation
+does not change its release target or rewrite history. The MP4 is tracked normally without LFS.
 
-After installing GitHub CLI, run these commands **from this independent public directory only**.
-First inspect authentication and whether a repository already exists; do not create a duplicate.
+At initial local validation, GitHub CLI and Docker were unavailable. GitHub CLI was subsequently
+installed and the release published. [GitHub Actions](https://github.com/hql7-luo/foreign-trade-enterprise-rag/actions/runs/33890245546)
+then passed backend tests/checks, frozen synthetic regressions, frontend tests/build, and a real
+Docker clean-stack build/start/smoke test. Docker remains unavailable on the local validation
+host; the runtime validation above ran on GitHub's hosted runner.
 
-```bash
-gh auth login
-gh auth status
-git status --short
-git log --oneline --all
-git tag --list
-uv run python -m scripts.audit_public_tree
-gh repo view foreign-trade-enterprise-rag
-```
-
-If no such repository exists:
-
-```bash
-gh repo create foreign-trade-enterprise-rag --public --source=. --remote=origin --push
-git push origin v1.0.0
-gh repo edit --description 'Enterprise RAG knowledge assistant for foreign-trade workflows with multilingual hybrid retrieval, claim-level citations, governed fact approval, RBAC, and reproducible evaluation.'
-gh repo edit --add-topic rag --add-topic qdrant --add-topic fastapi --add-topic react --add-topic hybrid-search --add-topic knowledge-management --add-topic multilingual --add-topic enterprise-ai
-gh release create v1.0.0 --verify-tag --title 'v1.0.0 — Foreign Trade Enterprise RAG' --notes-file docs/release_notes.md
-gh release upload v1.0.0 docs/demo/enterprise-rag-demo.mp4
-```
-
-If it exists, verify ownership and its history first, then configure/use its remote without
-force-pushing or replacing unrelated content. Confirm the remote branch, tag, release, README
-images and CI results after publication. The MP4 is already small enough to be tracked normally;
-the release upload is optional. Production exposure still requires real Docker/HTTPS validation.
+See [the publication record](github_publication.md) for remote verification and media checks.
+No paid cloud deployment is running. Internet exposure still requires HTTPS/domain provisioning
+and deployment-specific operational validation. No open-source license has been selected.
 
 ## Remaining limitations
 

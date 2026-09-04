@@ -4,6 +4,8 @@
 
 An internal knowledge desk that helps foreign-trade teams find product facts, inspect their evidence, and review changes before those changes become authoritative.
 
+[v1.0.0 release](https://github.com/hql7-luo/foreign-trade-enterprise-rag/releases/tag/v1.0.0) · [CI validation](https://github.com/hql7-luo/foreign-trade-enterprise-rag/actions) · [Publication record](docs/github_publication.md)
+
 ![Grounded employee answer](docs/demo/screenshots/03-grounded-product.png)
 
 FastAPI · React / TypeScript · SQLite · Qdrant · multilingual MiniLM option · BM25 · RRF
@@ -143,7 +145,7 @@ docker compose up --build -d --wait
 docker compose exec backend python -c "from pathlib import Path; print(Path('/app/data/private/demo-credentials.txt').read_text())"
 ```
 
-Open `http://localhost:3000`. The second command prints **local generated credentials**; keep it off-screen. Compose starts FastAPI, the built React frontend and Qdrant with persistent named volumes. Only loopback ports are published. The GitHub Actions Docker job builds and smoke-tests a clean stack; see the release report for actual execution status. Do not expose this local Compose file directly to the internet.
+Open `http://localhost:3000`. The second command prints **local generated credentials**; keep it off-screen. Compose starts FastAPI, the built React frontend and Qdrant with persistent named volumes. Only loopback ports are published. A [real GitHub Actions run](https://github.com/hql7-luo/foreign-trade-enterprise-rag/actions/runs/33890245546) passed Docker configuration, clean image builds, stack startup and deployment smoke tests. Do not expose this local Compose file directly to the internet.
 
 ## Testing
 
