@@ -1,0 +1,79 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1120" height="850" viewBox="0 0 1120 850" role="img" aria-labelledby="title description">
+  <title id="title">Foreign Trade Enterprise RAG architecture</title>
+  <desc id="description">Synthetic sources pass validation and ingestion into SQLite and Qdrant. Exact matches and multilingual dense plus BM25 retrieval are fused and reranked, then grounded claims and citations reach the React interface through FastAPI. Reviewers approve, reject or supersede pending facts; approved knowledge updates the Product Master and is reindexed.</desc>
+  <defs>
+    <marker id="arrow" viewBox="0 0 10 10" refX="9" refY="5" markerWidth="7" markerHeight="7" orient="auto-start-reverse"><path d="M0 0L10 5L0 10Z" fill="#52677e"/></marker>
+    <style>
+      text{font-family:Arial,Helvetica,sans-serif;fill:#18324b}
+      .title{font-size:26px;font-weight:700}.subtitle{font-size:15px;fill:#52677e}
+      .label{font-size:17px;font-weight:700}.small{font-size:14px;fill:#40566c}
+      .box{fill:#fff;stroke:#bbcbd9;stroke-width:1.5;rx:10}
+      .blue{fill:#eaf3ff;stroke:#8fafd3;stroke-width:1.5;rx:10}
+      .green{fill:#edf7f1;stroke:#99bdab;stroke-width:1.5;rx:10}
+      .flow{fill:none;stroke:#52677e;stroke-width:2;marker-end:url(#arrow)}
+    </style>
+  </defs>
+  <rect width="1120" height="850" rx="16" fill="#f5f8fc"/>
+  <text x="36" y="45" class="title">Foreign Trade Enterprise RAG</text>
+  <text x="36" y="72" class="subtitle">Traceable answers and governed knowledge updates · Fully synthetic Northstar demo data</text>
+
+  <rect x="36" y="102" width="260" height="74" class="box"/>
+  <text x="166" y="131" text-anchor="middle" class="label">Approved / demo sources</text>
+  <text x="166" y="155" text-anchor="middle" class="small">Synthetic catalog and documents</text>
+  <path d="M296 139H354" class="flow"/>
+  <rect x="356" y="102" width="306" height="74" class="box"/>
+  <text x="509" y="131" text-anchor="middle" class="label">Validation and privacy scan</text>
+  <text x="509" y="155" text-anchor="middle" class="small">Controlled source admission</text>
+  <path d="M662 139H720" class="flow"/>
+  <rect x="722" y="102" width="362" height="74" class="box"/>
+  <text x="903" y="131" text-anchor="middle" class="label">Source-aware ingestion</text>
+  <text x="903" y="155" text-anchor="middle" class="small">Normalize · chunk · preserve provenance</text>
+
+  <path d="M903 176V200H286V223" class="flow"/>
+  <path d="M903 176V223" class="flow"/>
+  <rect x="36" y="226" width="500" height="84" class="blue"/>
+  <text x="286" y="258" text-anchor="middle" class="label">SQLite and Current Product Master</text>
+  <text x="286" y="282" text-anchor="middle" class="small">Facts · source versions · approval and audit history</text>
+  <rect x="584" y="226" width="500" height="84" class="blue"/>
+  <text x="834" y="254" text-anchor="middle" class="label">Dense embeddings + BM25 → Qdrant</text>
+  <text x="834" y="278" text-anchor="middle" class="small">Multilingual MiniLM option; offline hash demo default</text>
+  <text x="834" y="298" text-anchor="middle" class="small">Named dense and sparse vectors</text>
+
+  <path d="M286 310V352H380" class="flow"/>
+  <text x="51" y="344" class="small">Exact SKU / product ID matches</text>
+  <path d="M834 310V352H742" class="flow"/>
+  <rect x="382" y="326" width="358" height="68" class="box"/>
+  <text x="561" y="354" text-anchor="middle" class="label">RRF + lightweight reranking</text>
+  <text x="561" y="377" text-anchor="middle" class="small">Relevance, structured match and authority</text>
+
+  <path d="M561 394V420" class="flow"/>
+  <rect x="246" y="422" width="630" height="76" class="green"/>
+  <text x="561" y="451" text-anchor="middle" class="label">Claim planning → evidence selection → grounded synthesis</text>
+  <text x="561" y="477" text-anchor="middle" class="small">Claim-level citations · current / historical status · explicit unsupported facts</text>
+
+  <path d="M561 498V523" class="flow"/>
+  <rect x="382" y="526" width="358" height="52" class="box"/>
+  <text x="561" y="558" text-anchor="middle" class="label">FastAPI and evidence access</text>
+  <path d="M561 578V603" class="flow"/>
+  <rect x="246" y="606" width="630" height="64" class="box"/>
+  <text x="561" y="633" text-anchor="middle" class="label">React knowledge desk</text>
+  <text x="561" y="655" text-anchor="middle" class="small">Employee: ask / inspect · Reviewer: decide · Admin: ingest / reindex</text>
+
+  <text x="36" y="714" class="label">Governance lifecycle</text>
+  <rect x="36" y="735" width="190" height="65" class="box"/>
+  <text x="131" y="762" text-anchor="middle" class="label">Proposed fact</text>
+  <text x="131" y="784" text-anchor="middle" class="small">Pending + source evidence</text>
+  <path d="M226 767H253" class="flow"/>
+  <rect x="256" y="735" width="255" height="65" class="box"/>
+  <text x="383" y="762" text-anchor="middle" class="label">Reviewer decision</text>
+  <text x="383" y="784" text-anchor="middle" class="small">Approve / reject / supersede</text>
+  <path d="M511 767H538" class="flow"/>
+  <rect x="541" y="735" width="258" height="65" class="green"/>
+  <text x="670" y="762" text-anchor="middle" class="label">Approved Product Master</text>
+  <text x="670" y="784" text-anchor="middle" class="small">Retain provenance and history</text>
+  <path d="M799 767H826" class="flow"/>
+  <rect x="829" y="735" width="255" height="65" class="blue"/>
+  <text x="956" y="762" text-anchor="middle" class="label">Controlled reindex</text>
+  <text x="956" y="784" text-anchor="middle" class="small">Updated evidence in future answers</text>
+  <text x="36" y="828" class="small">Only approved changes update current authority. Historical quotations remain historical.</text>
+</svg>
