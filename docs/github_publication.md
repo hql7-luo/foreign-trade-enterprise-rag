@@ -1,6 +1,7 @@
 # GitHub publication record
 
 Publication date: 2026-09-04. Scope: the independent synthetic-only public portfolio edition.
+Presentation verification completed: 2026-09-05.
 The original private project was not used as a Git remote and was not modified during publication.
 
 ## Repository and release
@@ -58,6 +59,10 @@ The actual GitHub README loads its main screenshot and both additional screensho
 original 1920-pixel width. All sixteen original README relative links resolve to published
 files/directories. GitHub-rendered Markdown includes the architecture Mermaid diagram markup,
 synthetic benchmark disclosure, privacy statement and explicit no-live-deployment wording.
+The Mermaid iframe could not be reliably inspected from the publication host. A static
+SVG of the same architecture is therefore embedded for reliable README presentation; the
+original Mermaid source is retained in an expandable section. No application architecture
+or behavior was changed.
 
 Video: [docs/demo/enterprise-rag-demo.mp4](https://github.com/hql7-luo/foreign-trade-enterprise-rag/blob/main/docs/demo/enterprise-rag-demo.mp4).
 It is a normal Git blob, not an LFS pointer: 3,705,807 bytes, 155.62 seconds, 1920×1080,
@@ -71,7 +76,8 @@ silent H.264. The reviewed recording uses only fictional Northstar information.
 ## Publication-only changes
 
 Added repository/release/CI links, replaced obsolete not-yet-published instructions with actual
-remote status, recorded successful Docker CI execution and added this publication record.
+remote status, recorded successful Docker CI execution, added a static architecture diagram
+for reliable display, and added this publication record.
 The application and frozen synthetic evaluations are unchanged.
 
 GitHub's initially resolved network endpoint timed out from the publication host. A temporary

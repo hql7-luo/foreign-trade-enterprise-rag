@@ -31,6 +31,11 @@ This application makes those distinctions visible instead of hiding them behind 
 
 ## Architecture
 
+![Retrieval and knowledge-governance architecture](docs/architecture.svg)
+
+<details>
+<summary>Mermaid diagram source and interactive rendering</summary>
+
 ```mermaid
 flowchart LR
     S[Approved synthetic sources] --> V[Validation and privacy scan]
@@ -54,6 +59,8 @@ flowchart LR
     DB --> RE[Controlled reindex]
     RE --> Q
 ```
+
+</details>
 
 See [architecture and operational boundaries](docs/architecture.md).
 
