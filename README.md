@@ -124,7 +124,7 @@ Uploads are bounded, validated, sensitivity-scanned and quarantined. Employee ev
 
 ## Quick start
 
-Requirements: Python 3.12+, uv, Node 22.18+ and pnpm 11.19.0. Run from the repository root.
+Requirements: Python 3.11+, uv, Node 22.18+ and pnpm 11.19.0. Python 3.11 and 3.12 are tested in CI; the Docker demo uses Python 3.12. Run from the repository root.
 
 ```bash
 cp .env.example .env
