@@ -1,0 +1,82 @@
+{
+  "output": "docs/demo/governance-workflow.png",
+  "output_sha256": "9bb21ba7f5711e8a7a749fbc49dff22a4d3112fd163765af76b6390fe2635605",
+  "mobile_output": "docs/demo/governance-workflow-mobile.png",
+  "mobile_output_sha256": "c2c16dd1e7a25ad48330b3e51347b9356ecbb68f44f66b7c2e7e868199b6de2e",
+  "layout": "Read left to right, then top to bottom; numbered actual UI crops",
+  "synthetic_data": true,
+  "steps": [
+    {
+      "step": 1,
+      "title": "Current approved answer",
+      "source": "docs/demo/screenshots/03-grounded-product.png",
+      "source_sha256": "cb74e37fcb25a55daba24c9f6b09718686fea1ed2afd1ba0d4326930f00092c7",
+      "crop_xyxy": [
+        295,
+        345,
+        1245,
+        910
+      ]
+    },
+    {
+      "step": 2,
+      "title": "New evidence submitted",
+      "source": "docs/demo/screenshots/07-controlled-ingestion.png",
+      "source_sha256": "84f0435836b4754b1798769b84175b85e9f3ee1855ac02ea5d1ccc9418039c73",
+      "crop_xyxy": [
+        305,
+        855,
+        1090,
+        1080
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Pending review / decision",
+      "source": "docs/demo/screenshots/08-pending-conflict.png",
+      "source_sha256": "b55169d17d98f141b95101635f13939bc74c9d212a9fc1b8bf9b0de738919acc",
+      "crop_xyxy": [
+        960,
+        248,
+        1835,
+        854
+      ]
+    },
+    {
+      "step": 4,
+      "title": "Product Master + history",
+      "source": "docs/demo/screenshots/10-master-provenance.png",
+      "source_sha256": "f6a7a310a7c8674851dc041699541ae038dc06aad8d99317b8fdd4e538da7f84",
+      "crop_xyxy": [
+        960,
+        650,
+        1835,
+        1000
+      ]
+    },
+    {
+      "step": 5,
+      "title": "Controlled reindex",
+      "source": "docs/demo/screenshots/11-index-updated.png",
+      "source_sha256": "9ff638608d978cf21ed08adde709afc5f568821ca9743c006deed51fc059cc55",
+      "crop_xyxy": [
+        305,
+        166,
+        1845,
+        448
+      ]
+    },
+    {
+      "step": 6,
+      "title": "Updated grounded answer",
+      "source": "docs/demo/screenshots/12-governed-answer.png",
+      "source_sha256": "97d7026b23c2f0fbc5d1f8d2c314d35d6e4dd4d683ab84e5f67b23f248888e51",
+      "crop_xyxy": [
+        298,
+        268,
+        1210,
+        520
+      ]
+    }
+  ]
+}

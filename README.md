@@ -1,27 +1,43 @@
 # Foreign Trade Enterprise RAG
 
-**Enterprise Knowledge Assistant with Hybrid Retrieval, Claim-Level Citations, Knowledge Governance, and RBAC**
+**A knowledge desk where new evidence must be reviewed before it becomes an approved answer.**
 
-An internal knowledge desk that helps foreign-trade teams find product facts, inspect their evidence, and review changes before those changes become authoritative.
+Foreign-trade employees ask product and policy questions; Reviewers approve or reject proposed facts; Admins update the retrieval index. Answers retain their sources, and replaced facts retain their history.
+
+**Input:** product catalogs, SOPs, historical quotations and proposed evidence.<br>
+**Output:** grounded answers with claim-level citations, an approved Product Master and a review audit trail.<br>
+**Business purpose:** distinguish current authority, historical terms, missing fields and unapproved changes.
+
+## The knowledge-governance workflow
+
+<picture>
+  <source media="(max-width:600px)" srcset="docs/demo/governance-workflow-mobile.png">
+  <img src="docs/demo/governance-workflow.png" alt="Six actual UI stages: approved 144-unit MOQ, submitted evidence, pending review and approve/reject decision, Product Master history, controlled reindex, and a cited 180-unit answer. All records are synthetic.">
+</picture>
+
+Read **01 → 06**: approved knowledge → new evidence → pending review → human decision → Product Master → controlled reindex → updated grounded answer. Pending or rejected proposals cannot overwrite the approved fact.
+
+**What I built:** hybrid retrieval, claim-level evidence, role-separated review, versioned product facts and controlled ingestion.<br>
+**Skills demonstrated:** Python / FastAPI · SQL / SQLite · React / TypeScript · Qdrant / BM25 / RRF · workflow design · knowledge governance.
+
+The montage uses cropped **actual application captures** from the recorded Northstar demo. **All business records are synthetic.** [Full frames and reproducible visual sources](docs/demo/governance-visual.md). No live cloud demo is deployed.
 
 [v1.0.0 release](https://github.com/hql7-luo/foreign-trade-enterprise-rag/releases/tag/v1.0.0) · [CI validation](https://github.com/hql7-luo/foreign-trade-enterprise-rag/actions) · [Publication record](docs/github_publication.md)
 
-![Grounded employee answer](docs/demo/screenshots/03-grounded-product.png)
-
-FastAPI · React / TypeScript · SQLite · Qdrant · multilingual MiniLM option · BM25 · RRF
-
 ## Demo
-
-Employee question → claim-level evidence → missing-field refusal → historical terms → Admin proposal → Reviewer decision → Product Master → reindex → updated employee answer.
 
 **[Watch / download the 2:36 demo MP4](docs/demo/enterprise-rag-demo.mp4)** · 1080p, silent, actual browser interactions.
 
 The [demo script](docs/demo_script.md) uses only fictional Northstar records. Recording verification is described in the [recording runbook](docs/demo/recording_runbook.md). No paid cloud deployment is running and no live URL is claimed.
 
-## Screenshots
+<details>
+<summary>Inspect full-size answer, evidence and pending-review screenshots</summary>
 
+![Grounded employee answer](docs/demo/screenshots/03-grounded-product.png)
 ![Inspectable provenance](docs/demo/screenshots/04-evidence.png)
 ![Current versus proposed fact](docs/demo/screenshots/08-pending-conflict.png)
+
+</details>
 
 ## Business problem
 
