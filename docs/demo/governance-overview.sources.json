@@ -1,0 +1,447 @@
+{
+  "source_revision": "1593b56f5e2fa4ef10892b945fed8c2ea5e40ed8",
+  "business_data": "Fully synthetic, fictional Northstar Trading",
+  "operations": "Rectangular crop, uniform Lanczos resize, white spacing; overview adds editorial captions outside UI crops",
+  "ui_changes": "None. No redrawn UI, generated answers, substituted numbers or simulated source excerpts.",
+  "stage_canvas": {
+    "width": 960,
+    "inset": 24,
+    "gap_between_crops": 32,
+    "background": "white"
+  },
+  "responsive_stage_canvas": {
+    "width": 480,
+    "inset": 12,
+    "gap_between_crops": 16,
+    "background": "white"
+  },
+  "resolution_note": "Original captures are 1920x1080 bitmap images. Larger stage exports are uniformly resized directly from original crops, not new higher-resolution UI captures; they cannot restore details absent from the source. The overview uses the independently exported 480px stages.",
+  "overview_caption_font": {
+    "regular": "Arial",
+    "bold": "Arial Bold",
+    "title_px": 34,
+    "key_px": 43,
+    "body_px": 31,
+    "note_px": 28
+  },
+  "stages": [
+    {
+      "id": "01",
+      "title": "Start with approved knowledge",
+      "key": "144 units",
+      "description": "The employee answer cites the approved catalog.",
+      "crops": [
+        {
+          "source": "screenshots/03-grounded-product.png",
+          "source_sha256": "cb74e37fcb25a55daba24c9f6b09718686fea1ed2afd1ba0d4326930f00092c7",
+          "crop_xyxy": [
+            332,
+            554,
+            708,
+            651
+          ],
+          "scaled_size": [
+            912,
+            235
+          ],
+          "paste_xy": [
+            24,
+            24
+          ]
+        }
+      ],
+      "output": "governance-stage-01.png",
+      "size": [
+        960,
+        283
+      ],
+      "bytes": 101857,
+      "sha256": "c6f39a615e3c71894464de462d30275ba3502214da2563e05cfea6820151a0e4",
+      "responsive_480": {
+        "id": "01",
+        "title": "Start with approved knowledge",
+        "key": "144 units",
+        "description": "The employee answer cites the approved catalog.",
+        "crops": [
+          {
+            "source": "screenshots/03-grounded-product.png",
+            "source_sha256": "cb74e37fcb25a55daba24c9f6b09718686fea1ed2afd1ba0d4326930f00092c7",
+            "crop_xyxy": [
+              332,
+              554,
+              708,
+              651
+            ],
+            "scaled_size": [
+              456,
+              118
+            ],
+            "paste_xy": [
+              12,
+              12
+            ]
+          }
+        ],
+        "output": "governance-stage-01-480.png",
+        "size": [
+          480,
+          142
+        ],
+        "bytes": 35060,
+        "sha256": "d4855137789083d6037bd9327c722c52c3033fc3373403267cef2fad865a2d11"
+      },
+      "overview_image_paste_xy": [
+        40,
+        380
+      ],
+      "overview_image_size": [
+        720,
+        213
+      ]
+    },
+    {
+      "id": "02",
+      "title": "Review a proposed change",
+      "key": "144 current / 180 proposed",
+      "description": "A proposal stays pending until a review decision.",
+      "crops": [
+        {
+          "source": "screenshots/08-pending-conflict.png",
+          "source_sha256": "b55169d17d98f141b95101635f13939bc74c9d212a9fc1b8bf9b0de738919acc",
+          "crop_xyxy": [
+            962,
+            336,
+            1396,
+            468
+          ],
+          "scaled_size": [
+            912,
+            277
+          ],
+          "paste_xy": [
+            24,
+            24
+          ]
+        },
+        {
+          "source": "screenshots/08-pending-conflict.png",
+          "source_sha256": "b55169d17d98f141b95101635f13939bc74c9d212a9fc1b8bf9b0de738919acc",
+          "crop_xyxy": [
+            1398,
+            336,
+            1833,
+            468
+          ],
+          "scaled_size": [
+            912,
+            277
+          ],
+          "paste_xy": [
+            24,
+            333
+          ]
+        }
+      ],
+      "output": "governance-stage-02.png",
+      "size": [
+        960,
+        634
+      ],
+      "bytes": 76475,
+      "sha256": "8566366efb7c92a8d015517eabf402450b66c73abbc776e104c5508a19e9af7b",
+      "responsive_480": {
+        "id": "02",
+        "title": "Review a proposed change",
+        "key": "144 current / 180 proposed",
+        "description": "A proposal stays pending until a review decision.",
+        "crops": [
+          {
+            "source": "screenshots/08-pending-conflict.png",
+            "source_sha256": "b55169d17d98f141b95101635f13939bc74c9d212a9fc1b8bf9b0de738919acc",
+            "crop_xyxy": [
+              962,
+              336,
+              1396,
+              468
+            ],
+            "scaled_size": [
+              456,
+              139
+            ],
+            "paste_xy": [
+              12,
+              12
+            ]
+          },
+          {
+            "source": "screenshots/08-pending-conflict.png",
+            "source_sha256": "b55169d17d98f141b95101635f13939bc74c9d212a9fc1b8bf9b0de738919acc",
+            "crop_xyxy": [
+              1398,
+              336,
+              1833,
+              468
+            ],
+            "scaled_size": [
+              456,
+              138
+            ],
+            "paste_xy": [
+              12,
+              167
+            ]
+          }
+        ],
+        "output": "governance-stage-02-480.png",
+        "size": [
+          480,
+          317
+        ],
+        "bytes": 25303,
+        "sha256": "5a50bdb930473d1ab9a97c7e3b75e5fbc52d22f3e63f5bdc33bac8cc3bef1f20"
+      },
+      "overview_image_paste_xy": [
+        40,
+        857
+      ],
+      "overview_image_size": [
+        720,
+        476
+      ]
+    },
+    {
+      "id": "03",
+      "title": "Approve and retain history",
+      "key": "180 current / 144 historical",
+      "description": "The Product Master records the approved replacement.",
+      "crops": [
+        {
+          "source": "screenshots/10-master-provenance.png",
+          "source_sha256": "f6a7a310a7c8674851dc041699541ae038dc06aad8d99317b8fdd4e538da7f84",
+          "crop_xyxy": [
+            958,
+            710,
+            1190,
+            763
+          ],
+          "scaled_size": [
+            912,
+            208
+          ],
+          "paste_xy": [
+            24,
+            24
+          ]
+        },
+        {
+          "source": "screenshots/10-master-provenance.png",
+          "source_sha256": "f6a7a310a7c8674851dc041699541ae038dc06aad8d99317b8fdd4e538da7f84",
+          "crop_xyxy": [
+            958,
+            815,
+            1190,
+            869
+          ],
+          "scaled_size": [
+            912,
+            212
+          ],
+          "paste_xy": [
+            24,
+            264
+          ]
+        }
+      ],
+      "output": "governance-stage-03.png",
+      "size": [
+        960,
+        500
+      ],
+      "bytes": 149775,
+      "sha256": "2b0d77e332b56c0d73d149281f6b456d36562e2b21dbc3aab0f8488fabd2abb4",
+      "responsive_480": {
+        "id": "03",
+        "title": "Approve and retain history",
+        "key": "180 current / 144 historical",
+        "description": "The Product Master records the approved replacement.",
+        "crops": [
+          {
+            "source": "screenshots/10-master-provenance.png",
+            "source_sha256": "f6a7a310a7c8674851dc041699541ae038dc06aad8d99317b8fdd4e538da7f84",
+            "crop_xyxy": [
+              958,
+              710,
+              1190,
+              763
+            ],
+            "scaled_size": [
+              456,
+              104
+            ],
+            "paste_xy": [
+              12,
+              12
+            ]
+          },
+          {
+            "source": "screenshots/10-master-provenance.png",
+            "source_sha256": "f6a7a310a7c8674851dc041699541ae038dc06aad8d99317b8fdd4e538da7f84",
+            "crop_xyxy": [
+              958,
+              815,
+              1190,
+              869
+            ],
+            "scaled_size": [
+              456,
+              106
+            ],
+            "paste_xy": [
+              12,
+              132
+            ]
+          }
+        ],
+        "output": "governance-stage-03-480.png",
+        "size": [
+          480,
+          250
+        ],
+        "bytes": 54167,
+        "sha256": "561fc6fc62deebee66bb3c09b8f06eafd73170a23aed53ec0861dfd56f2614ab"
+      },
+      "overview_image_paste_xy": [
+        40,
+        1637
+      ],
+      "overview_image_size": [
+        720,
+        375
+      ]
+    },
+    {
+      "id": "04",
+      "title": "Reindex, then answer",
+      "key": "180 units, with its source",
+      "description": "After the Admin reindex, the answer cites the approved change.",
+      "crops": [
+        {
+          "source": "screenshots/12-governed-answer.png",
+          "source_sha256": "97d7026b23c2f0fbc5d1f8d2c314d35d6e4dd4d683ab84e5f67b23f248888e51",
+          "crop_xyxy": [
+            331,
+            391,
+            723,
+            486
+          ],
+          "scaled_size": [
+            912,
+            221
+          ],
+          "paste_xy": [
+            24,
+            24
+          ]
+        },
+        {
+          "source": "screenshots/13-governed-evidence.png",
+          "source_sha256": "b33ae2ff76c3c5045e5ccf9b0fd3f0ad064fe6ec0bb3e48beae6840b899adb34",
+          "crop_xyxy": [
+            1462,
+            438,
+            1900,
+            615
+          ],
+          "scaled_size": [
+            912,
+            369
+          ],
+          "paste_xy": [
+            24,
+            277
+          ]
+        }
+      ],
+      "output": "governance-stage-04.png",
+      "size": [
+        960,
+        670
+      ],
+      "bytes": 306365,
+      "sha256": "6cbb75457e4cae6d52260eea8dab98657a6a0a0a7bf48d7978bc52ca67354f28",
+      "responsive_480": {
+        "id": "04",
+        "title": "Reindex, then answer",
+        "key": "180 units, with its source",
+        "description": "After the Admin reindex, the answer cites the approved change.",
+        "crops": [
+          {
+            "source": "screenshots/12-governed-answer.png",
+            "source_sha256": "97d7026b23c2f0fbc5d1f8d2c314d35d6e4dd4d683ab84e5f67b23f248888e51",
+            "crop_xyxy": [
+              331,
+              391,
+              723,
+              486
+            ],
+            "scaled_size": [
+              456,
+              111
+            ],
+            "paste_xy": [
+              12,
+              12
+            ]
+          },
+          {
+            "source": "screenshots/13-governed-evidence.png",
+            "source_sha256": "b33ae2ff76c3c5045e5ccf9b0fd3f0ad064fe6ec0bb3e48beae6840b899adb34",
+            "crop_xyxy": [
+              1462,
+              438,
+              1900,
+              615
+            ],
+            "scaled_size": [
+              456,
+              184
+            ],
+            "paste_xy": [
+              12,
+              139
+            ]
+          }
+        ],
+        "output": "governance-stage-04-480.png",
+        "size": [
+          480,
+          335
+        ],
+        "bytes": 100767,
+        "sha256": "7295481186d50ed91ebce983e47c981d43afa972fa385de861fb62af7058aa94"
+      },
+      "overview_image_paste_xy": [
+        40,
+        2316
+      ],
+      "overview_image_size": [
+        720,
+        502
+      ]
+    }
+  ],
+  "overview": {
+    "output": "governance-overview.png",
+    "size": [
+      800,
+      2876
+    ],
+    "sha256": "f391e2f9d180c379a678b4e16b58ce09d9c93dfdc0c90d5640b3433246c368e7"
+  },
+  "full_six_step_detail": "governance-workflow.png / governance-workflow-mobile.png (unchanged)",
+  "omitted_intermediate_operations": {
+    "staging": "screenshots/07-controlled-ingestion.png",
+    "approval_confirmation": "screenshots/09-review-approved.png",
+    "controlled_reindex": "screenshots/11-index-updated.png"
+  }
+}

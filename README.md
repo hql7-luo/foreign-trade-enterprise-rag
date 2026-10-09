@@ -1,26 +1,47 @@
 # Foreign Trade Enterprise RAG
 
-**A knowledge desk where new evidence must be reviewed before it becomes an approved answer.**
+[中文概览](README.zh-CN.md)
 
-Foreign-trade employees ask product and policy questions; Reviewers approve or reject proposed facts; Admins update the retrieval index. Answers retain their sources, and replaced facts retain their history.
+**Which product fact is approved—and where did it come from?**
 
-**Input:** product catalogs, SOPs, historical quotations and proposed evidence.<br>
-**Output:** grounded answers with claim-level citations, an approved Product Master and a review audit trail.<br>
-**Business purpose:** distinguish current authority, historical terms, missing fields and unapproved changes.
+Foreign-trade teams need to find product and policy information across catalogs, operating instructions and old quotations. This prototype shows the sources behind answers and reviews proposed changes before they become current facts.
 
-## The knowledge-governance workflow
+**The example:** a product's minimum order quantity (MOQ) moves through four visible stages: **approved 144 → pending proposal 180 → approved 180 with 144 retained as history → reindexed answer citing 180**. Pending or rejected evidence cannot silently replace the approved value.
+
+**Synthetic public prototype:** fictional Northstar records, actual application captures; no live cloud deployment.
+
+**[Watch / download the 2:36 demo](docs/demo/enterprise-rag-demo.mp4)** · [Portfolio case](https://hql7-luo.github.io/projects/foreign-trade-enterprise-rag.html) · [Technical details](#rag-pipeline)
+
+## Four stages, from existing fact to approved answer
+
+![Four stages from actual application captures: cited approved MOQ 144, current 144 versus pending proposal 180, approved 180 with historical 144 retained, and a reindexed answer citing the approved 180-unit source. All records are synthetic.](docs/demo/governance-overview.png)
+
+The second, third and fourth panels combine tightly cropped regions of original captures with white spacing. Captions sit outside the captured UI. [Full frames, exact crops and source hashes](docs/demo/governance-visual.md).
+
+## Why this matters
+
+Before using an answer, a team can inspect what is current, what is historical, what is missing and why a change was approved. This is a demonstrated information-management workflow; time savings, revenue gains and real-company performance have not been measured.
+
+## My contribution and skills shown
+
+I defined the fragmented-information problem and the requirements for retrieval, source citations and business information management, and participated in feature iterations, evaluation and result checking. **Codex and Claude substantially assisted implementation, tests and docs.**
+
+**Project methods:** business process design · information systems · retrieval with inspectable evidence · approval workflows · evaluation and its limitations.<br>
+**My confirmed contribution:** problem framing · requirements definition · feature iteration · result review.
+
+The technical stack below describes the artifact; I am not claiming independent coding or test execution.
+
+<details>
+<summary>Inspect the full six-step workflow, including source staging and Admin reindex</summary>
 
 <picture>
   <source media="(max-width:600px)" srcset="docs/demo/governance-workflow-mobile.png">
   <img src="docs/demo/governance-workflow.png" alt="Six actual UI stages: approved 144-unit MOQ, submitted evidence, pending review and approve/reject decision, Product Master history, controlled reindex, and a cited 180-unit answer. All records are synthetic.">
 </picture>
 
-Read **01 → 06**: approved knowledge → new evidence → pending review → human decision → Product Master → controlled reindex → updated grounded answer. Pending or rejected proposals cannot overwrite the approved fact.
+Read **01 → 06**: approved answer → source staging → pending comparison and review decision → Product Master history → controlled reindex → updated cited answer. Approval and reindex are separate operations; the four-stage overview groups them for easier reading.
 
-**What I built:** hybrid retrieval, claim-level evidence, role-separated review, versioned product facts and controlled ingestion.<br>
-**Skills demonstrated:** Python / FastAPI · SQL / SQLite · React / TypeScript · Qdrant / BM25 / RRF · workflow design · knowledge governance.
-
-The montage uses cropped **actual application captures** from the recorded Northstar demo. **All business records are synthetic.** [Full frames and reproducible visual sources](docs/demo/governance-visual.md). No live cloud demo is deployed.
+</details>
 
 [v1.0.0 release](https://github.com/hql7-luo/foreign-trade-enterprise-rag/releases/tag/v1.0.0) · [CI validation](https://github.com/hql7-luo/foreign-trade-enterprise-rag/actions) · [Publication record](docs/github_publication.md)
 
@@ -39,12 +60,6 @@ The [demo script](docs/demo_script.md) uses only fictional Northstar records. Re
 
 </details>
 
-## Business problem
-
-Product catalogs, operating instructions and old quotations answer different questions. A relevant document is not automatically current policy. Employees need to know what is supported, what is historical, what is missing and who approved a change.
-
-This application makes those distinctions visible instead of hiding them behind a fluent answer.
-
 ## Architecture
 
 ![Retrieval and knowledge-governance architecture](docs/architecture.svg)
@@ -57,7 +72,7 @@ flowchart LR
     S[Approved synthetic sources] --> V[Validation and privacy scan]
     V --> I[Source-aware ingestion]
     I --> DB[SQLite: sources, chunks, Product Master]
-    I --> E[Multilingual MiniLM or offline hash fallback]
+    I --> E[Offline hash default or optional MiniLM]
     I --> B[BM25 sparse encoding]
     E --> Q[Qdrant]
     B --> Q
@@ -83,6 +98,8 @@ See [architecture and operational boundaries](docs/architecture.md).
 ## RAG pipeline
 
 Exact SKU / product ID → dense retrieval + BM25 → Reciprocal Rank Fusion → authority-aware lightweight reranking → claim-level grounded synthesis → source citation.
+
+**System stack:** Python / FastAPI · SQL / SQLite · React / TypeScript · Qdrant / BM25 / RRF. RAG here retrieves evidence and assembles an extractive answer; it does not use an answer-generating LLM.
 
 - Qdrant stores named dense and sparse vectors. SQLite retains the authoritative structured records and provenance.
 - The optional neural provider is `sentence-transformers/paraphrase-multilingual-MiniLM-L12-v2`, 384 dimensions, through FastEmbed/ONNX.
@@ -125,6 +142,8 @@ All results below use the offline hash provider, BM25 and local Qdrant. They do 
 | Development, first run | 30 | 78.33 / 90 / 96.67 / 96.67% | 0.9150 | 96.67% | 96.67% | 94.74% | 0/5 |
 | Held-out, first run | 20 | 75 / 95 / 97.5 / 97.5% | 0.8875 | 80% | 85% | 77.27% | 0/3 |
 | Internal frozen holdback, first run | 20 | 75 / 90 / 92.5 / 95% | 0.8850 | 85% | 95% | 91.30% | 0/5 |
+
+The **92.5%** figure is mean Recall@5 over the 20 internal frozen holdback questions: coverage of expected sources within the first five retrieved results. It is not answer accuracy, a count of fully correct questions, or independently validated business performance. The optional MiniLM implementation was smoke-checked, not benchmarked for retrieval quality.
 
 Median query latency was 6.41–6.59 ms, P95 7.66–7.74 ms on the local test machine, excluding ingestion and model startup. Source/claim substring checks are automated, not human semantic grading. Citation scores include vacuous passes on questions with no expected supported claim. Zero narrowly detected unsupported-field hallucinations does **not** establish zero semantic errors.
 
@@ -198,4 +217,4 @@ Backend coverage targets ingestion, idempotency, authority, conflicts, approvals
 
 Production-oriented configuration exists: environment validation, optional neural embeddings, read-only public mode, limits, structured logs, readiness, persistent storage and operator backup/reset tools. HTTPS/domain provisioning and runtime validation remain operator responsibilities. **No paid production deployment is running.**
 
-See [public release status](docs/public_portfolio_release.md), [portfolio summary](docs/portfolio_summary.md), and [interview notes](docs/interview_talking_points.md).
+See [public release status](docs/public_portfolio_release.md), [architecture](docs/architecture.md), and [benchmark failure analysis](docs/benchmark_analysis.md). The contribution statement above reflects the confirmed AI-assisted division of work.
