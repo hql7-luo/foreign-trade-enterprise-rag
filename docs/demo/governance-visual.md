@@ -31,7 +31,7 @@ Employee, Reviewer and Admin are application permission roles, not claims about 
 human project team. The README states the confirmed personal AI-assisted contribution.
 
 [The new source manifest](governance-overview.sources.json) records the reviewed source
-revision `1593b56f5e2fa4ef10892b945fed8c2ea5e40ed8`, original PNG hashes, exact
+revision `fb7ee408c282fb9b05969270d31ca95ef9d93581`, original PNG hashes, exact
 `[left, top, right, bottom]` pixel crop coordinates, uniform resize dimensions,
 white-canvas placement, output dimensions and output hashes. Coordinates follow
 Pillow's half-open box convention. Sources are RGB PNGs; processing uses Lanczos
@@ -72,7 +72,7 @@ governance behavior are implemented in `app/approval.py`, `app/database/sqlite.p
 `app/api/routes.py` and `app/ingestion/pipeline.py`.
 
 The UI source and application behavior are unchanged from these captures in the
-reviewed revision `757c874316f56701cdeb529054dce149049c688c`; that revision updated
+reviewed revision `fb9eafaff74995563c81b3215e1ed730ef50bb71`; that revision updated
 dependencies and runtime support. The screenshot files remain the original captures.
 
 ## Regenerate the preserved six-step detail

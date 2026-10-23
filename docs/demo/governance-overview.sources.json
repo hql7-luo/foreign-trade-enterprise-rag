@@ -1,5 +1,5 @@
 {
-  "source_revision": "1593b56f5e2fa4ef10892b945fed8c2ea5e40ed8",
+  "source_revision": "fb7ee408c282fb9b05969270d31ca95ef9d93581",
   "business_data": "Fully synthetic, fictional Northstar Trading",
   "operations": "Rectangular crop, uniform Lanczos resize, white spacing; overview adds editorial captions outside UI crops",
   "ui_changes": "None. No redrawn UI, generated answers, substituted numbers or simulated source excerpts.",

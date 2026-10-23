@@ -2,7 +2,7 @@
 
 [中文概览](README.zh-CN.md)
 
-**Which product fact is approved—and where did it come from?**
+**Which product fact is approved, and where did it come from?**
 
 Foreign-trade teams need to find product and policy information across catalogs, operating instructions and old quotations. This prototype shows the sources behind answers and reviews proposed changes before they become current facts.
 
@@ -133,7 +133,7 @@ Empty fields mean unverified. DEMO-prefixed compliance records are simulated exa
 
 ## Evaluation
 
-**Synthetic Public Demo Benchmark** — newly authored labels, frozen hashes and immutable first-run artifacts. The three splits were defined before execution. The same development agent authored data and questions: the blind-named set is an internal frozen holdback, **not independently human-authored blind validation**.
+**Synthetic Public Demo Benchmark:** newly authored labels, frozen hashes and immutable first-run artifacts. The three splits were defined before execution. The same development agent authored data and questions: the blind-named set is an internal frozen holdback, **not independently human-authored blind validation**.
 
 All results below use the offline hash provider, BM25 and local Qdrant. They do not estimate real-company accuracy or the quality of the neural embedding provider.
 
